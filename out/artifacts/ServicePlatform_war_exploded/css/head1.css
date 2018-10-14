@@ -1,0 +1,343 @@
+
+* {
+    font-family: Microsoft Yahei;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*IE的BUG*/
+img {
+    border: 0px !important;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    border-bottom: 3px solid #ff6713;
+    height: 115px;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style: none outside none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+/*清除浮动*/
+div.clear_float {
+    clear: both;
+}
+
+div.site-nav {
+    height: 36px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+div.site-nav-bd {
+    font-size: 14px;
+    line-height: 36px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+div.site-nav-bd-l {
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    display: inline;
+    float: left;
+}
+
+ul.site-nav-bd-r {
+    display: inline;
+    float: right;
+    font-size: 12px;
+}
+
+.site-nav-bd-r li {
+    display: inline;
+    float: left;
+    cursor: pointer;
+    height: 36px;
+}
+
+.site-nav-bd-r li a:hover {
+    color: #f40;
+}
+
+.site-nav-bd-r li div#down_load {
+    line-height: 36px;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1000;
+}
+
+#downloadMenu {
+    cursor: default;
+}
+
+.site-nav-bd-r li div#help-center {
+    line-height: 36px;
+    padding: 0 5px;
+    z-index: 1000;
+}
+
+.site-nav-bd-r li div#reg-center {
+    line-height: 36px;
+    padding: 0 5px;
+    z-index: 1000;
+}
+
+.site-nav-bd-r li div#resetpsd-center {
+    line-height: 36px;
+    padding: 0 5px;
+    z-index: 1000;
+}
+
+.site-nav-bd-r li div#login-center {
+    line-height: 36px;
+    padding: 0 0px;
+    z-index: 1000;
+    display: inline-block;
+    width: 340px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+input {
+    width: 100px;
+    border: 1px solid #dfdfdf;
+}
+
+#submitBtn {
+    border: none;
+    color: white;
+    background-color: rgb(0, 149, 218);
+    padding: 0px 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    line-height: 21px;
+    font-size: 12px;
+}
+
+div.logo-box {
+    height: 112px;
+    margin: 0 auto;
+
+    width: 1000px;
+}
+
+div.logo-box .logo {
+    height: 50px;
+    width: 150px;
+    margin-top: 12.5px;
+    margin-left: 400px;
+}
+
+#dl_dropdown {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    z-index: 10002;
+    background: none repeat scroll 0 0 #fff;
+    line-height: normal;
+    position: absolute;
+    top: 36px;
+    right: 174px;
+    padding: 8px 10px 8px 15px;
+    display: none;
+    height: 60px;
+}
+
+.qr-img {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    float: left;
+    height: 60px;
+    width: 60px;
+}
+
+.qr-img img {
+    vertical-align: middle;
+    height: 50px;
+    margin: 5px;
+    width: 50px;
+}
+
+.qr-right {
+    float: left;
+    width: 90px;
+    height: 90px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.qr-right a {
+    display: block;
+    line-height: 35px;
+}
+
+.qr-right p {
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.dialog-outer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /*background: none repeat scroll 0% 0% #4a4a4a;*/
+    background-color: transparent;
+
+    z-index: 1987;
+    font-family: "Microsoft Yahei", Tahoma, Arial !important;
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    display: none;
+}
+
+.dialog-outer table {
+    layout: fixed;
+    cellspacing: 0;
+    cellpadding: 0;
+    border-collapse: collapse;
+}
+
+.dialog-box {
+    border: 1px solid rgb(0, 8, 6);
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 #959595;
+    position: fixed;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1988;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    margin-left: -157px;
+    margin-top: -50px;
+
+}
+
+.dialog-inner {
+    background: none repeat scroll 0 0 #fff;
+    width: 300px;
+    height: auto;
+    z-index: 1989;
+    opacity: 1;
+}
+
+.dlg-buttons {
+    height: auto;
+    padding: 3px 8px;
+    border-top: 1px solid #dadee5;
+    background-color: #f6f6f6;
+    text-align: right;
+    z-index: 1990;
+}
+
+.dlg-title {
+    color: 4 c5a5f;
+    line-height: 28px;
+    background: #dce5e9;
+    background: -moz-linear-gradient(center top, #edf5f8, #bdc6cd) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-linear-gradient(center top, #edf5f8, #bdc6cd) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -o-linear-gradient(center top, #edf5f8, #bdc6cd) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#edf5f8, endColorstr=#bdc6cd); /*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#edf5f8, endColorstr=#bdc6cd)"; /*IE8+*/
+    padding: 0 28px 0 10px;
+    font-weight: bold;
+    z-index: 1990;
+}
+
+.dlg-info {
+    padding: 8px 25px;
+    z-index: 1990;
+    color: red;
+    text-align: center;
+}
+
+.dlg-buttons button {
+    background: #33bbee;
+    background: -moz-linear-gradient(center top, #33bbee, #2288cc) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-linear-gradient(center top, #33bbee, #2288cc) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -o-linear-gradient(center top, #33bbee, #2288cc) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#33bbee, endColorstr=#2288cc); /*IE<9>*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#33bbee, endColorstr=#2288cc)"; /*IE8+*/
+
+    border: 1px solid #1c6a9e;
+    color: #fff;
+    text-shadow: -1px -1px 1px #1c6a9e;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-left: 15px;
+    overflow: visible;
+    padding: 3px 5px;
+    text-align: center
+}
+
+/*天气*/
+.weather-box {
+    height: 36px;
+    line-height: 36px;
+    width: auto;
+    float: left;
+
+    text-align: left !important;
+    display: none;
+}
+
+.weather-box .pic {
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    float: left;
+}
+
+.weather-box .detail {
+    margin-left: 5px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.weather-box .detail span.temperature {
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+    margin-right: 5px;
+}
+
+.weather-box .detail p.info {
+    padding-left: 3px;
+    margin-top: 5px;
+}
+
+.weather-box .detail span.weather {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.weather-box .detail span.wind {
+    color: #959595;
+    font-size: 13px;
+}

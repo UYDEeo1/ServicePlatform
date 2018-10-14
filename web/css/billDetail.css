@@ -1,0 +1,110 @@
+body{
+font-family:微软雅黑, Arial, Helvetica, sans-serif;
+}
+span{
+line-height: 35px;
+}
+#body_left img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    float: left;
+    margin-left: 12px; 
+    display: inline;
+    margin-top: 9px;
+}
+/* 解决angularjs中init初始化延时 */
+.ng-cloak{display:none;} 
+
+.container{
+	width: 100% !important;
+	min-width: 1268px;
+	margin: 0 auto !important;
+	height: auto;
+	border: 0px solid #e6e6e6;
+	background-color:#fff;
+	padding-top: 20px;
+}
+
+#billIframe{
+	width: 93%;
+	border: 0px;
+	margin:0px;
+	padding:0px;
+	height:572px;
+}
+.title_right{
+    background-color: #39b8ef;
+    width: 93%;
+    line-height: 82px;
+    font-size:25px;
+    text-align: left;
+    text-indent: 30px;
+    color: white;
+    border-left: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+}
+.content_right{
+
+}
+.page-nav{
+	display:block !important;
+	float:none !important;
+	padding-left:15px;
+	margin:0 auto !important;
+	margin-bottom:5px;
+}
+
+.page_main{
+   background-color: white;
+   margin: 20px 0px 0px 4%;;
+   overflow: hidden;
+   width: 92%;
+   height:auto;
+}
+div{
+font-size:16px;
+}
+.body_main {
+   height: auto;
+   margin-left: 15%;
+   overflow: hidden;
+}
+.body_left {
+   float: left;
+   width: 200px;
+   background-color:#f4f4f4;
+   height:600px;
+}
+.left_body{
+	
+}
+.title{
+   color:#bfbfbf;
+   background-color: #f4f4f4;
+   font-size: 16px;
+   line-height: 50px;
+   overflow: hidden;
+   line-height: 50px;
+   text-align: left;
+   text-indent: 16px;
+}
+.body_right {
+   float: left;
+   height: 654px;
+   overflow: hidden;
+   width:650px;
+   background-color:white;
+}
+.content{
+width:100%;
+margin: 0;
+text-align: left;
+         text-indent: 15px;
+}
+.list{
+padding: 5px;
+cursor:pointer; 
+color:#5c5c5c; 
+}
+/* .list:hover{ color:rgb(252,82,20); } */

@@ -1,0 +1,56 @@
+*{ padding:0px; margin:0px;}
+ul{ list-style: none;}
+body{ font-family:宋体,微软雅黑, Arial, Helvetica, sans-serif; font-size:12px; line-height:25px;color:#333333;}
+a{ text-decoration:none; border:0; color:#333333;}
+img{ border:0;}
+.clear{ clear:both;}
+
+/*内容*/
+.sheq{ width:1000px; margin:0 auto; margin-top:10px;}
+.wora{ width:1000px; float:left; margin-bottom:20px; display:inline;}
+.wora a{ margin:0 9px;}
+.my{ width:310px; height:186px; float:left; overflow:hidden; font-family:微软雅黑;font-size:14px; line-height:30px;}
+.my p,.my1 p{ width:310px; height:20px; float:left; background:url("/portal/images/dicService/inzx.png") no-repeat; font-family:微软雅黑; font-size:17px; color:#00a6f3; text-indent:55px; margin-bottom:15px; display:inline;}
+.my span,.my1 span{ display:block; text-align:right; }
+.my span a,.my1 span a{ color:#00a6f3; text-decoration: underline;}
+.my1{ width:651px; height:186px; float:right; font-family:微软雅黑;font-size:14px;}
+.my1 p{ width:651px;}
+.my1 ul,.servaz ul,.servaz_mid ul,.servaz_rig ul,.servaz1 ul,.servaz_mid1 ul,.servaz_rig1 ul{ list-style: square; color:#92b7f2; float:left;}
+.my1 li{ width:620px; margin-left:25px; height:31px; line-height:31px;}
+.my1 li span{ float:right; color:#919191;}
+
+/*服务*/
+.serz,.serz_do{ width:998px; height:330px; margin:0 auto; border:1px solid #f0f0f0; margin-top:15px;}
+.serz_left,.serz_mid,.serz_rig,.serz_left1,.serz_mid1,.serz_rig1{ width:auto; height:330px; float:left; border-right:1px solid #f0f0f0;}
+.serz_left p,.serz_mid p,.serz_rig p,.serz_left1 p,.serz_mid1 p,.serz_rig1 p{ width:332px; height:42px; background:url(/portal/images/dicService/serv07.png) repeat-x; line-height:42px; font-family:微软雅黑; font-size:16px; color:#2f2f2f;}
+.serz_left p img,.serz_mid p img,.serz_rig p img,.serz_left1 p img,.serz_mid1 p img,.serz_rig1 p img{ float:left; width:30px; height:24px; margin-left:15px; margin-right:9px; margin-top:8px; display:inline;}
+.serz_left li,.serz_mid li,.serz_rig li,.serz_left1 li,.serz_mid1 li,.serz_rig1 li{ width:332px; height:80px; font-family:宋体; font-size:13px; color:#747474;margin-top:12px; line-height:27px;}
+.serz_left li span,.serz_mid li span,.serz_rig li span,.serz_left1 li span,.serz_mid1 li span,.serz_rig1 li span{ font-size:15px; color:#292929; font-family:微软雅黑;}
+.serz_left li img,.serz_mid li img,.serz_rig li img,.serz_left1 li img,.serz_mid1 li img,.serz_rig1 li img{ width:99px; height:80px; float:left;margin-left:15px; margin-right:9px; display:inline;}
+.servaz,.servaz_mid,.servaz_rig,.servaz1,.servaz_mid1,.servaz_rig1{ width:330px; height:80px; float:left;}
+.servaz li,.servaz_mid li,.servaz_rig li,.servaz1 li,.servaz_mid1 li,.servaz_rig1 li{ width:330px; height:20px; line-height:20px; color:#92b7f2; font-family:微软雅黑; margin-left:35px; font-size:14px;}
+.serz_rig,.serz_rig1{ border:none;}
+
+/*便民服务*/
+.easy{ width:1000px; height:auto; margin:0 auto;}
+.easy span{ width:1000px; height:52px; float:left; margin-top:5px; margin-bottom:5px; display:block; line-height:50px; font-family:微软雅黑; font-size:20px; color:#121212;}
+.seaxq1,.seaxq2{ width:318px; height:185px; float:left;border:1px solid #dedede;margin-right:17px}
+.seaxq3
+{ 
+	width:318px;
+	height:185px; 
+	border:1px solid #dedede ; 
+	margin-right:2px; 
+	float:left;
+	margin-bottom: 10px;
+} 
+.titla{ width:318px; height:37px; background:#eeeeee; float:left; line-height:38px;border-bottom:1px solid #f0f0f0;font-family:微软雅黑; font-size:15px;}
+.titla p{ width:124px; height:38px; /* background:url(/portal/images/dicService/lif.png) no-repeat; */ float:left; text-align:center;/*  color:#1d51a3; */}
+.sazq,.sazq2,.sazq4,.sazq3,.sazq5{ width:318px; float:left;}
+.sazq p,.sazq2 p,.sazq4 p,.sazq3 p,.sazq5 p{ width:300px; height:32px; font-size:12.5px; color:#2e2e2e;font-family:微软雅黑; margin-left:10px; margin-top:15px; }
+.sazq p img,.sazq2 p img,.sazq4 p img,.sazq3 p img,.sazq5 p img{ float:right;height:25px;margin-right: 6px;cursor:pointer}
+.sazq input,.sazq2 input,.sazq4 input,.sazq3 input,.sazq5 input{ background:#fff;border:1px solid #dedede; width:150px; height:22px; margin-left:15px;}
+
+/*连接*/
+.linm{ width:1000px; height:auto; margin:0 auto; font-family:微软雅黑; font-size:14px; color:#121212; margin-top:30px; margin-bottom:10px;}
+.linm a{ margin:0 18px;}

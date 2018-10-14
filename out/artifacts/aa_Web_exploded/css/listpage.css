@@ -1,0 +1,42 @@
+.cate_detail_item {
+    padding-top: 5px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color:#ff9934;
+}
+.cate_detail_tit {
+    overflow: hidden;
+    /*width: 130px;*/
+    font-weight: 700;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.cate_detail_tit_arrow {
+    margin-left: 5px;
+}
+.cate_detail_con {
+    overflow: hidden;
+    /*padding-top: 5px;*/
+}
+.cate_detail_con_lk {
+
+    margin: 3px 0;
+    padding: 0 3px;
+    height: 16px;
+    border-left: 1px solid #e0e0e0;
+    line-height: 16px;
+    color: #666;
+    /*white-space: nowrap;*/
+}
+.cate_detail{
+    width: 800px;
+}
+summary{
+    outline: none;
+}
