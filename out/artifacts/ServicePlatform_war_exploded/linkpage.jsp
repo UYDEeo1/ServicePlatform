@@ -290,7 +290,7 @@
         </a>
 
         <a href="http://www.shmzj.gov.cn/gb/shmzj/index.html" target="_blank">
-            <span style="background-image: url(img/guohui1.png);"></span>
+            <span style="background-image: url(img/logobaiyulan.png);"></span>
             <h3>上海市民政局</h3>
             <ul class="clearfloat">
                 <li>婚姻</li>
@@ -302,7 +302,7 @@
         </a>
 
         <a href="http://www.wsjsw.gov.cn/wsj/" target="_blank">
-            <span style="background-image: url(img/guohui1.png);"></span>
+            <span style="background-image: url(img/logobaiyulan.png);"></span>
             <h3>上海市卫生和计划生育委员会</h3>
             <ul class="clearfloat">
                 <li>卫生</li>
@@ -313,7 +313,7 @@
         </a>
 
         <a href="http://mh.shmzj.gov.cn/gb/mzmhq/index.html" target="_blank">
-            <span style="background-image: url(img/guohui1.png);"></span>
+            <span style="background-image: url(img/logobaiyulan.png);"></span>
             <h3>上海市闵行区民政局</h3>
             <ul class="clearfloat">
                 <li>闵行</li>
@@ -325,7 +325,7 @@
         </a>
 
         <a href="https://www.mhwsjsw.gov.cn/" target="_blank">
-            <span style="background-image: url(img/guohui1.png);"></span>
+            <span style="background-image: url(img/logobaiyulan.png);"></span>
             <h3>闵行区卫生和计划生育委员会</h3>
             <ul class="clearfloat">
                 <li>闵行</li>

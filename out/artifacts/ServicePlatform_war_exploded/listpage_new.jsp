@@ -35,7 +35,7 @@
             }
             .list_div p{
                 padding-top: 8%;
-                font-size: 18px;
+                font-size: 21px;
                 font-weight:700;
                 padding-left: 8%;
             }
@@ -51,6 +51,7 @@
                 list-style-type:none;
                 text-align: right;
                 right:0;
+                font-size: 16px;
 
             }
             .list_div li a{
@@ -71,7 +72,7 @@
             }
             .lineee{
                 width:100%;
-                height:7px;
+                height:8px;
                 background-color:#e56339 ;
                 box-shadow:0 1px 1px 0 #cb8e6a;
             }
@@ -116,9 +117,11 @@
             }
             .title_1{
                 font-weight:700;
+                font-size: 18px;
             }
             .title_2{
                 color:#cb8e6a;
+                font-size: 17px;
             }
             .left-menu{
                 position: absolute;
@@ -126,7 +129,7 @@
                 left:100%;
                 display: none;
                 float: left;
-                min-width: 160px;
+                min-width: 180px;
                 padding: 5px 0;
                 margin: -40px 0 0;
                 font-size: 14px;
@@ -218,7 +221,7 @@
 
         }
         @media screen and (min-width: 1366px) and (max-width: 1599px){
-            body{font-size: 14px}
+            body{font-size: 15px}
             #headFrame {
                 height: 78px;
                 min-width: 1268px;
@@ -357,6 +360,15 @@
 <div class="relatedOrg">
 
         <ul>
+            <li class="box_related">
+                <a href="page5.jsp" target="_top">
+                    <img src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
+                </a>
+                <a href="page5.jsp" target="_top">
+                    古美敬老院
+                </a>
+                <br>     地址：闵行区虹莘路2288弄<br>     咨询电话：(021)34174387
+            </li>
             <li class="box_related">
                 <a href="page5.jsp" target="_top">
                     <img src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">

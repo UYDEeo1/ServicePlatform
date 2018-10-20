@@ -32,19 +32,24 @@
             line-height: 40px;
             padding-right: 40px;
         }
+        .control-label label{
+            font-size: 15px;
+            color: #954025;
+        }
     </style>
 </head>
 <body>
 
 <div class="title_right">政策</div>
-<div>
+<div ng-app="myInfo" ng-controller="LabelCtrl">
     <ul class="form-group">
-        <li class="control-label">康乐福信息服务: 已落实</li>
-        <li class="control-label">70周岁及以上老人: 已落实</li>
-        <li class="control-label">65周岁及以上老人: 已落实</li>
+        <li class="control-label" ng-repeat="x in Data"><label>{{x.labelName}} ：{{x.isImplement}}</label></li>
     </ul>
 
 </div>
+
+<script src="js/angular.min.js"></script>
+<script src="js/pageJs/page3_3.js"></script>
 
 </body>
 </html>

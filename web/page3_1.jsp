@@ -32,6 +32,10 @@
             line-height: 40px;
             padding-right: 40px;
         }
+        .control-label label{
+            font-size: 15px;
+            color: #954025;
+        }
     </style>
 </head>
 <body>
@@ -39,47 +43,47 @@
 <div class="title_right">个人信息</div>
 <div ng-app="myInfo" ng-controller="infoCtrl">
     <ul class="form-group">
-        <li class="control-label">编号：{{Oldman.id}}</li>
-        <li class="control-label">姓名：{{Oldman.name}}</li>
-        <li class="control-label">性别：{{Oldman.sex}}</li>
-        <li class="control-label">年龄：{{Oldman.age}}</li>
-        <li class="control-label">政治面貌：{{Oldman.politicalStatus}}</li>
-        <li class="col-sm-2 control-label">电话：{{Oldman.phone}}</li>
-        <li class="col-sm-2 control-label">户籍：{{Oldman.census}}</li>
-        <li class="col-sm-2 control-label">身份证号码：{{Oldman.idNum}}</li>
+        <li class="control-label">编号：<label>{{Oldman.id}}</label></li>
+        <li class="control-label">姓名：<label>{{Oldman.name}}</label></li>
+        <li class="control-label">性别：<label>{{Oldman.sex}}</label></li>
+        <li class="control-label">年龄：<label>{{Oldman.age}}</label></li>
+        <li class="control-label">政治面貌：<label>{{Oldman.politicalStatus}}</label></li>
+        <li class="col-sm-2 control-label">电话：<label>{{Oldman.phone}}</label></li>
+        <li class="col-sm-2 control-label">户籍：<label>{{Oldman.census}}</label></li>
+        <li class="col-sm-2 control-label">身份证号码：<label>{{Oldman.idNum}}</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul>
-        <li class="col-sm-2 control-label">片区：{{Oldman.area}}</li>
-        <li class="col-sm-2 control-label">居委：{{Oldman.neiboCom}}</li>
-        <li class="col-sm-2 control-label">小区：{{Oldman.neighbour}}</li>
-        <li class="col-sm-2 control-label">楼号：{{Oldman.buildNum}}</li>
-        <li class="col-sm-2 control-label">地址：{{Oldman.address}}</li>
+        <li class="col-sm-2 control-label">片区：<label>{{Oldman.area}}</label></li>
+        <li class="col-sm-2 control-label">居委：<label>{{Oldman.neiboCom}}</label></li>
+        <li class="col-sm-2 control-label">小区：<label>{{Oldman.neighbour}}</label></li>
+        <li class="col-sm-2 control-label">楼号：<label>{{Oldman.buildNum}}</label></li>
+        <li class="col-sm-2 control-label">地址：<label>{{Oldman.address}}</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">
-        <li class="col-sm-2 control-label">家庭结构：{{Oldman.family.Family}}</li>
-        <li class="col-sm-2 control-label">经济条件：{{Oldman.economic.Economic}}</li>
+        <li class="col-sm-2 control-label">家庭结构：<label>{{Oldman.family.Family}}</label></li>
+        <li class="col-sm-2 control-label">经济条件：<label>{{Oldman.economic.Economic}}</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">
-        <li class="col-sm-2 control-label">紧急联系人姓名：{{Linkman.name}}</li>
-        <li class="col-sm-2 control-label">电话：{{Linkman.phone}}</li>
-        <li class="col-sm-2 control-label">关系：{{Linkman.relation}}</li>
+        <li class="col-sm-2 control-label">紧急联系人姓名：<label>{{Linkman.name}}</label></li>
+        <li class="col-sm-2 control-label">电话：<label>{{Linkman.phone}}</label></li>
+        <li class="col-sm-2 control-label">关系：<label>{{Linkman.relation}}</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">
-        <li class="col-sm-2 control-label">机构养老：无</li>
-        <li class="col-sm-2 control-label">社区养老：无</li>
-        <li class="col-sm-2 control-label">居家养老：2</li>
-        <li class="col-sm-2 control-label">类型：长护险</li>
-        <li class="col-sm-2 control-label">服务时间：2018-06-29-2018-06-29</li>
+        <li class="col-sm-2 control-label">机构养老：<label>{{Organ.oldmanStatus}}</label></li>
+        <li class="col-sm-2 control-label">社区养老：<label>{{Community.oldmanStatus}}</label></li>
+        <li class="col-sm-2 control-label">居家养老：<label>{{Home.oldmanStatus}}</label></li>
+        <li class="col-sm-2 control-label">类型：<label>{{Home.homeType}}</label></li>
+        <li class="col-sm-2 control-label">居家养老服务时间：<label>{{Home.time}}</label></li>
     </ul>
 </div>
 
 
 <script src="js/angular.min.js"></script>
-<script src="js/page3.js"></script>
+<script src="js/pageJs/page3.js"></script>
 
 
 </body>

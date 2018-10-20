@@ -32,6 +32,10 @@
             line-height: 40px;
             padding-right: 40px;
         }
+        .control-label label{
+            font-size: 15px;
+            color: #954025;
+        }
 
 
     </style>
@@ -40,28 +44,31 @@
 
 
 <div class="title_right">健康档案</div>
-<div>
+<div ng-app="myInfo" ng-controller="HealthCtrl">
     <ul class="form-group">
-        <li class="col-sm-2 control-label">血型：A</li>
-        <li class="col-sm-2 control-label">失智情况：正常</li>
-        <li class="col-sm-2 control-label">视力：一般障碍</li>
+        <li class="col-sm-2 control-label">血型：<label>{{Data.bloodType}}</label></li>
+        <li class="col-sm-2 control-label">失智情况：<label>{{Data.intelligence}}</label></li>
+        <li class="col-sm-2 control-label">视力：<label>{{Data.eyesight}}</label></li>
 
-        <li class="col-sm-2 control-label">慢病: 糖尿病 高血压</li>
+        <li class="col-sm-2 control-label">慢病: <label ng-repeat="x in ChronicDis">{{x.secTypeName}}；&nbsp;</label></li>
 
-        <li class="col-sm-2 control-label">失能情况：洗澡</li>
+        <li class="col-sm-2 control-label">失能情况：<label ng-repeat="x in AbiliInfo">{{x.secTypeName}}；</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">
-        <li class="col-sm-2 control-label">药物反应: 无</li>
+        <li class="col-sm-2 control-label">药物反应: <label ng-repeat="x in DrugAlley">{{x.secTypeName}}；</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">
-        <li class="col-sm-2 control-label">恶性肿瘤史：<p>2016年，得了肿瘤A</p></li>
-        <li class="col-sm-2 control-label">骨折史:<p>2015年，手骨折</p><p>脚骨折</p></li>
-        <li class="col-sm-2 control-label">残疾情况: 无</li>
+        <li class="col-sm-2 control-label">恶性肿瘤史：<label  ng-repeat="x in Cancer">{{x.desc}}，时间：{{x.time}}；</label></li>
+        <li class="col-sm-2 control-label">骨折史: <label ng-repeat="x in Broken">{{x.secTypeName}}，时间：{{x.time}}；</label></li>
+        <li class="col-sm-2 control-label">残疾情况: <label ng-repeat="x in Disabled">{{x.desc}}；</label></li>
 
     </ul>
 </div>
+
+<script src="js/angular.min.js"></script>
+<script src="js/pageJs/page3_2.js"></script>
 
 </body>
 </html>

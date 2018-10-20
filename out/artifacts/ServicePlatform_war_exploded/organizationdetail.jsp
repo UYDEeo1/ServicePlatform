@@ -84,7 +84,7 @@
 
 <div>
     <div id="organization_title">
-        <p style="text-align: center;font-size:24px;font-weight: 900;padding-bottom: 25px;color:#424242;letter-spacing: 3px;">古美敬老院</p>
+        <p style="text-align: center;font-size:30px;font-weight: 900;padding-bottom: 25px;color:#000000;letter-spacing: 3px;">古美敬老院</p>
     </div>
     <div class="contt">
     <ul class="form-group">
