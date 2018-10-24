@@ -222,7 +222,7 @@
             list-style: none;
         }
         .tbh-nav .nav-hd li {
-            margin: 0 3px;
+            margin: 0 30px;
             text-align: center;
             padding: 0 4px;
         }
@@ -287,6 +287,11 @@
             /*border-radius: 4px;*/
 
 
+        }
+        .organReg a{
+            margin-left: 200px;
+            cursor: pointer;
+            color:#731032!important;
         }
 
     </style>
@@ -365,6 +370,7 @@
             <li><a onmouseover="overdiv('hidden_div')" onmouseout="outdiv('hidden_div')">居家养老服务</a></li>
             <li><a onmouseover="overdiv('hidden_div1')" onmouseout="outdiv('hidden_div1')">社会养老服务</a></li>
             <li><a onmouseover="overdiv('hidden_div2')" onmouseout="outdiv('hidden_div2')">机构养老服务</a></li>
+            <li class="organReg"><a href="organ_reg.jsp" target="_blank">机构注册</a></li>
         </ul>
     </div>
 </div>

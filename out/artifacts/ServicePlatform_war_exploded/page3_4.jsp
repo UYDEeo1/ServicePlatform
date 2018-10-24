@@ -74,7 +74,7 @@
 </head>
 <body>
 <div class="title_right">一卡通</div>
-<div>
+<div ng-app="myInfo" ng-controller="RecordCtrl">
     <div id="box">
         <input type="text" name="search" placeholder="请输入关键字">
         <div id="search">搜索</div>

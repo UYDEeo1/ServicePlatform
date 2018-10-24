@@ -111,7 +111,7 @@
             <a href="page1.jsp" target="_top"><img src="img/mainpage/logo_title.png"></a>
         </div>
         <div id="div_login" class="col-md-offset-3" >
-            <button class="btn bbtn">登录</button>
+            <a href="login.jsp" target="_blank"><button class="btn bbtn">登录</button></a>
             <a href="page6.jsp" target="_top"><button class="btn bbtn">个人中心</button></a>
         </div>
     </div>
