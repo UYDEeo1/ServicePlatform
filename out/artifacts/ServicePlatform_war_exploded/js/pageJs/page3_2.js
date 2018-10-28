@@ -6,7 +6,7 @@ var app = angular.module('myInfo', []);
 app.controller('HealthCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/file/36/getHealthById'
+        url: 'http://101.132.76.252:83/file/3374/getHealthById'
     }).then(function successCallback(response) {
 
         console.log(response);

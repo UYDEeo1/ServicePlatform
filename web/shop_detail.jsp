@@ -21,6 +21,10 @@
     <script src="js/jquery.form.js" type="text/javascript"></script>
     <script src="js/common.js" type="text/javascript"></script>
     <script src="js/validate-custom.js" type="text/javascript"></script>
+
+
+    <script src="js/sweetalert.min.js"></script>
+
     <style type="text/css">
         body{
             margin:0px;
@@ -179,7 +183,7 @@
         }
         .companyname{
             float:left;
-            width:100px;
+            width:auto;
             color:#ff6713;
             font-weight: 700;
             padding-top: 4px;
@@ -293,20 +297,22 @@
             cursor: pointer;
             color:#731032!important;
         }
+        .pagination>li>a{
+            color:#F40!important;
+        }
+
+
+        .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+            background-color: #ff5000!important;
+            border-color: #ff5000!important;
+            color: #fff!important;
+        }
 
     </style>
-    <script>
 
-        function overdiv(x) {
-            document.getElementById(x).style.display="block";
-        }
-        function outdiv(x) {
-            document.getElementById(x).style.display="none";
-        }
-    </script>
 
 </head>
-<body>
+<body ng-app="myShop" ng-controller="myController">
 
 
 <!DOCTYPE html>
@@ -338,156 +344,105 @@
             padding: 0px;
         }
 
-        #headFrame {
-            height: 78px;
-            min-width: 1268px;
-            width: 100%;
-            margin: 0 auto;
-            overflow: hidden;
-            display: block;
+        @media screen and (max-width: 1365px){
+            body{font-size: 12px}
+            #headFrame {
+                height: 78px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #indexIframe{
+                height:800px;
+            }
         }
-
+        @media screen and (min-width: 1366px) and (max-width: 1599px){
+            body{font-size: 14px}
+            #headFrame {
+                height: 78px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #indexIframe{
+                height:800px;
+            }
+        }
+        @media screen and (min-width: 1600px) and (max-width: 1919px){
+            body{font-size: 16px}
+            #headFrame {
+                height: 78px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #indexIframe{
+                height:800px;
+            }
+        }
+        @media screen and (min-width: 1920px){
+            body{font-size: 18px}
+            #headFrame {
+                height: 110px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #indexIframe{
+                height:1000px;
+            }
+        }
     </style>
-
 
 </head>
 
 <body>
 
-<iframe id="headFrame" src="head.jsp" frameborder="0" scrolling="no">
+<iframe id="headFrame" src="head.jsp" frameborder="0" scrolling="no" style="border-bottom:3px solid #E98242; ">
 </iframe>
 </body>
 </html>
 
 
 
-
+<div ng-controller="NavCtrl">
 
 <div class="tbh-nav tb-bg " data-name="nav" data-spm="201859">
     <div class="nav J_Nav clearfix " role="navigation">
         <h2>网上商城</h2>
         <ul class="nav-hd">
-            <li><a onmouseover="overdiv('hidden_div')" onmouseout="outdiv('hidden_div')">居家养老服务</a></li>
-            <li><a onmouseover="overdiv('hidden_div1')" onmouseout="outdiv('hidden_div1')">社会养老服务</a></li>
-            <li><a onmouseover="overdiv('hidden_div2')" onmouseout="outdiv('hidden_div2')">机构养老服务</a></li>
+            <li ng-repeat="x in Data"><a ng-mouseover="overdiv(x.id)" ng-mouseout="outdiv(x.id)">{{x.name}}</a></li>
             <li class="organReg"><a href="organ_reg.jsp" target="_blank">机构注册</a></li>
         </ul>
     </div>
 </div>
 <div id="shop_nav">
-<div id="hidden_div" class="hidden_div"  style="display: none;" onmouseover="overdiv('hidden_div')" onmouseout="outdiv('hidden_div')">
+<div ng-repeat="x in Data" id="{{x.id}}" class="hidden_div"  style="display: none;"ng-mouseover="overdiv(x.id)" ng-mouseout="outdiv(x.id)">
     <div class="cate_detail">
 
-        <dl class="cate_detail_item dl-horizontal">
+        <dl class="cate_detail_item dl-horizontal" ng-repeat="m in x.productTypeModels">
             <dt class="cate_detail_tit">
-                十助 <i class="cate_detail_tit_arrow">></i>
+                {{m.name}} <i class="cate_detail_tit_arrow">></i>
             </dt>
-            <dd class="cate_detail_con">
-                <a class="cate_detail_con_lk" target="_blank">助洁</a>
-                <a class="cate_detail_con_lk">|</a>
-                <a class="cate_detail_con_lk" target="_blank">助浴</a>
-                <a class="cate_detail_con_lk">|</a>
-                <a class="cate_detail_con_lk" target="_blank">饮食制作</a>
+            <dd class="cate_detail_con" >
+                <a ng-repeat="k in m.productTypeModels" class="cate_detail_con_lk" target="_blank" id="{{k.id}}" ng-click="shopDetail(k.id)">{{k.name}} </a>
+
             </dd>
         </dl>
 
-        <dl class="cate_detail_item dl-horizontal">
-            <dt class="cate_detail_tit">
-                智能化设备 <i class="cate_detail_tit_arrow">></i>
-            </dt>
-            <dd class="cate_detail_con">
-                <a class="cate_detail_con_lk" target="_blank">智能化设备</a>
-            </dd>
-        </dl>
-        <dl class="cate_detail_item dl-horizontal">
-            <dt class="cate_detail_tit">
-                家庭医生 <i class="cate_detail_tit_arrow">></i>
-            </dt>
-            <dd class="cate_detail_con">
-                <a class="cate_detail_con_lk" target="_blank">家庭医生</a>
-            </dd>
-        </dl>
-        <dl class="cate_detail_item dl-horizontal">
-            <dt class="cate_detail_tit">
-                家庭病床 <i class="cate_detail_tit_arrow">></i>
-            </dt>
-            <dd class="cate_detail_con">
-                <a class="cate_detail_con_lk" target="_blank">家庭病床</a>
-            </dd>
-        </dl>
 
     </div>
 </div>
 
 
-    <div id="hidden_div1" class="hidden_div"  style="display: none;" onmouseover="overdiv('hidden_div1')" onmouseout="outdiv('hidden_div1')">
-        <div class="cate_detail">
 
-            <dl class="cate_detail_item dl-horizontal">
-                <dt class="cate_detail_tit">
-                    长者照护之家 <i class="cate_detail_tit_arrow">></i>
-                </dt>
-                <dd class="cate_detail_con">
-                    <a class="cate_detail_con_lk" target="_blank">长者照护之家</a>
-                </dd>
-            </dl>
-
-            <dl class="cate_detail_item dl-horizontal">
-                <dt class="cate_detail_tit">
-                    日间照料中心 <i class="cate_detail_tit_arrow">></i>
-                </dt>
-                <dd class="cate_detail_con">
-                    <a class="cate_detail_con_lk" target="_blank">日间照料中心</a>
-                </dd>
-            </dl>
-            <dl class="cate_detail_item dl-horizontal">
-                <dt class="cate_detail_tit">
-                    老人日托站 <i class="cate_detail_tit_arrow">></i>
-                </dt>
-                <dd class="cate_detail_con">
-                    <a class="cate_detail_con_lk" target="_blank">老人日托站</a>
-                </dd>
-            </dl>
-
-
-        </div>
-    </div>
-
-
-        <div id="hidden_div2" class="hidden_div"  style="display: none;" onmouseover="overdiv('hidden_div2')" onmouseout="outdiv('hidden_div2')">
-            <div class="cate_detail">
-
-                <dl class="cate_detail_item dl-horizontal">
-                    <dt class="cate_detail_tit">
-                        莲花路老年公寓 <i class="cate_detail_tit_arrow">></i>
-                    </dt>
-                    <dd class="cate_detail_con">
-                        <a class="cate_detail_con_lk" target="_blank">莲花路老年公寓</a>
-                    </dd>
-                </dl>
-
-                <dl class="cate_detail_item dl-horizontal">
-                    <dt class="cate_detail_tit">
-                        平阳敬老院 <i class="cate_detail_tit_arrow">></i>
-                    </dt>
-                    <dd class="cate_detail_con">
-                        <a class="cate_detail_con_lk" target="_blank">平阳敬老院</a>
-                    </dd>
-                </dl>
-                <dl class="cate_detail_item dl-horizontal">
-                    <dt class="cate_detail_tit">
-                       古美敬老院 <i class="cate_detail_tit_arrow">></i>
-                    </dt>
-                    <dd class="cate_detail_con">
-                        <a class="cate_detail_con_lk" target="_blank">古美敬老院</a>
-                    </dd>
-                </dl>
-
-            </div>
-        </div>
 
 </div>
-
+</div>
 
 <div class="c1"><a href="page1.jsp">首页</a>><a>网上商城</a></div>
 
@@ -497,59 +452,56 @@
     </div>
     <div class="company container">
 
-        <div>
+        <div ng-repeat="s in Shop">
             <div class="row">
-                <div class="companyname">XX公司</div>
-                <div class="btnn"><a href="http://www.lj-service.com">线上网站</a></div>
-                <div class="btnn"><a onclick="alert('该公司订购电话：123456')">线下电话</a></div>
-                <div class="btnn"><a href="shop_other.jsp">其他商品</a></div>
-                <div class="btnn"><a onclick="alert('加入购物车成功，可在个人中心查看您的购物车！')">加入购物车</a></div>
+                <div class="companyname" id="{{s.organId}}">{{s.organName}}</div>
+                <div class="btnn"><a href="http://{{s.webUrl}}" target="_blank">线上网站</a></div>
+                <div class="btnn"><a ng-click="phone(s.phone)">线下电话</a></div>
+                <div class="btnn"><a href="shop_other.jsp?id={{s.organId}}" ng-cloak>其他商品</a></div>
+                <div class="btnn"><a onclick="swal({text:'加入购物车成功，可在个人中心查看您的购物车',icon:'success'})">加入购物车</a></div>
             </div>
             <div class="row detail" style="margin-top: 10px;">
-                <div class="col-md-4"><img src="img/shop1.jpg"></div>
+                <div class="col-md-4"><img src="{{s.imgUrl}}"></div>
                 <div class="detail col-md-offset-4">
                 <dl>
                     <dt style="margin-bottom: 15px;!important;">商品名称：</dt>
-                    <dd style="margin-bottom: 15px;!important;">饮食制作</dd>
+                    <dd style="margin-bottom: 15px;!important;">{{s.name}}</dd>
                     <dt style="margin-bottom: 15px;!important;">商品介绍：</dt>
-                    <dd style="margin-bottom: 15px;!important;">1.清洗衣物、床上用品
-                        2.打扫卫生、整理房间</dd>
+                    <dd style="margin-bottom: 15px;!important;">{{s.intro}}</dd>
                     <dt style="margin-bottom: 15px;!important;">服务价格：</dt>
-                    <dd style="margin-bottom: 15px;!important;">¥30/h</dd>
+                    <dd style="margin-bottom: 15px;!important;">¥{{s.price}}</dd>
                 </dl>
                 </div>
             </div>
         </div>
 
 
-        <div>
-            <div class="row">
-                <div class="companyname">XX公司</div>
-                <div class="btnn"><a href="http://www.lj-service.com">线上网站</a></div>
-                <div class="btnn"><a onclick="alert('该公司订购电话：123456')">线下电话</a></div>
-                <div class="btnn"><a href="shop_other.jsp">其他商品</a></div>
-                <div class="btnn"><a onclick="alert('加入购物车成功，可在个人中心查看您的购物车！')">加入购物车</a></div>
-            </div>
-            <div class="row detail" style="margin-top: 10px;">
-                <div class="col-md-4"><img src="img/shop1.jpg"></div>
-                <div class="detail col-md-offset-4">
-                    <dl>
-                        <dt style="margin-bottom: 15px;!important;">商品名称：</dt>
-                        <dd style="margin-bottom: 15px;!important;">饮食制作</dd>
-                        <dt style="margin-bottom: 15px;!important;">商品介绍：</dt>
-                        <dd style="margin-bottom: 15px;!important;">1.清洗衣物、床上用品
-                            2.打扫卫生、整理房间</dd>
-                        <dt style="margin-bottom: 15px;!important;">服务价格：</dt>
-                        <dd style="margin-bottom: 15px;!important;">¥30/h</dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
 
+    </div>
+
+
+
+    <div>
+        <ul class="pagination pull-right" style="margin-right: 250px;">
+            <li>
+                <a href ng-click="prev()">上一页</a>
+            </li>
+            <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}">
+                <a href ng-click="selectPage(page)">{{page}}</a>
+            </li>
+            <li>
+                <a href ng-click="next()">下一页</a>
+            </li>
+        </ul>
     </div>
 </div>
 
-<div class="col-md-offset-8" style="cursor: pointer;"><a href="page6.jsp">购物车</a></div>
+
+
+<%--<div class="col-md-offset-8" style="cursor: pointer;"><a href="page6.jsp">购物车</a></div>--%>
+
+<script src="js/angular.min.js"></script>
+<script src="js/pageJs/shop_detail.js"></script>
 
 </body>
 </html>

@@ -136,7 +136,7 @@
     </style>
 </head>
 
-<body>
+<body ng-app="myInfo">
 
 <div class="pannel">
     <div class="title">
@@ -151,7 +151,7 @@
 
 </p>
 
-<form >
+<form ng-controller="accountCtrl">
     <table cellspacing="0" cellpadding="0" class="infoTable">
         <colgroup>
             <col width="100"/>
@@ -162,7 +162,7 @@
                 账号：
             </td>
             <td class="second">
-                <input id="cUserNameInput" type="text" name="userName" autocomplete="off" readOnly="readOnly" value="1234567890">
+                <input id="cUserNameInput" type="text" name="userName" autocomplete="off" readOnly="readOnly" style="color: #954025;" value="{{Data.username}}">
             </td>
             <td class="third">
             </td>
@@ -172,7 +172,7 @@
                 密码：
             </td>
             <td class="second">
-                <input id="statusInput" type="text" name="status" autocomplete="off" readOnly="readOnly" style="color:rgb(80,164,210)" value="123123">
+                <input id="statusInput" type="text" name="status" autocomplete="off" readOnly="readOnly" style="color: #954025;" value="{{Data.password}}">
             </td>
             <td class="third">
             </td>
@@ -180,6 +180,10 @@
     </table>
 </form>
 
+
+
+<script src="js/angular.min.js"></script>
+<script src="js/pageJs/page6_1.js"></script>
 </body>
 
 </html>

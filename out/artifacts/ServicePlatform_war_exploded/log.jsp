@@ -21,6 +21,9 @@
     <script src="js/common.js" type="text/javascript"></script>
     <script src="js/validate-custom.js" type="text/javascript"></script>
 
+
+    <script src="js/sweetalert.min.js"></script>
+
     <style type="text/css">
 
         body{
@@ -137,7 +140,7 @@
     </style>
 </head>
 
-<body onload="bodyResize()">
+<body onload="bodyResize()" ng-app="myInfo">
 <div class="pannel">
     <div class="title">
         <div class="icon">
@@ -151,7 +154,7 @@
 
 </p>
 
-<div>
+<form ng-controller="userpswdCtrl" name="myForm" novalidate>
 
     <table cellspacing="0" cellpadding="0">
         <colgroup>
@@ -163,7 +166,8 @@
                 <font color="red">*</font>&nbsp;当前密码：
             </td>
             <td class="second">
-                <input id="oldpsdInput" type="password" name="oldpsd" autocomplete="off">
+                <input id="oldpsdInput" type="password" ng-model="user.password">
+                </span>
             </td>
             <td class="third">
             </td>
@@ -173,7 +177,7 @@
                 <font color="red">*</font>&nbsp;新密码：
             </td>
             <td class="second">
-                <input id="newpsdInput" type="password" name="newpsd" autocomplete="off">
+                <input id="newpsdInput" type="password" ng-model="user.newPassword" ng-minlength="8" ng-maxlength="16" required>
                 <div class="tip">6-16个英文字母，数字或符号的组合</div>
             </td>
             <td class="third">
@@ -184,7 +188,7 @@
                 <font color="red">*</font>&nbsp;确认密码：
             </td>
             <td class="second">
-                <input id="confirmPsdInput" type="password" name="confirmPsd" autocomplete="off">
+                <input id="confirmPsdInput" type="password" ng-model="password_again">
             </td>
             <td class="third">
             </td>
@@ -195,7 +199,7 @@
             </td>
             <td>
                 <div class="ac-button">
-                    <input type="submit" value="保存" id="submit">
+                    <input type="submit" value="保存" id="submit" ng-click="changePassword()">
                 </div>
             </td>
             <td>
@@ -207,7 +211,7 @@
 
         </tbody></table>
 
-</div>
+</form>
 
 </body>
 </html>

@@ -17,11 +17,13 @@
             border-bottom: 2px solid #ff9934;;
         }
         .d_p{
-            width:90px;
-            height:30px;
+
+            width: max-content;
+            height: 30px;
             background-color: #ff9934;
-            color:white;
+            color: white;
             padding-left: 15px;
+            padding-right: 15px;
             padding-top: 4px;
 
         }
@@ -47,7 +49,7 @@
             cursor: pointer;
         }
         .shop_div img{
-            width:210px;
+            width:250px;
             height:190px;
             margin: 3px;
             border: 2px solid rgba(255,255,255,0.8);
@@ -88,30 +90,30 @@
         }
     </style>
 </head>
-<body>
+<body ng-app="myShopD" ng-controller="OthCtrl">
 
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>portal统一头部</title>
-    <link rel="icon" href="/smmail/cop/images/favicon.ico?1234" type="image/x-icon"/>
-    <link rel="shortcut icon" href="/smmail/cop/images/favicon.ico?1234"
-          type="image/x-icon"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=device-dpi"/>
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
+    <%--<link rel="icon" href="/smmail/cop/images/favicon.ico?1234" type="image/x-icon"/>--%>
+    <%--<link rel="shortcut icon" href="/smmail/cop/images/favicon.ico?1234"--%>
+          <%--type="image/x-icon"/>--%>
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=device-dpi"/>--%>
+    <%--<meta http-equiv="pragma" content="no-cache">--%>
+    <%--<meta http-equiv="cache-control" content="no-cache">--%>
+    <%--<meta http-equiv="expires" content="0">--%>
 
-    <link type="text/css" rel="stylesheet" href="css/common.css"/>
-    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37293556" charset="UTF-8"></script>
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery.validate.js"
-            type="text/javascript"></script>
-    <script src="js/jquery.form.js" type="text/javascript"></script>
-    <script src="js/common.js" type="text/javascript"></script>
-    <script src="js/validate-custom.js" type="text/javascript"></script>
-    <script src="js/sysout.js"></script>
+    <%--<link type="text/css" rel="stylesheet" href="css/common.css"/>--%>
+    <%--<script type="text/javascript" src="http://tajs.qq.com/stats?sId=37293556" charset="UTF-8"></script>--%>
+    <%--<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>--%>
+    <%--<script src="js/jquery.validate.js"--%>
+            <%--type="text/javascript"></script>--%>
+    <%--<script src="js/jquery.form.js" type="text/javascript"></script>--%>
+    <%--<script src="js/common.js" type="text/javascript"></script>--%>
+    <%--<script src="js/validate-custom.js" type="text/javascript"></script>--%>
+    <%--<script src="js/sysout.js"></script>--%>
 
 
     <style>
@@ -120,64 +122,96 @@
             padding: 0px;
         }
 
-        #headFrame {
-            height: 118px;
-            min-width: 1268px;
-            width: 100%;
-            margin: 0 auto;
-            overflow: hidden;
-            display: block;
+        @media screen and (max-width: 1365px){
+            body{font-size: 12px}
+            #headFrame {
+                height: 78px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #indexIframe{
+                height:800px;
+            }
         }
-
+        @media screen and (min-width: 1366px) and (max-width: 1599px){
+            body{font-size: 14px}
+            #headFrame {
+                height: 78px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #indexIframe{
+                height:800px;
+            }
+        }
+        @media screen and (min-width: 1600px) and (max-width: 1919px){
+            body{font-size: 16px}
+            #headFrame {
+                height: 78px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #indexIframe{
+                height:800px;
+            }
+        }
+        @media screen and (min-width: 1920px){
+            body{font-size: 18px}
+            #headFrame {
+                height: 110px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #indexIframe{
+                height:1000px;
+            }
+        }
     </style>
-
 
 </head>
 
 <body>
 
-<iframe id="headFrame" src="head2.jsp" frameborder="0" scrolling="no">
+<iframe id="headFrame" src="head.jsp" frameborder="0" scrolling="no" style="border-bottom:3px solid #E98242; ">
 </iframe>
 </body>
 </html>
 
 
 
+
+
 <div style="padding-left: 150px;">
     <div class="d_tit" style="width:1000px;margin:20px;">
-        <div class="d_p">乐健公司</div>
+        <div class="d_p">{{Data.organName}}</div>
     </div>
 
     <div class="container row" style="margin-left:10px;">
-        <div class="shop_div col-md-3" onclick="javascript:location.href='shop_detail.jsp'" style="padding-right:10px;!important;">
-            <div><img src="img/shop2.jpg"></div>
-            <p>饮食制作</p>
-            <label>清理衣物、洗脸、洗头、洗澡</label>
+        <div ng-repeat="s in ShopD" class="shop_div col-md-3" id="{{s.type}}" ng-click="gotoShop(s.type)" style="padding-right:10px;!important;">
+            <div><img src="{{s.imgUrl}}"></div>
+            <p>{{s.name}}</p>
+            <label>{{s.intro}}</label>
             <div class="hr-line-dashed"></div>
-            <span>¥30.00</span>
+            <span>¥{{s.price}}</span>
             <%--<div style="padding-left:150px;"><a href="shop_list_1.jsp">查看详情</a></div>--%>
         </div>
-        <div class="shop_div col-md-3" onclick="javascript:location.href='shop_detail1.jsp'">
-            <div><img src="img/shop2.jpg"></div>
-            <p>助浴</p>
-            <label>清理衣物、洗脸、洗头、洗澡</label>
-            <div class="hr-line-dashed"></div>
-            <span>¥30.00</span>
-            <%--<div style="padding-left:150px;"><a href="shop_list_1.jsp">查看详情</a></div>--%>
-        </div>
-        <div class="shop_div col-md-3" onclick="javascript:location.href='shop_detail2.jsp'">
-            <div><img src="img/shop2.jpg"></div>
-            <p>设备1</p>
-            <label>清理衣物、洗脸、洗头、洗澡</label>
-            <div class="hr-line-dashed"></div>
-            <span>¥30.00</span>
-            <%--<div style="padding-left:150px;"><a href="shop_list_1.jsp">查看详情</a></div>--%>
-        </div>
+
 
 
 
     </div>
 </div>
+
+<script src="js/angular.min.js"></script>
+<script src="js/pageJs/shop_other.js"></script>
 
 </body>
 </html>

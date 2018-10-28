@@ -139,6 +139,11 @@
                 display: block;}
 
         }
+        .smalimage{
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
     </style>
 
 
@@ -152,8 +157,15 @@
 </html>
 
 
+    <div style="position: relative;width: 75%;float: left;">
+        <div>
+            <img src="img/onepicture.jpeg" border="0" alt="OnePic" usemap="#onepicture" width="1056px;">
+        </div>
+        <div class="smalimage">
+            <img src="img/地图.png" width="50px">
+        </div>
+    </div>
 
-    <img src="img/onepicture.jpeg" border="0" alt="OnePic" usemap="#onepicture" width="1056px;">
     <map name="onepicture">
         <area shape="circle" coords="657.5,481.25,10" onclick="showdetails(this,'古龙汇')"  target="_blank" title="古龙汇">
         <area shape="circle" coords="230,437.5,10" onclick="showdetails(this,'东兰苑')"  target="_blank" title="东兰苑">
@@ -257,8 +269,8 @@
             <div id="collapseFive" class="panel-collapse collapse">
                 <div class="panel-body">
                     <a>平南居</a><br>
-                    <a >东兰苑</a><br>
-                    <a>古美韵</a>
+                    <a onclick="showImage('19.5%','31%')">东兰苑</a><br>
+                    <a onclick="showImage('60.3%','33.5%')">古龙汇</a>
                 </div>
             </div>
         </div>
@@ -292,6 +304,10 @@
         $("#details").css({ "top": t, "left": l }).show();
     }
 
+    function showImage(x,y) {
+        $(".smalimage").css("top",y).css("left",x).show();
+
+    }
 </script>
 
 </body>
