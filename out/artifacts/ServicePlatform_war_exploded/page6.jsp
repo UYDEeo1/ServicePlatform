@@ -23,7 +23,27 @@
 
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37293556" charset="UTF-8"></script>
     <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script>
+        $.ajax({
+            url : "http://101.132.76.252:83/identify/checkToken?token="+getCookie("token"),
+            type : "get",
+            success : function(data) {
+                var result=eval("("+data+")");
+                if(result.success==false){
+                    location.href="/login.jsp";
+                }
+            }
+        });
 
+        function getCookie(name)
+        {
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+    </script>
     <style type="text/css">
         .container{
             min-height: 200px !important;

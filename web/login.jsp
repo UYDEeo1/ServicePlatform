@@ -64,11 +64,13 @@
             <form method="post" action="j_spring_security_check">
                 <h2 class="no-margins">登录：</h2>
                 <%--<#--<p class="m-t-md">登录到古美路街道综合为老服务平台</p>-->--%>
-                <input style="font-size: 20px !important;padding: 18px!important;margin-top: 30px;margin-bottom: 20px" type="text" class="form-control uname" placeholder="用户名" name="j_username" />
-                <input style="font-size: 20px !important;padding: 18px!important;margin-bottom: 30px"  type="password" class="form-control pword m-b" placeholder="密码" name="j_password" />
+                <input style="font-size: 20px !important;padding: 18px!important;margin-top: 30px;margin-bottom: 20px" type="text" class="form-control uname" placeholder="用户名" name="username" />
+                <input style="font-size: 20px !important;padding: 18px!important;margin-bottom: 30px"  type="password" class="form-control pword m-b" placeholder="密码" name="password" />
+                <p id="#message"></p>
                 <%--<#--<a href="">忘记密码了？</a>-->--%>
                 <%--<span style="color: red">${(((SPRING_SECURITY_LAST_EXCEPTION.message)!)?contains("Exception"))?string("登陆超时！",(SPRING_SECURITY_LAST_EXCEPTION.message)!)}</span>--%>
-                    <button style="font-size: 24px" class="btn btn-success btn-block">登录</button>
+                    <%--<button style="font-size: 24px" class="btn btn-success btn-block">登录</button>--%>
+                <input type="button" class="btn btn-success btn-block" value="登录" onclick="sub()">
             </form>
         </div>
     </div>
@@ -79,4 +81,52 @@
     </div>
 </div>
 </body>
+<script src="js/jquery.min.js"></script>
+<script>
+    function sub() {
+        $.ajax({
+            url :" http://101.132.76.252:83/identify/login",
+            type : "get",
+            data:{
+                username:$("input[name='username']").val(),
+                password:$("input[name='password']").val()
+            },
+            success : function(data) {
+//                var result=eval("("+data+")");
+                if(data.success==false) {
+                    $("#message").html(data.data);
+                }else{
+                    setCookie("token",data.data,"24*60*60*1000");
+                    location.href="/page1.jsp";
+                }
+            }
+        });
+    }
+
+    function setCookie(name,value,time)
+    {
+        var strsec = getsec(time);
+        var exp = new Date();
+        exp.setTime(exp.getTime() + strsec*1);
+        document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+    }
+
+    function getsec(str)
+    {
+        var str1=str.substring(1,str.length)*1;
+        var str2=str.substring(0,1);
+        if (str2=="s")
+        {
+            return str1*1000;
+        }
+        else if (str2=="h")
+        {
+            return str1*60*60*1000;
+        }
+        else if (str2=="d")
+        {
+            return str1*24*60*60*1000;
+        }
+    }
+</script>
 </html>
