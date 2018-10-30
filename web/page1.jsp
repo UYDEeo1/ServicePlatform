@@ -127,27 +127,6 @@
     }
 
 </script>
-<script>
-    $.ajax({
-        url : "http://101.132.76.252:83/identify/checkToken?token="+getCookie("token"),
-        type : "get",
-        success : function(data) {
-            var result=eval("("+data+")");
-            if(result.success==false){
-                location.href="/login.jsp";
-            }
-        }
-    });
-
-    function getCookie(name)
-    {
-        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-        if(arr=document.cookie.match(reg))
-            return unescape(arr[2]);
-        else
-            return null;
-    }
-</script>
 
 <div id="xinchun-image"></div>
 

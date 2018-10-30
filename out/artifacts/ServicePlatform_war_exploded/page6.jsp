@@ -28,8 +28,7 @@
             url : "http://101.132.76.252:83/identify/checkToken?token="+getCookie("token"),
             type : "get",
             success : function(data) {
-                var result=eval("("+data+")");
-                if(result.success==false){
+                if(data.success==false){
                     location.href="/login.jsp";
                 }
             }

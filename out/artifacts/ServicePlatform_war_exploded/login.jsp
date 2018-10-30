@@ -97,6 +97,7 @@
                     $("#message").html(data.data);
                 }else{
                     setCookie("token",data.data,"24*60*60*1000");
+                    setCookie("username",$("input[name='username']").val(),"24*60*60*1000");
                     location.href="/page1.jsp";
                 }
             }
