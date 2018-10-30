@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ServicePlatform:war exploded" />
+      <artifact name="ServicePlatform:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cbaec07-fa44-4e23-bc7d-8606df7805db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/mainpage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/mainpage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/page1.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/page1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/page3.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/page3.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/page6.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/page6.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/head.jsp" afterPath="$PROJECT_DIR$/web/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/page1.jsp" afterPath="$PROJECT_DIR$/web/page1.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/page3.jsp" afterPath="$PROJECT_DIR$/web/page3.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,65 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="page6.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="page6.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/page6.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1015">
-              <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-              <folding>
-                <marker date="1540828540520" expanded="true" signature="1702:3664" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="1722:1818" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="1837:1952" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="1981:2342" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="2367:2455" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="2477:2683" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="2710:2758" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="2791:3031" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="3058:3130" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="3164:3245" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="3347:3504" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="3540:3650" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="3680:8692" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="3705:6007" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="3712:5902" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="3902:3933" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="4514:5893" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="4529:4591" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="4638:4902" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="4697:4891" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="4972:5236" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="5031:5225" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="5306:5570" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="5365:5559" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="5616:5881" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="5675:5870" ph="{...}" />
-                <marker date="1540828540520" expanded="true" signature="5910:5999" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="5981:5991" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6041:6461" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6047:6325" ph="//..." />
-                <marker date="1540828540520" expanded="true" signature="6331:6345" ph="/*...*/" />
-                <marker date="1540828540520" expanded="true" signature="6487:7933" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6515:7737" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6543:6629" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6578:6597" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6675:7726" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6752:6862" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6798:6844" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6919:7029" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="6965:7011" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7090:7200" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7136:7182" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7261:7370" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7307:7352" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7429:7539" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7475:7521" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7599:7709" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7645:7691" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="7764:7889" ph="..." />
-                <marker date="1540828540520" expanded="false" signature="7857:7868" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="8042:8692" ph="..." />
-                <marker date="1540828540520" expanded="true" signature="8072:8231" ph="{...}" />
-              </folding>
+            <state relative-caret-position="1470">
+              <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,7 +35,7 @@
       <file leaf-file-name="page1.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/page1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
+            <state relative-caret-position="504">
               <caret line="128" column="9" lean-forward="false" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
               <folding />
             </state>
@@ -105,7 +45,7 @@
       <file leaf-file-name="mainpage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/mainpage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
+            <state relative-caret-position="12600">
               <caret line="360" column="12" lean-forward="false" selection-start-line="360" selection-start-column="12" selection-end-line="360" selection-end-column="12" />
               <folding />
             </state>
@@ -115,8 +55,8 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+            <state relative-caret-position="3395">
+              <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -125,21 +65,19 @@
       <file leaf-file-name="page3.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/page3.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="280">
+              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="head.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/head.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="113" column="65" lean-forward="false" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="49">
+              <caret line="106" column="69" lean-forward="false" selection-start-line="106" selection-start-column="69" selection-end-line="106" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -213,11 +151,11 @@
         <option value="$PROJECT_DIR$/web/js/pageJs/page3_5.js" />
         <option value="$PROJECT_DIR$/web/page3_5.jsp" />
         <option value="$PROJECT_DIR$/web/page6.jsp" />
-        <option value="$PROJECT_DIR$/web/page3.jsp" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/page1.jsp" />
         <option value="$PROJECT_DIR$/web/mainpage.jsp" />
         <option value="$PROJECT_DIR$/web/head.jsp" />
+        <option value="$PROJECT_DIR$/web/page3.jsp" />
       </list>
     </option>
   </component>
@@ -297,7 +235,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,7 +252,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -363,7 +301,7 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ServicePlatform:war exploded">
+        <artifact name="ServicePlatform:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -430,7 +368,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="ServicePlatform:war exploded" />
+          <artifact name="ServicePlatform:war" />
         </option>
       </method>
     </configuration>
@@ -903,12 +841,13 @@
       <workItem from="1540197081335" duration="56707000" />
       <workItem from="1540535483172" duration="11314000" />
       <workItem from="1540792616305" duration="2666000" />
-      <workItem from="1540859378992" duration="1072000" />
+      <workItem from="1540859378992" duration="2339000" />
+      <workItem from="1540864111911" duration="1396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="417746000" />
+    <option name="totallyTimeSpent" value="420409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1942" height="1102" extended-state="0" />
@@ -936,7 +875,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19914347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20182014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1137,6 +1076,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,106 +1217,51 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_2.js" />
-    <entry file="file://$PROJECT_DIR$/web/page6.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1015">
-          <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-          <folding>
-            <marker date="1540828540520" expanded="true" signature="1702:3664" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="1722:1818" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="1837:1952" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="1981:2342" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="2367:2455" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="2477:2683" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="2710:2758" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="2791:3031" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="3058:3130" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="3164:3245" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="3347:3504" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="3540:3650" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="3680:8692" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="3705:6007" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="3712:5902" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="3902:3933" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="4514:5893" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="4529:4591" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="4638:4902" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="4697:4891" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="4972:5236" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="5031:5225" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="5306:5570" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="5365:5559" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="5616:5881" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="5675:5870" ph="{...}" />
-            <marker date="1540828540520" expanded="true" signature="5910:5999" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="5981:5991" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6041:6461" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6047:6325" ph="//..." />
-            <marker date="1540828540520" expanded="true" signature="6331:6345" ph="/*...*/" />
-            <marker date="1540828540520" expanded="true" signature="6487:7933" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6515:7737" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6543:6629" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6578:6597" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6675:7726" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6752:6862" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6798:6844" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6919:7029" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="6965:7011" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7090:7200" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7136:7182" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7261:7370" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7307:7352" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7429:7539" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7475:7521" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7599:7709" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7645:7691" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="7764:7889" ph="..." />
-            <marker date="1540828540520" expanded="false" signature="7857:7868" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="8042:8692" ph="..." />
-            <marker date="1540828540520" expanded="true" signature="8072:8231" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/page3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/page1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="128" column="9" lean-forward="false" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+        <state relative-caret-position="3395">
+          <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/mainpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
+        <state relative-caret-position="12600">
           <caret line="360" column="12" lean-forward="false" selection-start-line="360" selection-start-column="12" selection-end-line="360" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/page1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="128" column="9" lean-forward="false" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/head.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="113" column="65" lean-forward="false" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="49">
+          <caret line="106" column="69" lean-forward="false" selection-start-line="106" selection-start-column="69" selection-end-line="106" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/page3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/page6.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
