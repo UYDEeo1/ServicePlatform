@@ -102,7 +102,31 @@
 
 
     </style>
+
 </head>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    $.ajax({
+        url : "http://101.132.76.252:83/identify/checkToken?token="+getCookie("token"),
+        type : "get",
+        success : function(data) {
+            if(data.success==true){
+                $("#div_login").hide();
+                $("#div_login_2").show();
+                $("#div_login_2 button").html(getCookie("username"));
+            }
+        }
+    });
+
+    function getCookie(name)
+    {
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+</script>
 <body>
 
 <div>
@@ -113,6 +137,9 @@
         <div id="div_login" class="col-md-offset-3" >
             <a href="login.jsp" target="_blank"><button class="btn bbtn">登录</button></a>
             <a href="page6.jsp" target="_top"><button class="btn bbtn">个人中心</button></a>
+        </div>
+        <div id="div_login_2" class="col-md-offset-3" style="display: none">
+            <a href="page6.jsp" target="_top"><button class="btn bbtn"></button></a>
         </div>
     </div>
 

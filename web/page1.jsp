@@ -128,7 +128,6 @@
 
 </script>
 
-
 <div id="xinchun-image"></div>
 
 
