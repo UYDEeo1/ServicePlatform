@@ -25,7 +25,7 @@ $(document).ready(function(){
             ],
             "sAjaxSource": "http://101.132.76.252:83/file/record",//这个是请求的地址
             "fnServerData": retrieveData,
-            bLengthChange: false,
+            bLengthChange: false
         });
     function retrieveData(url, aoData, fnCallback) {
 

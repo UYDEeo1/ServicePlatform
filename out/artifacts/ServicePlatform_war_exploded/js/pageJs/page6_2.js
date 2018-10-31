@@ -31,7 +31,7 @@ app.controller('userpswdCtrl', function($scope,Account,SweetAlert,$state,$localS
     $scope.user = {};  //信息全部存在user里面
     $scope.changePassword = function(){
         if($scope.password_again === $scope.user.newPassword){   //如果两次密码输入一致
-            $scope.user.accountId = $localStorage.accountId;     //获取用户id
+            // $scope.user.accountId = $localStorage.accountId;     //获取用户id
             Account.modifyPassword($scope.user,function(data){    //修改密码
                 console.log(data);
                 SweetAlert.swal({
