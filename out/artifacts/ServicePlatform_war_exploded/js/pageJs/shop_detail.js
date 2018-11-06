@@ -40,8 +40,6 @@ app.controller('NavCtrl', function($scope, $http) {
 
 });
 
-
-
 app.controller('myController',["$scope", "$http",function($scope,$http) {
     // 分页组件 必须变量
     $scope.currentPage = 1; // 当前页 （请求数据）
@@ -64,7 +62,11 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
         if ($scope.totalPages != 0 && (page < 1 || page > $scope.totalPages)) {
             return;
         }
+
+
+        // $('#content').html("");
         //发送请求
+
         $http({
             method: 'GET',
             // url: page + '.json',
@@ -140,12 +142,49 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
             text:"欢迎拨打我公司电话："+ pphone
         })
     }
-}])
+
+    $scope.add_shopcar = function (id,organId,type) {
+        $.ajax({
+            url: "http://101.132.76.252:83/cart/save",
+            type: "get",
+            data: {
+                organId: organId,
+                productId: id,
+                type:type,
+                token:getCookie("token")
+            },
+            async:false,
+            success: function (data) {
+//
+                if (data.success == false) {
+                    swal({
+                        text:data.error,
+                        icon:"error"
+                    });
+                } else {
+                    swal({
+                        text:"加入购物车成功！请到个人中心查看您的购物车",
+                        icon:"success"
+                    })
+
+                }
+            }
+        });
+
+
+    }
+}]);
 
 
 
-
-
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}
 
 
 

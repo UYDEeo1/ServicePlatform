@@ -7,7 +7,7 @@ var app = angular.module('myInfo', []);
 app.controller('infoCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/file/3374/getById'
+        url: 'http://101.132.76.252:83/file/1/getById?token='+getCookie("token")
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -23,3 +23,13 @@ app.controller('infoCtrl', function($scope, $http) {
     });
 
 });
+
+
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}

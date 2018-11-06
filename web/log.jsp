@@ -13,8 +13,9 @@
 
     <link  href="css/common.css" type="text/css" rel="stylesheet" />
     <link  href="css/personal.css" type="text/css" rel="stylesheet" />
-
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <%--<script type="text/javascript" src="http://tajs.qq.com/stats?sId=37293556" charset="UTF-8"></script>--%>
+
     <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="js/jquery.validate.js" type="text/javascript"></script>
     <script src="js/jquery.form.js" type="text/javascript"></script>
@@ -22,7 +23,10 @@
     <script src="js/validate-custom.js" type="text/javascript"></script>
 
 
+
+
     <script src="js/sweetalert.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/sweetalert.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/pageJs/page6_2.js"></script>
 
@@ -155,11 +159,11 @@
     </div>
 </div>
 
-<p class="msg-success">
+<%--<p class="msg-success">--%>
 
-</p>
+<%--</p>--%>
 
-<form name="myForm" novalidate>
+<%--<form name="myForm" novalidate>--%>
 
     <table cellspacing="0" cellpadding="0">
         <colgroup>
@@ -216,16 +220,16 @@
                     <input type="submit" value="保存" id="submit" onclick="psdd()">
                 </div>
             </td>
-            <td>
-                <div class="summary_msg">
+            <%--<td>--%>
+                <%--<div class="summary_msg">--%>
 
-                </div>
-            </td>
+                <%--</div>--%>
+            <%--</td>--%>
         </tr>
 
         </tbody></table>
 
-</form>
+<%--</form>--%>
 
 </body>
 </html>

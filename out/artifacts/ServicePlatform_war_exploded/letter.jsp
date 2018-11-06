@@ -38,6 +38,11 @@
     <script src="js/common.js" type="text/javascript"></script>
     <script src="js/validate-custom.js" type="text/javascript"></script>
 
+    <script src="js/sweetalert.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/sweetalert.css">
+    <script src="js/jquery.min.js"></script>
+
+
     <style type="text/css">
 
         body{
@@ -204,7 +209,7 @@
 
 </p>
 
-<form >
+
 
     <div class="conxinxiang">
 
@@ -214,15 +219,17 @@
 
         <div class="xinxiang_div">
             <textarea cols="9" name="text" placeholder="请填写您想对我们说的话。"></textarea></br>
-            <div class="radio_div">类型：<input type="radio" name="typee" value="1" checked>反馈
-                <input type="radio" name="typee" value="2">举报</br>
+            <div class="radio_div">类型：<input type="radio" name="typee" value="21" checked>反馈
+                <input type="radio" name="typee" value="22">举报</br>
             </div>
 
-            <div id="btn_div"><a>提 交</a></div>
+            <div id="btn_div"><a onclick="xinxiang()">提 交</a></div>
         </div>
     </div>
 
-</form>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/pageJs/page6_6.js"></script>
 
 </body>
 

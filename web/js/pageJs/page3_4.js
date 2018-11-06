@@ -37,7 +37,7 @@ $(document).ready(function(){
                 "iSortCol_0" : aoData.iSortCol_0,
                 "sEcho" : aoData.sEcho,
                 "sSortDir_0" : aoData.sSortDir_0,
-                "oldmanId":"3374"
+                "token":getCookie("token")
             },
             type: 'GET',
             dataType: 'json',
@@ -64,3 +64,11 @@ $(document).ready(function(){
 });
 
 
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}

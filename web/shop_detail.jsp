@@ -24,6 +24,7 @@
 
 
     <script src="js/sweetalert.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/sweetalert.css">
 
     <style type="text/css">
         body{
@@ -450,7 +451,7 @@
     <div class="d_tit" style="width:1000px;">
         <div class="d_p">服务机构</div>
     </div>
-    <div class="company container">
+    <div class="company container" id="content">
 
         <div ng-repeat="s in Shop">
             <div class="row">
@@ -458,7 +459,7 @@
                 <div class="btnn"><a href="http://{{s.webUrl}}" target="_blank">线上网站</a></div>
                 <div class="btnn"><a ng-click="phone(s.phone)">线下电话</a></div>
                 <div class="btnn"><a href="shop_other.jsp?id={{s.organId}}" ng-cloak>其他商品</a></div>
-                <div class="btnn"><a onclick="swal({text:'加入购物车成功，可在个人中心查看您的购物车',icon:'success'})">加入购物车</a></div>
+                <div class="btnn"><a ng-click="add_shopcar(s.id,s.organId,s.type)">加入购物车</a></div>
             </div>
             <div class="row detail" style="margin-top: 10px;">
                 <div class="col-md-4"><img src="{{s.imgUrl}}"></div>

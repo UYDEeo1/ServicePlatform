@@ -70,6 +70,7 @@ function psdd() {
                 if (data.success == false) {
                     $("#m").html(data.error);
                 } else {
+                    $("#m").empty();
                     swal({
                         text:"密码修改成功！",
                         icon:"success"

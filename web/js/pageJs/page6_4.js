@@ -1,27 +1,6 @@
 /**
- * Created by jinsq on 2018/10/26.
+ * Created by jinsq on 2018/11/5.
  */
-
-var app = angular.module('myInfo', []);
-app.controller('pCtrl', function($scope, $http) {
-    $http({
-        method: 'GET',
-        url: 'http://101.132.76.252:83/file/getIntegral?token='+getCookie("token")
-    }).then(function successCallback(response) {
-
-        console.log(response);
-        // alert(JSON.stringify(response.data.data))
-        $scope.PPP = response.data.data;
-
-
-
-    }, function errorCallback(response) {
-        // 请求失败执行代码
-    });
-
-});
-
-
 $(document).ready(function(){
 
 
@@ -36,18 +15,26 @@ $(document).ready(function(){
             "bProcessing": true, //加载数据时显示正在加载信息
             "bServerSide": true, //指定从服务器端获取数据
             "columns":[{
-                data:"organ.name"
+                data:"name"
             },{
-                data:"type"
-            },{
-                data:"data"
+                data:"organName"
             },{
                 data:"time"
-            },{
-                data:"moneyChange"
             }
             ],
-            "sAjaxSource": "http://101.132.76.252:83/file/data",//这个是请求的地址
+            "columnDefs": [
+                // 列样式
+
+                // 增加一列删除和修改，同时将我们需要传递的数据传递到链接中
+                {
+                    "targets": [3], // 目标列位置，下标从0开始
+                    "data": "id", // 数据列名
+                    "render": function(data, type, full) { // 返回自定义内容
+                        return "<button id='"+data+"' onclick='delete_shop("+data+")'>删除</button>";
+                    }
+                }
+            ],
+            "sAjaxSource": "http://101.132.76.252:83/cart/getCartInfo",//这个是请求的地址
             "fnServerData": retrieveData,
             bLengthChange: false,
         });
@@ -99,6 +86,60 @@ function getCookie(name)
 }
 
 
+function delete_shop(Id) {
+    $.ajax({
+        url: "http://101.132.76.252:83/cart/delete",
+        type: "get",
+        data: {
+            ids:Id
+        },
+        async:false,
+        success: function (data) {
+//                var result=eval("("+data+")");
+//                 alert(JSON.stringify(data));
+            if (data.success == false) {
+                swal({
+                    text:data.error,
+                    icon:"error"
+                });
+            } else {
+                swal({
+                    text:"删除成功！",
+                    icon:"success"
+                })
+
+            }
+        }
+    });
+
+}
 
 
+function submit_shop() {
+    $.ajax({
+        url: "http://101.132.76.252:83/cart/saveInBook",
+        type: "get",
+        data: {
+            token:getCookie("token")
+        },
+        async:false,
+        success: function (data) {
+//                var result=eval("("+data+")");
+//                 alert(JSON.stringify(data));
+            if (data.success == false) {
+                swal({
+                    text:data.error,
+                    icon:"error"
+                });
+            } else {
+                swal({
+                    text:"提交成功！",
+                    icon:"success"
+                })
+
+            }
+        }
+    });
+
+}
 

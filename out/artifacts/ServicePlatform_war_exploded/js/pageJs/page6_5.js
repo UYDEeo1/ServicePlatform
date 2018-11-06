@@ -1,26 +1,6 @@
 /**
- * Created by jinsq on 2018/10/26.
+ * Created by jinsq on 2018/11/5.
  */
-
-var app = angular.module('myInfo', []);
-app.controller('pCtrl', function($scope, $http) {
-    $http({
-        method: 'GET',
-        url: 'http://101.132.76.252:83/file/getIntegral?token='+getCookie("token")
-    }).then(function successCallback(response) {
-
-        console.log(response);
-        // alert(JSON.stringify(response.data.data))
-        $scope.PPP = response.data.data;
-
-
-
-    }, function errorCallback(response) {
-        // 请求失败执行代码
-    });
-
-});
-
 
 $(document).ready(function(){
 
@@ -36,18 +16,16 @@ $(document).ready(function(){
             "bProcessing": true, //加载数据时显示正在加载信息
             "bServerSide": true, //指定从服务器端获取数据
             "columns":[{
-                data:"organ.name"
+                data:"name"
             },{
-                data:"type"
-            },{
-                data:"data"
+                data:"organName"
             },{
                 data:"time"
             },{
-                data:"moneyChange"
+                data:"status"
             }
             ],
-            "sAjaxSource": "http://101.132.76.252:83/file/data",//这个是请求的地址
+            "sAjaxSource": "http://101.132.76.252:83/goods/book/data",//这个是请求的地址
             "fnServerData": retrieveData,
             bLengthChange: false,
         });
@@ -97,8 +75,3 @@ function getCookie(name)
     else
         return null;
 }
-
-
-
-
-
