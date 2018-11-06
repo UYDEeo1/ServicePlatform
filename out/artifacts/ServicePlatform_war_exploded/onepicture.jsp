@@ -41,8 +41,8 @@
             }
             .pop{
 
-                height:250px;
-                width:23%;
+                height:320px;
+                width:24%;
                 display: none;
                 position: fixed;
                 bottom: 0;
@@ -53,11 +53,11 @@
                 list-style-type: none;
             }
             .box_related{
-                margin-right:20px;
+
                 padding:3%;
                 box-shadow: 0 6px 12px rgba(0,0,0,.175);
-                margin-left: 0;
-                margin-bottom: 40px;
+                background-color: #ffffff;
+
 
             }
 
@@ -75,7 +75,7 @@
                 cursor: pointer;
             }
             .closeimg{
-                padding-left: 85%;
+                padding-left: 90%;
                 position: absolute;
             }
             .closeimg img{
@@ -86,7 +86,7 @@
         }
     </style>
 </head>
-<body>
+<body ng-app="myInfo" ng-controller="PicCtrl">
 
 <!DOCTYPE html>
 <html>
@@ -166,122 +166,96 @@
 
     <div style="position: relative;width: 75%;float: left;">
         <div>
-            <img src="img/onepicture.jpeg" border="0" alt="OnePic" usemap="#onepicture" width="1056px;">
+            <img src="img/onePic.jpeg" border="0" alt="OnePic" usemap="#onepicture" width="1056px;">
         </div>
         <div class="smalimage">
-            <img src="img/地图.png" width="50px">
+            <img src="img/地图.png" width="30px">
         </div>
     </div>
 
-    <map name="onepicture">
-        <area shape="circle" coords="657.5,481.25,10" onclick="showdetails(this,'古龙汇')"  target="_blank" title="古龙汇">
-        <area shape="circle" coords="230,437.5,10" onclick="showdetails(this,'东兰苑')"  target="_blank" title="东兰苑">
+    <map name="onepicture" ng-controller="MapCtrl">
+
+        <area ng-repeat="k in mmap" shape="circle" coords="{{k.X}},{{k.Y}},8" ng-click="showDetails(k.id)" target="_blank">
+
+        <%--<area shape="circle" coords="230,437.5,10" onclick="showdetails(this,'东兰苑')"  target="_blank">--%>
     </map>
 
 
 <div id="right_nav">
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-danger">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-                       href="#collapseOne">
-                        日间照料中心
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
+    <div class="panel-group" id="accordion" >
 
-                    <a>平南日间照料中心</a>
 
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion_1"
-                               href="#collapseOne1_1">
-                                日托站
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne1_1" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <a>平吉一村日托站</a><br>
-                            <a>平吉二村日托站</a>
-                        </div>
-                    </div>
+        <div class="panel panel-info" ng-repeat="x in Data" ng-cloak>
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                       href="#co{{x.organName}}" id="{{x.id}}">
+                       {{x.organName}}
+                    </a>
+                </h4>
+            </div>
+            <div id="co{{x.organName}}" class="panel-collapse collapse">
+                <div class="panel-body" ng-repeat="s in x.organs">
+                    <%--<a onclick="sImage('19.5%','31%')">ceshi</a><br>--%>
+                    <a id="{{s.id}}" ng-click="showImage(s.id);showDetails(s.id)">{{s.value}}</a><br>
+                </div>
+            </div>
+        </div>
 
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-                       href="#collapseTwo">
-                        敬老院
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                    vice lomo.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-success">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-                       href="#collapseThree">
-                        长者照护之家
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                    vice lomo.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-warning">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-                       href="#collapseFour">
-                        助餐点
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                    vice lomo.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-                       href="#collapseFive">
-                        邻里中心
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFive" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <a>平南居</a><br>
-                    <a onclick="showImage('19.5%','31%')">东兰苑</a><br>
-                    <a onclick="showImage('60.3%','33.5%')">古龙汇</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+        <%--<div class="panel panel-success">--%>
+            <%--<div class="panel-heading">--%>
+                <%--<h4 class="panel-title">--%>
+                    <%--<a data-toggle="collapse" data-parent="#accordion"--%>
+                       <%--href="#collapseThree">--%>
+                        <%--长者照护之家--%>
+                    <%--</a>--%>
+                <%--</h4>--%>
+            <%--</div>--%>
+            <%--<div id="collapseThree" class="panel-collapse collapse">--%>
+                <%--<div class="panel-body">--%>
+                    <%--Nihil anim keffiyeh helvetica, craft beer labore wes anderson--%>
+                    <%--cred nesciunt sapiente ea proident. Ad vegan excepteur butcher--%>
+                    <%--vice lomo.--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
+        <%--<div class="panel panel-warning">--%>
+            <%--<div class="panel-heading">--%>
+                <%--<h4 class="panel-title">--%>
+                    <%--<a data-toggle="collapse" data-parent="#accordion"--%>
+                       <%--href="#collapseFour">--%>
+                        <%--助餐点--%>
+                    <%--</a>--%>
+                <%--</h4>--%>
+            <%--</div>--%>
+            <%--<div id="collapseFour" class="panel-collapse collapse">--%>
+                <%--<div class="panel-body">--%>
+                    <%--Nihil anim keffiyeh helvetica, craft beer labore wes anderson--%>
+                    <%--cred nesciunt sapiente ea proident. Ad vegan excepteur butcher--%>
+                    <%--vice lomo.--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
+        <%--<div class="panel panel-default">--%>
+            <%--<div class="panel-heading">--%>
+                <%--<h4 class="panel-title">--%>
+                    <%--<a data-toggle="collapse" data-parent="#accordion"--%>
+                       <%--href="#collapseFive">--%>
+                        <%--邻里中心--%>
+                    <%--</a>--%>
+                <%--</h4>--%>
+            <%--</div>--%>
+            <%--<div id="collapseFive" class="panel-collapse collapse">--%>
+                <%--<div class="panel-body">--%>
+                    <%--<a>平南居</a><br>--%>
+                    <%--<a onclick="showImage('19.5%','31%')">东兰苑</a><br>--%>
+                    <%--<a onclick="showImage('60.3%','33.5%')">古龙汇</a>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
+    <%--</div>--%>
 
 
 </div>
@@ -291,28 +265,29 @@
     <div class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></div>
     <li class="box_related">
         <a>
-            <img src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
+            <img id="imgOrg" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
         </a>
         <a id="Tit">
             古美敬老院
         </a>
-        <br>     地址：闵行区虹莘路2288弄<br>     咨询电话：(021)34174387
+        <br>     地址：<label id="add">闵行区虹莘路2288弄</label><br>     咨询电话：<label id="phoneNum">(021)34174387</label><br>
+        服务时间：<label id="serviceTime"></label><br>
     </li>
 </div>
 
 <script type="text/javascript">
 
 
-    function showdetails(thisObj,k){
-        var d = $(thisObj);
-        var pos = d.offset();
-        var t = pos.top + d.height(); // 弹出框的上边位置
-        var l = pos.left + d.width();  // 弹出框的左边位置
-        document.getElementById("Tit").innerHTML=k;
-        $("#details").css({ "top": t, "left": l }).show();
-    }
+//    function showdetails(thisObj,k){
+//        var d = $(thisObj);
+//        var pos = d.offset();
+//        var t = pos.top + d.height(); // 弹出框的上边位置
+//        var l = pos.left + d.width();  // 弹出框的左边位置
+//        document.getElementById("Tit").innerHTML=k;
+//        $("#details").css({ "top": t, "left": l }).show();
+//    }
 
-    function showImage(x,y) {
+    function sImage(x,y) {
         $(".smalimage").css("top",y).css("left",x).show();
 
     }
@@ -321,6 +296,13 @@
         $("#details").hide();
     }
 </script>
+
+
+
+
+
+<script src="js/angular.min.js"></script>
+<script src="js/pageJs/onepicture.js"></script>
 
 </body>
 </html>

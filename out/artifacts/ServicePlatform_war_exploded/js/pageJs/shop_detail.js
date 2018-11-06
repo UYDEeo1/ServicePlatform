@@ -83,6 +83,24 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
 
             // 显示表格数据
             $scope.Shop = response.data.aaData;
+
+
+
+            if(response.data.aaData.button=="saveInCart")
+            {
+                document.getElementById("shangpin").style.display="block";
+                document.getElementById("yanglaoyuan").style.display="none";
+
+            }
+            else {
+                document.getElementById("shangpin").style.display="none";
+                document.getElementById("yanglaoyuan").style.display="block";
+            }
+
+
+
+
+
             //先根据总记录数去计算总页数
             $scope.totalCount = response.data.iTotalItems; //总记录数
             $scope.totalPages = Math.ceil($scope.totalCount / $scope.pageSize); //总页数

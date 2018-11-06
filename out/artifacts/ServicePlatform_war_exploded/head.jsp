@@ -27,7 +27,7 @@
                 padding:3px 8px;
 
             }
-            #div_login{
+            #div_login,#div_login_2{
                 padding-top: 22px;
                 padding-left: 55%;
             }
@@ -49,7 +49,7 @@
                 padding:3px 8px;
 
             }
-            #div_login{
+            #div_login,#div_login_2{
                 padding-top: 22px;
                 padding-left: 55%;
             }
@@ -71,7 +71,7 @@
                 padding:3px 8px;
 
             }
-            #div_login{
+            #div_login,#div_login_2{
                 padding-top: 22px;
                 padding-left: 55%;
             }
@@ -93,7 +93,7 @@
                 padding:3px 8px;
 
             }
-            #div_login{
+            #div_login,#div_login_2{
                 padding-top: 37px;
                 padding-left: 55%;
             }
@@ -140,6 +140,7 @@
         </div>
         <div id="div_login_2" class="col-md-offset-3" style="display: none">
             <a href="page6.jsp" target="_top"><button class="btn bbtn"></button></a>
+            <%--<a href="page6.jsp" target="_top"><button class="btn bbtn">退出</button></a>--%>
         </div>
     </div>
 

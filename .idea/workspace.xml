@@ -2,39 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cbaec07-fa44-4e23-bc7d-8606df7805db" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/sweetalert.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_6.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/xinxiang.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/xinxiang.jsp" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/pageJs/onepicture.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3.js" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3_2.js" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3_3.js" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3_3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3_4.js" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3_4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3_5.js" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page3_5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page6_2.js" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/page6_2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/shop_detail.js" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/js/pageJs/shop_detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/letter.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/letter.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/log.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/log.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/order.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/order.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/page6.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/page6.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/onepicture.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/onepicture.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/shop_detail.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/shop_detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/shopcar.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/shopcar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3_2.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3_3.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3_3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3_4.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3_4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3_5.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3_5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page6_2.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/head.jsp" afterPath="$PROJECT_DIR$/web/head.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/shop_detail.js" afterPath="$PROJECT_DIR$/web/js/pageJs/shop_detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/letter.jsp" afterPath="$PROJECT_DIR$/web/letter.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/log.jsp" afterPath="$PROJECT_DIR$/web/log.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/order.jsp" afterPath="$PROJECT_DIR$/web/order.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/page6.jsp" afterPath="$PROJECT_DIR$/web/page6.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/onepicture.jsp" afterPath="$PROJECT_DIR$/web/onepicture.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/shop_detail.jsp" afterPath="$PROJECT_DIR$/web/shop_detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/shopcar.jsp" afterPath="$PROJECT_DIR$/web/shopcar.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,19 +27,34 @@
       <file leaf-file-name="shop_detail.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/shop_detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="461" column="80" lean-forward="false" selection-start-line="461" selection-start-column="80" selection-end-line="461" selection-end-column="80" />
+            <state relative-caret-position="171">
+              <caret line="493" column="52" lean-forward="true" selection-start-line="493" selection-start-column="52" selection-end-line="493" selection-end-column="52" />
               <folding>
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dt#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dd#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dt#1;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dd#1;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dt#2;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dd#2;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1541475840703" expanded="false" signature="14643:14659" ph="..." />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1541512670757" expanded="false" signature="16042:16058" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onepicture.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/onepicture.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="199" column="61" lean-forward="false" selection-start-line="199" selection-start-column="61" selection-end-line="199" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/head.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="143" column="14" lean-forward="true" selection-start-line="143" selection-start-column="14" selection-end-line="143" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,18 +63,18 @@
       <file leaf-file-name="shop_detail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="152" column="26" lean-forward="false" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+            <state relative-caret-position="-1022">
+              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page6_4.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_4.js">
+      <file leaf-file-name="onepicture.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/pageJs/onepicture.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="125" column="34" lean-forward="true" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
+            <state relative-caret-position="301">
+              <caret line="116" column="51" lean-forward="false" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="51" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -91,26 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page6_5.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_5.js">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="76" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#41#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page6_2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="80" column="11" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="80" selection-end-column="11" />
-              <folding>
-                <element signature="n#!!doc;n#psdd#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="398">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/css/common.css" />
         <option value="$PROJECT_DIR$/web/listpage.jsp" />
         <option value="$PROJECT_DIR$/web/shoplist.jsp" />
         <option value="$PROJECT_DIR$/web/app_page.jsp" />
@@ -160,7 +136,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/login.jsp" />
         <option value="$PROJECT_DIR$/web/css/login.css" />
         <option value="$PROJECT_DIR$/web/login.ftl" />
-        <option value="$PROJECT_DIR$/web/head.jsp" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/page3_2.jsp" />
         <option value="$PROJECT_DIR$/web/css/base.css" />
@@ -170,7 +145,6 @@
         <option value="$PROJECT_DIR$/web/account.jsp" />
         <option value="$PROJECT_DIR$/web/page3_5.jsp" />
         <option value="$PROJECT_DIR$/web/js/pageJs/page6_1.js" />
-        <option value="$PROJECT_DIR$/web/onepicture.jsp" />
         <option value="$PROJECT_DIR$/web/page6.jsp" />
         <option value="$PROJECT_DIR$/web/log.jsp" />
         <option value="$PROJECT_DIR$/web/js/pageJs/page6_2.js" />
@@ -186,9 +160,12 @@
         <option value="$PROJECT_DIR$/web/js/pageJs/page3_3.js" />
         <option value="$PROJECT_DIR$/web/js/pageJs/page6_5.js" />
         <option value="$PROJECT_DIR$/web/shopcar.jsp" />
-        <option value="$PROJECT_DIR$/web/shop_detail.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/shop_detail.js" />
         <option value="$PROJECT_DIR$/web/js/pageJs/page6_4.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/onepicture.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/shop_detail.js" />
+        <option value="$PROJECT_DIR$/web/shop_detail.jsp" />
+        <option value="$PROJECT_DIR$/web/head.jsp" />
+        <option value="$PROJECT_DIR$/web/onepicture.jsp" />
       </list>
     </option>
   </component>
@@ -248,7 +225,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="814" />
+    <option name="height" value="808" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -331,24 +308,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pageJs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ServicePlatform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ServicePlatform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -956,15 +915,15 @@
       <workItem from="1540535483172" duration="11314000" />
       <workItem from="1540793897647" duration="784000" />
       <workItem from="1540951824260" duration="2088000" />
-      <workItem from="1541036452458" duration="38846000" />
+      <workItem from="1541036452458" duration="53381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455726000" />
+    <option name="totallyTimeSpent" value="470261000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="814" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="808" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -987,7 +946,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29085872" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2932961" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1059,7 +1018,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/login.css" />
     <entry file="file://$PROJECT_DIR$/web/head2.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -1186,13 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_other.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="46" column="91" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/shop_other.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -1205,14 +1156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/page3_2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1233,34 +1176,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="115" column="69" lean-forward="false" selection-start-line="115" selection-start-column="69" selection-end-line="115" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/account.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1177">
           <caret line="164" column="133" lean-forward="false" selection-start-line="164" selection-start-column="133" selection-end-line="164" selection-end-column="133" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/onepicture.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="320" column="29" lean-forward="false" selection-start-line="320" selection-start-column="29" selection-end-line="320" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1365,14 +1284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -1400,72 +1311,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1541384533248" expanded="false" signature="6278:6311" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/shopcar.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="285" column="94" lean-forward="false" selection-start-line="285" selection-start-column="94" selection-end-line="285" selection-end-column="94" />
           <folding>
-            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="80" column="11" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="80" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc;n#psdd#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="76" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/shop_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="461" column="80" lean-forward="false" selection-start-line="461" selection-start-column="80" selection-end-line="461" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dt#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dd#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dt#1;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dd#1;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dt#2;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dd#2;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1541475840703" expanded="false" signature="14643:14659" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="152" column="26" lean-forward="false" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1476,6 +1329,116 @@
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_other.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="76" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding>
+            <marker date="1541384533248" expanded="false" signature="6278:6311" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/page3_2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="46" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="80" column="11" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="80" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc;n#psdd#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1022">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/onepicture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="116" column="51" lean-forward="false" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="143" column="14" lean-forward="true" selection-start-line="143" selection-start-column="14" selection-end-line="143" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/shop_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="493" column="52" lean-forward="true" selection-start-line="493" selection-start-column="52" selection-end-line="493" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1541512670757" expanded="false" signature="16042:16058" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/onepicture.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="199" column="61" lean-forward="false" selection-start-line="199" selection-start-column="61" selection-end-line="199" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
