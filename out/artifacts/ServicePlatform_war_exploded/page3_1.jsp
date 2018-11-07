@@ -62,8 +62,8 @@
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">
-        <li class="col-sm-2 control-label">家庭结构：<label>{{Oldman.family.Family}}</label></li>
-        <li class="col-sm-2 control-label">经济条件：<label>{{Oldman.economic.Economic}}</label></li>
+        <li class="col-sm-2 control-label">家庭结构：<label ng-repeat="list in Oldman.family">{{list}}&nbsp;&nbsp;&nbsp;</label></li>
+        <li class="col-sm-2 control-label">经济条件：<label ng-repeat="list in Oldman.economic">{{list}}&nbsp;&nbsp;&nbsp;</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">

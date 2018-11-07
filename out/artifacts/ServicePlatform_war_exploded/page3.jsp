@@ -27,10 +27,9 @@
         $.ajax({
             url : "http://101.132.76.252:83/identify/checkToken?token="+getCookie("token"),
             type : "get",
+            async:false,
             success : function(data) {
-                alert(1);
                 if(data.success==false){
-                    alert(2);
                     location.href="/login.jsp";
                 }
             }

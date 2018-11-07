@@ -11,7 +11,7 @@
     <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="js/jquery.validate.js" type="text/javascript"></script>
     <script src="js/jquery.form.js" type="text/javascript"></script>
-    <script src="js/common.js" type="text/javascript"></script>
+    <%--<script src="js/common.js" type="text/javascript"></script>--%>
     <script src="js/validate-custom.js" type="text/javascript"></script>
 
     <style type="text/css">
@@ -27,6 +27,7 @@
         $.ajax({
             url : "http://101.132.76.252:83/identify/checkToken?token="+getCookie("token"),
             type : "get",
+            async:false,
             success : function(data) {
                 if(data.success==false){
                     location.href="/login.jsp";

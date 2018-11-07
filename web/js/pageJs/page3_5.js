@@ -6,7 +6,7 @@ var app = angular.module('myInfo', []);
 app.controller('pCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/file/getIntegral?id=3374'
+        url: 'http://101.132.76.252:83/file/getIntegral?token='+getCookie("token")
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -61,7 +61,7 @@ $(document).ready(function(){
                 "iSortCol_0" : aoData.iSortCol_0,
                 "sEcho" : aoData.sEcho,
                 "sSortDir_0" : aoData.sSortDir_0,
-                "oldmanId":"3374"
+                "token":getCookie("token")
             },
             type: 'GET',
             dataType: 'json',
@@ -89,6 +89,14 @@ $(document).ready(function(){
 
 
 
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}
 
 
 
