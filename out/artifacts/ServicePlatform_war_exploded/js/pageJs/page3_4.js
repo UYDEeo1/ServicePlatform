@@ -25,7 +25,7 @@ $(document).ready(function(){
             ],
             "sAjaxSource": "http://101.132.76.252:83/file/record",//这个是请求的地址
             "fnServerData": retrieveData,
-            bLengthChange: false,
+            bLengthChange: false
         });
     function retrieveData(url, aoData, fnCallback) {
 
@@ -36,8 +36,7 @@ $(document).ready(function(){
                 "iDisplayLength" : aoData.iDisplayLength,
                 "iSortCol_0" : aoData.iSortCol_0,
                 "sEcho" : aoData.sEcho,
-                "sSortDir_0" : aoData.sSortDir_0,
-                "oldmanId":"3374"
+                "sSortDir_0" : aoData.sSortDir_0
             },
             type: 'GET',
             dataType: 'json',

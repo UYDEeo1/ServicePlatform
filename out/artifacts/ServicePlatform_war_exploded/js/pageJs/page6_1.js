@@ -6,7 +6,7 @@ var app = angular.module('myInfo', []);
 app.controller('accountCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/cardUser/accountInfo?oldmanId=3374'
+        url: 'http://101.132.76.252:83/cardUser/accountInfo?token='+getCookie("token")
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -20,3 +20,12 @@ app.controller('accountCtrl', function($scope, $http) {
     });
 
 });
+
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}

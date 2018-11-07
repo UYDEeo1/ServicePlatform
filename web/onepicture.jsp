@@ -74,6 +74,13 @@
             a{
                 cursor: pointer;
             }
+            .closeimg{
+                padding-left: 85%;
+                position: absolute;
+            }
+            .closeimg img{
+                width:30px;
+            }
 
 
         }
@@ -281,11 +288,12 @@
 
 
 <div id="details" class="pop">
+    <div class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></div>
     <li class="box_related">
-        <a href="page5.jsp" target="_top">
+        <a>
             <img src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
         </a>
-        <a href="page5.jsp" target="_top" id="Tit">
+        <a id="Tit">
             古美敬老院
         </a>
         <br>     地址：闵行区虹莘路2288弄<br>     咨询电话：(021)34174387
@@ -307,6 +315,10 @@
     function showImage(x,y) {
         $(".smalimage").css("top",y).css("left",x).show();
 
+    }
+
+    function closeimg() {
+        $("#details").hide();
     }
 </script>
 

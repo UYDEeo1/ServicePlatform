@@ -14,15 +14,17 @@
     <link  href="css/common.css" type="text/css" rel="stylesheet" />
     <link  href="css/personal.css" type="text/css" rel="stylesheet" />
 
-    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37293556" charset="UTF-8"></script>
+    <%--<script type="text/javascript" src="http://tajs.qq.com/stats?sId=37293556" charset="UTF-8"></script>--%>
     <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="js/jquery.validate.js" type="text/javascript"></script>
     <script src="js/jquery.form.js" type="text/javascript"></script>
-    <script src="js/common.js" type="text/javascript"></script>
+    <%--<script src="js/common.js" type="text/javascript"></script>--%>
     <script src="js/validate-custom.js" type="text/javascript"></script>
 
 
     <script src="js/sweetalert.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pageJs/page6_2.js"></script>
 
     <style type="text/css">
 
@@ -135,12 +137,15 @@
             line-height: 32px;
             display: inline-block;
         }
+        #m{
+            color:red;
+         }
 
 
     </style>
 </head>
 
-<body onload="bodyResize()" ng-app="myInfo">
+<body>
 <div class="pannel">
     <div class="title">
         <div class="icon">
@@ -154,7 +159,7 @@
 
 </p>
 
-<form ng-controller="userpswdCtrl" name="myForm" novalidate>
+<form name="myForm" novalidate>
 
     <table cellspacing="0" cellpadding="0">
         <colgroup>
@@ -166,7 +171,7 @@
                 <font color="red">*</font>&nbsp;当前密码：
             </td>
             <td class="second">
-                <input id="oldpsdInput" type="password" ng-model="user.password">
+                <input id="oldpsdInput" type="password" name="password">
                 </span>
             </td>
             <td class="third">
@@ -177,7 +182,7 @@
                 <font color="red">*</font>&nbsp;新密码：
             </td>
             <td class="second">
-                <input id="newpsdInput" type="password" ng-model="user.newPassword" ng-minlength="8" ng-maxlength="16" required>
+                <input id="newpsdInput" type="password" name="newpsd">
                 <div class="tip">6-16个英文字母，数字或符号的组合</div>
             </td>
             <td class="third">
@@ -188,7 +193,16 @@
                 <font color="red">*</font>&nbsp;确认密码：
             </td>
             <td class="second">
-                <input id="confirmPsdInput" type="password" ng-model="password_again">
+                <input id="confirmPsdInput" type="password" name="newpsd_Again">
+            </td>
+            <td class="third">
+            </td>
+        </tr>
+        <tr>
+            <td class="first">
+            </td>
+            <td class="second">
+                <p id="m"></p>
             </td>
             <td class="third">
             </td>
@@ -199,7 +213,7 @@
             </td>
             <td>
                 <div class="ac-button">
-                    <input type="submit" value="保存" id="submit" ng-click="changePassword()">
+                    <input type="submit" value="保存" id="submit" onclick="psdd()">
                 </div>
             </td>
             <td>

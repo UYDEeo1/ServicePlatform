@@ -10,7 +10,7 @@ app.controller('pCtrl', function($scope, $http) {
     }).then(function successCallback(response) {
 
         console.log(response);
-        alert(JSON.stringify(response.data.data))
+        // alert(JSON.stringify(response.data.data))
         $scope.PPP = response.data.data;
 
 
