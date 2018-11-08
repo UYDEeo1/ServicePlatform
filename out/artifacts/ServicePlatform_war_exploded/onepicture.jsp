@@ -33,27 +33,42 @@
                 /*width:100%;*/
             /*}*/
             #right_nav{
-                float: right;
+                position: fixed;
                 width: 16%;
-                margin-right: 2%;
+                margin-right: 1%;
                 margin-top: 30px;
-
+                right: 0;
             }
             .pop{
 
+                 height:320px;
+                 width:70%;
+                 display: none;
+                 /*position: fixed;*/
+                 /*bottom: 0;*/
+                 z-index:99;
+                 margin-left: 10%;
+                 margin-top: -70%;
+                 /*position:absolute;  !* 注：弹出框必须为绝对定位 *!*/
+             }
+            .pop li{
+                list-style-type: none;
+            }
+
+            .popOnly{
+
                 height:320px;
-                width:70%;
+                width:27%;
                 display: none;
                 /*position: fixed;*/
                 /*bottom: 0;*/
                 z-index:99;
-                margin-left: 10%;
-                margin-top: -70%;
-                /*position:absolute;  !* 注：弹出框必须为绝对定位 *!*/
+                position:absolute;  /* 注：弹出框必须为绝对定位 */
             }
-            .pop li{
+            .popOnly li{
                 list-style-type: none;
             }
+
             .box_related{
 
                 padding:3%;
@@ -83,7 +98,6 @@
             .closeimg img{
                 width:30px;
             }
-
 
         }
     </style>
@@ -147,6 +161,7 @@
                 overflow: hidden;
                 display: block;}
 
+
         }
         .smalimage{
             position: absolute;
@@ -186,16 +201,28 @@
                 </li>
             </div>
         </div>
+        <div id="detailsOnly" class="popOnly">
+            <div class="closeimg"><img src="img/guanbi.png" onclick="closeimgOnly()"></div>
+            <li class="box_related">
+                <a>
+                    <img id="imgOrgOnly" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
+                </a>
+                <a id="TitOnly">
+                    古美敬老院
+                </a>
+                <br>     地址：<label id="addOnly">闵行区虹莘路2288弄</label><br>     咨询电话：<label id="phoneNumOnly">(021)34174387</label><br>
+                服务时间：<label id="serviceTimeOnly"></label><br>
+            </li>
+        </div>
     </div>
 <div class="row-lg-8">
     <map name="onepicture" ng-controller="MapCtrl">
 
-        <area ng-repeat="k in mmap" shape="circle" coords="{{k.X}},{{k.Y}},8" ng-click="showDetails(k.id)" target="_blank">
+        <area ng-repeat="k in mmap" shape="circle" coords="{{k.X}},{{k.Y}},8" ng-click="showDetailsOnly(k.id)" target="_blank">
 
         <%--<area shape="circle" coords="230,437.5,10" onclick="showdetails(this,'东兰苑')"  target="_blank">--%>
     </map>
 </div>
-
 
 
 <div id="right_nav">
@@ -279,7 +306,6 @@
 
 
 
-
 <script type="text/javascript">
 
 
@@ -300,6 +326,9 @@
     function closeimg() {
         $("#details").hide();
     }
+function closeimgOnly() {
+    $("#detailsOnly").hide();
+}
 </script>
 
 
