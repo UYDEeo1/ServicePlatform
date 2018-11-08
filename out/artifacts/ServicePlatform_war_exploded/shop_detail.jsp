@@ -451,6 +451,10 @@
     <div class="d_tit" style="width:1000px;">
         <div class="d_p">服务机构</div>
     </div>
+    <div id="kong" align="center" style="display: none;position: relative;right:12%;">
+        <img src="/img/shop/kong.png" style="margin-top: 5%">
+        <h2>抱歉！没有相关商品</h2>
+    </div>
     <div class="company container" id="content">
 
          <%--商品--%>

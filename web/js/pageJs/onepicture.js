@@ -65,8 +65,8 @@ app.controller('PicCtrl', function($scope, $http) {
                     document.getElementById("phoneNum").innerHTML=data.data.phone;
                     document.getElementById("add").innerHTML=data.data.address;
                     document.getElementById("serviceTime").innerHTML=data.data.serviceTime;
-
-                    $("#details").css({ "top": "78px", "left": "0" }).show();
+                    $("#details").show();
+                    // $("#details").css({ "top": data.data.mapTop, "left": data.data.mapLeft }).show();
 
                 }
             }
@@ -130,3 +130,19 @@ app.controller('MapCtrl', function($scope, $http) {
 
 });
 
+app.controller('LocCtrl', function($scope, $http) {
+        $http({
+            method: 'GET',
+            url: 'http://101.132.76.252:83/map/getJwTypes'
+        }).then(function successCallback(response) {
+
+            console.log(response);
+            // alert(JSON.stringify(response.data.data))
+            $scope.jw = response.data.data;
+
+
+        }, function errorCallback(response) {
+            // 请求失败执行代码
+        });
+
+    })

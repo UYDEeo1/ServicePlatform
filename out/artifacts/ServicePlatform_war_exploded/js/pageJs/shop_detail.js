@@ -81,9 +81,18 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
             $scope.pageList = new Array();
             // alert(JSON.stringify(response.data.aaData));
 
-            // 显示表格数据
-            $scope.Shop = response.data.aaData;
 
+            if(response.success==false || response.data.iTotalItems==0){
+                $(".pagination").hide();
+                $("#content").hide();
+                $("#kong").show();
+            }else{
+                $("#kong").hide();
+                $(".pagination").show();
+                $("#content").show();
+                // 显示表格数据
+                $scope.Shop = response.data.aaData;
+            }
 
 
             if(response.data.aaData.button=="saveInCart")

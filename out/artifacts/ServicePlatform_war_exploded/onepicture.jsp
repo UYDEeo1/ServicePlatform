@@ -45,11 +45,13 @@
             .pop{
 
                 height:320px;
-                width:24%;
+                width:70%;
                 display: none;
-                position: fixed;
-                bottom: 0;
+                /*position: fixed;*/
+                /*bottom: 0;*/
                 z-index:99;
+                margin-left: 10%;
+                margin-top: -70%;
                 /*position:absolute;  !* 注：弹出框必须为绝对定位 *!*/
             }
             .pop li{
@@ -84,6 +86,16 @@
             .closeimg img{
                 width:30px;
             }
+            .erJ{
+                font-size: 14px!important;
+                padding-left: 20px!important;
+
+            }
+            .sanJ{
+                font-size: 14px!important;
+                padding-left: 35px!important;
+            }
+
 
 
         }
@@ -172,20 +184,70 @@
             <img src="img/onePic.jpeg" border="0" alt="OnePic" usemap="#onepicture" width="1056px;">
         </div>
         <div class="smalimage">
-            <img src="img/地图.png" width="30px">
+            <img src="img/map.png" width="30px">
+            <div id="details" class="pop">
+                <div class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></div>
+                <li class="box_related">
+                    <a>
+                        <img id="imgOrg" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
+                    </a>
+                    <a id="Tit">
+                        古美敬老院
+                    </a>
+                    <br>     地址：<label id="add">闵行区虹莘路2288弄</label><br>     咨询电话：<label id="phoneNum">(021)34174387</label><br>
+                    服务时间：<label id="serviceTime"></label><br>
+                </li>
+            </div>
         </div>
     </div>
-
+<div class="row-lg-8">
     <map name="onepicture" ng-controller="MapCtrl">
 
         <area ng-repeat="k in mmap" shape="circle" coords="{{k.X}},{{k.Y}},8" ng-click="showDetails(k.id)" target="_blank">
 
         <%--<area shape="circle" coords="230,437.5,10" onclick="showdetails(this,'东兰苑')"  target="_blank">--%>
     </map>
+</div>
+
 
 
 <div id="right_nav">
-    <div class="panel-group" id="accordion" >
+    <div class="panel-group" id="accordion" ng-controller="LocCtrl">
+
+
+        <div class="panel panel-info" id="ddd">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                       href="#co{{jw.name}}">
+                        {{jw.name}}
+                    </a>
+                </h4>
+            </div>
+            <div id="co{{jw.name}}" class="panel-collapse collapse">
+                <div ng-repeat="www in jw.organData">
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title erJ">
+                                <a data-toggle="collapse" data-parent="#ddd"
+                                   href="#co{{www.organName}}">
+                                    {{www.organName}}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="co{{www.organName}}" class="panel-collapse collapse">
+                            <div class="panel-body sanJ" ng-repeat="ws in www.organs">
+                                <a id="{{ws.id}}" ng-click="showImage(ws.id);showDetails(ws.id)">{{ws.value}}</a><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
 
 
         <div class="panel panel-info" ng-repeat="x in Data" ng-cloak>
@@ -207,39 +269,7 @@
 
 
 
-        <div class="panel panel-info" id="ddd">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-                       href="#collapseThree">
-                        居委会
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-                <div>
 
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#ddd"
-                            href="#collapseFour">
-                                街道
-                            </a>
-                            </h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                古美一村
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </div>
 
 
 
@@ -284,19 +314,7 @@
 </div>
 
 
-<div id="details" class="pop">
-    <div class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></div>
-    <li class="box_related">
-        <a>
-            <img id="imgOrg" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
-        </a>
-        <a id="Tit">
-            古美敬老院
-        </a>
-        <br>     地址：<label id="add">闵行区虹莘路2288弄</label><br>     咨询电话：<label id="phoneNum">(021)34174387</label><br>
-        服务时间：<label id="serviceTime"></label><br>
-    </li>
-</div>
+
 
 <script type="text/javascript">
 
@@ -327,5 +345,6 @@
 <script src="js/angular.min.js"></script>
 <script src="js/pageJs/onepicture.js"></script>
 
+</div>
 </body>
 </html>
