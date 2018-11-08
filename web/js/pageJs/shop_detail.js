@@ -86,24 +86,15 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
                 $(".pagination").hide();
                 $("#content").hide();
                 $("#kong").show();
-            }else{
+            }else {
                 $("#kong").hide();
                 $(".pagination").show();
                 $("#content").show();
                 // 显示表格数据
                 $scope.Shop = response.data.aaData;
-            }
 
 
-            if(response.data.aaData.button=="saveInCart")
-            {
-                document.getElementById("shangpin").style.display="block";
-                document.getElementById("yanglaoyuan").style.display="none";
 
-            }
-            else {
-                document.getElementById("shangpin").style.display="none";
-                document.getElementById("yanglaoyuan").style.display="block";
             }
 
 
@@ -198,7 +189,9 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
             }
         });
 
-
+    }
+    $scope.panduan= function (s1,s2) {
+        return angular.equals(s1,s2);
     }
 }]);
 
