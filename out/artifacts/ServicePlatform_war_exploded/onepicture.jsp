@@ -37,6 +37,9 @@
                 width: 16%;
                 margin-right: 2%;
                 margin-top: 30px;
+                /*position: fixed;*/
+                /*right: 0;*/
+                /*z-index: 99;*/
 
             }
             .pop{
@@ -204,23 +207,42 @@
 
 
 
-        <%--<div class="panel panel-success">--%>
-            <%--<div class="panel-heading">--%>
-                <%--<h4 class="panel-title">--%>
-                    <%--<a data-toggle="collapse" data-parent="#accordion"--%>
-                       <%--href="#collapseThree">--%>
-                        <%--长者照护之家--%>
-                    <%--</a>--%>
-                <%--</h4>--%>
-            <%--</div>--%>
-            <%--<div id="collapseThree" class="panel-collapse collapse">--%>
-                <%--<div class="panel-body">--%>
-                    <%--Nihil anim keffiyeh helvetica, craft beer labore wes anderson--%>
-                    <%--cred nesciunt sapiente ea proident. Ad vegan excepteur butcher--%>
-                    <%--vice lomo.--%>
-                <%--</div>--%>
-            <%--</div>--%>
-        <%--</div>--%>
+        <div class="panel panel-info" id="ddd">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseThree">
+                        居委会
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div>
+
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#ddd"
+                            href="#collapseFour">
+                                街道
+                            </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                古美一村
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
         <%--<div class="panel panel-warning">--%>
             <%--<div class="panel-heading">--%>
                 <%--<h4 class="panel-title">--%>
@@ -238,6 +260,7 @@
                 <%--</div>--%>
             <%--</div>--%>
         <%--</div>--%>
+
         <%--<div class="panel panel-default">--%>
             <%--<div class="panel-heading">--%>
                 <%--<h4 class="panel-title">--%>
