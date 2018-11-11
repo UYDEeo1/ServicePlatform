@@ -131,10 +131,20 @@
             url : "http://101.132.76.252:83/identify/logout?token="+getCookie("token"),
             type : "get",
             success : function(data) {
-                window.location.reload();
+//                window.location.reload();
+                delCookie("token");
+                top.location.href="page1.jsp";
 
             }
         });
+    }
+    function delCookie(name)
+    {
+        var exp = new Date();
+        exp.setTime(exp.getTime() - 1);
+        var cval=getCookie(name);
+        if(cval!=null)
+            document.cookie= name + "="+cval+";expires="+exp.toGMTString();
     }
 </script>
 <body>

@@ -16,7 +16,10 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/onepicture.js"></script>
-</head>
+
+
+
+
     <style>
         @media (min-width: 1024px) {
             body {
@@ -94,7 +97,7 @@
                 cursor: pointer;
             }
             .closeimg{
-                padding-left: 65%;
+                /*padding-left: 65%;*/
                 position: absolute;
             }
             .closeimg img{
@@ -185,12 +188,18 @@
 
 </head>
 
-<body>
+<body >
 
 <iframe id="headFrame" src="head.jsp" frameborder="0" scrolling="no">
 </iframe>
 </body>
 </html>
+
+
+
+
+
+
 
 
     <div style="position: relative;width: 75%;float: left;">
