@@ -6,7 +6,7 @@ var app = angular.module('myInfo', []);
 app.controller('PicCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/map/getTypes'
+        url: 'http://47.101.138.13:83/map/getTypes'
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -22,7 +22,7 @@ app.controller('PicCtrl', function($scope, $http) {
     //点击菜单，在地图中显示小图标
     $scope.showImage = function (id) {
         $.ajax({
-            url: "http://101.132.76.252:83/map/getDetails",
+            url: "http://47.101.138.13:83/map/getDetails",
             type: "get",
             data: {
                 organId: id
@@ -45,7 +45,7 @@ app.controller('PicCtrl', function($scope, $http) {
 
     $scope.showDetails = function (id) {
         $.ajax({
-            url: "http://101.132.76.252:83/map/getDetails",
+            url: "http://47.101.138.13:83/map/getDetails",
             type: "get",
             data: {
                 organId: id
@@ -86,7 +86,7 @@ app.controller('PicCtrl', function($scope, $http) {
 app.controller('MapCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/map/getLocation'
+        url: 'http://47.101.138.13:83/map/getLocation'
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -103,7 +103,7 @@ app.controller('MapCtrl', function($scope, $http) {
 
     $scope.showDetailsOnly = function (id) {
         $.ajax({
-            url: "http://101.132.76.252:83/map/getDetails",
+            url: "http://47.101.138.13:83/map/getDetails",
             type: "get",
             data: {
                 organId: id
@@ -138,7 +138,7 @@ app.controller('MapCtrl', function($scope, $http) {
 app.controller('LocCtrl', function($scope, $http) {
         $http({
             method: 'GET',
-            url: 'http://101.132.76.252:83/map/getJwTypes'
+            url: 'http://47.101.138.13:83/map/getJwTypes'
         }).then(function successCallback(response) {
 
             console.log(response);
@@ -149,5 +149,6 @@ app.controller('LocCtrl', function($scope, $http) {
         }, function errorCallback(response) {
             // 请求失败执行代码
         });
+
 
     })

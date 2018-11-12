@@ -6,7 +6,7 @@ var app = angular.module('myInfo', []);
 app.controller('pCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/file/getIntegral?token='+getCookie("token")
+        url: 'http://47.101.138.13:83/file/getIntegral?token='+getCookie("token")
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -47,7 +47,7 @@ $(document).ready(function(){
                 data:"moneyChange"
             }
             ],
-            "sAjaxSource": "http://101.132.76.252:83/file/data",//这个是请求的地址
+            "sAjaxSource": "http://47.101.138.13:83/file/data",//这个是请求的地址
             "fnServerData": retrieveData,
             bLengthChange: false,
         });

@@ -89,7 +89,7 @@
 <script>
     function sub() {
         $.ajax({
-            url :" http://101.132.76.252:83/identify/login",
+            url :" http://47.101.138.13:83/identify/login",
             type : "get",
             data:{
                 username:$("input[name='username']").val(),

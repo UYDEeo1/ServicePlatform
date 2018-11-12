@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cbaec07-fa44-4e23-bc7d-8606df7805db" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/loader.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/pageJs/organ_reg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/head.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/onepicture.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/onepicture.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/organ_reg.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ServicePlatform_war_exploded/organ_reg.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/head.jsp" afterPath="$PROJECT_DIR$/web/head.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/onepicture.js" afterPath="$PROJECT_DIR$/web/js/pageJs/onepicture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/organ_reg.js" afterPath="$PROJECT_DIR$/web/js/pageJs/organ_reg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3_2.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3_3.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3_3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3_4.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3_4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page3_5.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page3_5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page6_1.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page6_2.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page6_4.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page6_5.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/page6_6.js" afterPath="$PROJECT_DIR$/web/js/pageJs/page6_6.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/shop_detail.js" afterPath="$PROJECT_DIR$/web/js/pageJs/shop_detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/pageJs/shop_other.js" afterPath="$PROJECT_DIR$/web/js/pageJs/shop_other.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/onepicture.jsp" afterPath="$PROJECT_DIR$/web/onepicture.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/organ_reg.jsp" afterPath="$PROJECT_DIR$/web/organ_reg.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,14 +31,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shop_detail.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/shop_detail.jsp">
+      <file leaf-file-name="page3_3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="69" />
-              <folding>
-                <marker date="1541660164589" expanded="false" signature="15052:15068" ph="..." />
-              </folding>
+            <state relative-caret-position="32">
+              <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,83 +44,8 @@
       <file leaf-file-name="onepicture.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/onepicture.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="96" column="32" lean-forward="true" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="organ_reg.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../organ_reg.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="10" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="organ_reg.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/organ_reg.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="282" column="35" lean-forward="false" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="organ_reg.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/pageJs/organ_reg.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
-              <folding>
-                <element signature="n#!!doc;n#regsub#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page6_6.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_6.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loader.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/loader.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/head.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2077">
-              <caret line="141" column="5" lean-forward="false" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shop_detail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_detail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="20">
+              <caret line="249" column="5" lean-forward="true" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -126,9 +54,41 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+            <state relative-caret-position="-367">
+              <caret line="91" column="42" lean-forward="false" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organ_reg.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/organ_reg.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4230">
+              <caret line="282" column="35" lean-forward="false" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/head.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-547">
+              <caret line="109" column="38" lean-forward="false" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onepicture.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/pageJs/onepicture.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="49" column="2" lean-forward="false" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,37 +136,37 @@
         <option value="$PROJECT_DIR$/web/login.ftl" />
         <option value="$PROJECT_DIR$/web/css/base.css" />
         <option value="$PROJECT_DIR$/web/page3_4.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/shop_other.js" />
         <option value="$PROJECT_DIR$/web/shop_other.jsp" />
         <option value="$PROJECT_DIR$/web/account.jsp" />
         <option value="$PROJECT_DIR$/web/page3_5.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page6_1.js" />
         <option value="$PROJECT_DIR$/web/page6.jsp" />
         <option value="$PROJECT_DIR$/web/log.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page6_2.js" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page6_6.js" />
         <option value="$PROJECT_DIR$/web/xinxiang.jsp" />
         <option value="$PROJECT_DIR$/web/letter.jsp" />
         <option value="$PROJECT_DIR$/web/js/pageJs/page6_3.js" />
         <option value="$PROJECT_DIR$/web/order.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page3_4.js" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page3_5.js" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page3.js" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page3_2.js" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page3_3.js" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page6_5.js" />
         <option value="$PROJECT_DIR$/web/shopcar.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/page6_4.js" />
         <option value="$PROJECT_DIR$/web/page3_2.jsp" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/onepicture.js" />
-        <option value="$PROJECT_DIR$/web/js/pageJs/shop_detail.js" />
         <option value="$PROJECT_DIR$/web/shop_detail.jsp" />
-        <option value="$PROJECT_DIR$/web/head.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/css/loader.css" />
         <option value="$PROJECT_DIR$/web/organ_reg.jsp" />
         <option value="$PROJECT_DIR$/web/onepicture.jsp" />
         <option value="$PROJECT_DIR$/web/js/pageJs/organ_reg.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page3.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page3_2.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page3_3.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page3_4.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page3_5.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page6_1.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page6_2.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page6_4.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page6_5.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/page6_6.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/shop_detail.js" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/shop_other.js" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/head.jsp" />
+        <option value="$PROJECT_DIR$/web/js/pageJs/onepicture.js" />
       </list>
     </option>
   </component>
@@ -960,12 +920,12 @@
       <workItem from="1541036452458" duration="59770000" />
       <workItem from="1541640927923" duration="6096000" />
       <workItem from="1541653424354" duration="12631000" />
-      <workItem from="1541764657881" duration="8971000" />
+      <workItem from="1541764657881" duration="11414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="504348000" />
+    <option name="totallyTimeSpent" value="506791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="109" y="42" width="1312" height="806" extended-state="0" />
@@ -1218,13 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/page3_5.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1233,13 +1186,6 @@
             <marker date="1540717031667" expanded="true" signature="5742:5760" ph="..." />
             <marker date="1540717031667" expanded="false" signature="5845:5878" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1254,32 +1200,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/shopcar.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="285" column="94" lean-forward="false" selection-start-line="285" selection-start-column="94" selection-end-line="285" selection-end-column="94" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_other.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="76" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1309,75 +1234,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/onepicture.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="87" column="22" lean-forward="false" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/page3.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="95" column="1" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="95" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="125" column="34" lean-forward="true" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1400,14 +1260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2077">
-          <caret line="141" column="5" lean-forward="false" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/shop_detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1426,39 +1278,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/onepicture.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/organ_reg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="96" column="32" lean-forward="true" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+        <state relative-caret-position="-343">
+          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc;n#regsub#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="119" column="37" lean-forward="false" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-343">
+          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_6.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="-148">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_other.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-583">
+          <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/shop_detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="165" column="41" lean-forward="false" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+          <caret line="58" column="41" lean-forward="false" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page6_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="49" column="51" lean-forward="false" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-309">
+          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/page3_3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-547">
+          <caret line="109" column="38" lean-forward="false" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/organ_reg.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
+        <state relative-caret-position="4230">
           <caret line="282" column="35" lean-forward="false" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/pageJs/organ_reg.js">
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
+        <state relative-caret-position="-367">
+          <caret line="91" column="42" lean-forward="false" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/onepicture.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="249" column="5" lean-forward="true" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/pageJs/onepicture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="49" column="2" lean-forward="false" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
           <folding>
-            <element signature="n#!!doc;n#regsub#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>

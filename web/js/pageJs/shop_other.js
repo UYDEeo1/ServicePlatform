@@ -44,7 +44,7 @@ app.controller("OthCtrl",["$scope", "$http",function($scope,$http) {
         $http({
             method: 'GET',
             // url: page + '.json',
-            url:'http://101.132.76.252:83/goods/getByOrganId?organId='+Id+'&iDisplay='+page,
+            url:'http://47.101.138.13:83/goods/getByOrganId?organId='+Id+'&iDisplay='+page,
             // params: {
             //     "iDisplay": page, // 页码
             //     // pageSize: $scope.pageSize, // 每页记录数

@@ -31,7 +31,7 @@ function regsub() {
                 check_val.push(obj[k].value);
         };
         $.ajax({
-            url: "http://101.132.76.252:83/organ/reg",
+            url: "http://47.101.138.13:83/organ/reg",
             type: "post",
             data: {
                 personPhone: $("input[name='personPhone']").val(),
