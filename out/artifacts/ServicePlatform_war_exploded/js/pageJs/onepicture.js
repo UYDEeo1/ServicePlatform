@@ -149,6 +149,6 @@ app.controller('LocCtrl', function($scope, $http) {
         }, function errorCallback(response) {
             // 请求失败执行代码
         });
-        
+
 
     })

@@ -87,6 +87,9 @@
                 width:100%;
                 height:150px;
                 margin-bottom: 10px;
+                padding-top: 4%;
+                padding-right: 4%;
+                padding-left: 4%;
             }
             .box_related a{
                 color:#cb8e6a;
@@ -209,7 +212,7 @@
         <div class="smalimage">
             <img src="img/map.png" width="30px">
             <div id="details" class="pop">
-                <div class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></div>
+                <a class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></a>
                 <li class="box_related">
                     <a>
                         <img id="imgOrg" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
@@ -223,7 +226,7 @@
             </div>
         </div>
         <div id="detailsOnly" class="popOnly">
-            <div class="closeimg"><img src="img/guanbi.png" onclick="closeimgOnly()"></div>
+            <a class="closeimg"><img src="img/guanbi.png" onclick="closeimgOnly()"></a>
             <li class="box_related">
                 <a>
                     <img id="imgOrgOnly" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
