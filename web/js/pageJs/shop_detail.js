@@ -48,6 +48,7 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
     $scope.totalPages = 0; // 总页数 （根据 总记录数、每页记录数 计算 ）
     $scope.shopId = 46;
 
+
     //加载上一页
     $scope.prev = function () {
         $scope.selectPage($scope.currentPage - 1,$scope.shopId);
@@ -142,6 +143,7 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
     // $scope.selectPage(1,46);
     if(IIId!=null)
     {
+
         $scope.selectPage(1,IIId);
     }
     else{
@@ -149,11 +151,13 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
     }
     //接受传值
 
-    $scope.shopDetail= function(id){
+    $scope.shopDetail= function(id,name){
         $scope.shopId= id;
         $scope.selectPage($scope.currentPage,$scope.shopId);
+        document.getElementById("posC").innerHTML=">"+name;
 
     }
+
 
     $scope.phone = function (pphone) {
         swal({

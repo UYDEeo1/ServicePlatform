@@ -430,7 +430,7 @@
                 {{m.name}} <i class="cate_detail_tit_arrow">></i>
             </dt>
             <dd class="cate_detail_con" >
-                <a ng-repeat="k in m.productTypeModels" class="cate_detail_con_lk" target="_blank" id="{{k.id}}" ng-click="shopDetail(k.id)">{{k.name}} </a>
+                <a ng-repeat="k in m.productTypeModels" class="cate_detail_con_lk" target="_blank" id="{{k.id}}" ng-click="shopDetail(k.id,k.name)">{{k.name}} </a>
 
             </dd>
         </dl>
@@ -443,9 +443,11 @@
 
 
 </div>
-</div>
 
-<div class="c1"><a href="page1.jsp">首页</a>><a>网上商城</a></div>
+
+<div class="c1"><a href="page1.jsp">首页</a>><a href="shop_detail.jsp">网上商城</a><a id="posC">>助餐</a></div>
+
+</div>
 
 <div style="margin-left: 200px;margin-top:25px;">
     <div class="d_tit" style="width:1000px;">
