@@ -5,7 +5,7 @@
 
 function xinxiang() {
         $.ajax({
-            url: "http://101.132.76.252:83/message/saveMessage",
+            url: "http://47.101.138.13:83/message/saveMessage",
             type: "get",
             data: {
                 content: $("textarea[name='text']").val(),

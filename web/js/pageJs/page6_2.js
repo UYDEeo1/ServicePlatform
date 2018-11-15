@@ -56,7 +56,7 @@
 function psdd() {
     if($("input[name='newpsd']").val()==$("input[name='newpsd_Again']").val()) {
         $.ajax({
-            url: "http://101.132.76.252:83/cardUser/changePwd",
+            url: "http://47.101.138.13:83/cardUser/changePwd",
             type: "get",
             data: {
                 oldPwd: $("input[name='password']").val(),

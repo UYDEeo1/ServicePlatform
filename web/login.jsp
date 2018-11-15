@@ -12,6 +12,10 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="css/login.min.css" rel="stylesheet">
+
+
+    <script src="js/sweetalert.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/sweetalert.css">
     <!--[if lt IE 8]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
@@ -61,17 +65,17 @@
             </div>
         </div>
         <div class="col-sm-6 llog">
-            <form method="post" action="j_spring_security_check">
+            <%--<form method="post" action="j_spring_security_check">--%>
                 <h2 class="no-margins">登录：</h2>
                 <%--<#--<p class="m-t-md">登录到古美路街道综合为老服务平台</p>-->--%>
                 <input style="font-size: 20px !important;padding: 18px!important;margin-top: 30px;margin-bottom: 20px" type="text" class="form-control uname" placeholder="用户名" name="username" />
                 <input style="font-size: 20px !important;padding: 18px!important;margin-bottom: 30px"  type="password" class="form-control pword m-b" placeholder="密码" name="password" />
-                <p id="#message"></p>
+                <%--<div class="row"><p id="#message"></p></div>--%>
                 <%--<#--<a href="">忘记密码了？</a>-->--%>
                 <%--<span style="color: red">${(((SPRING_SECURITY_LAST_EXCEPTION.message)!)?contains("Exception"))?string("登陆超时！",(SPRING_SECURITY_LAST_EXCEPTION.message)!)}</span>--%>
                     <%--<button style="font-size: 24px" class="btn btn-success btn-block">登录</button>--%>
                 <input type="button" class="btn btn-success btn-block" value="登录" onclick="sub()">
-            </form>
+            <%--</form>--%>
         </div>
     </div>
     <div class="signup-footer">
@@ -85,7 +89,7 @@
 <script>
     function sub() {
         $.ajax({
-            url :" http://101.132.76.252:83/identify/login",
+            url :" http://47.101.138.13:83/identify/login",
             type : "get",
             data:{
                 username:$("input[name='username']").val(),
@@ -94,7 +98,10 @@
             success : function(data) {
 //                var result=eval("("+data+")");
                 if(data.success==false) {
-                    $("#message").html(data.data);
+                    swal({
+                        text:data.error,
+                        icon:"error"
+                    });
                 }else{
                     setCookie("token",data.data,"24*60*60*1000");
                     setCookie("username",$("input[name='username']").val(),"24*60*60*1000");

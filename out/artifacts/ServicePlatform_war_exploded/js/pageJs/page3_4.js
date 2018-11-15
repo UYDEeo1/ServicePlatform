@@ -23,7 +23,7 @@ $(document).ready(function(){
                 data:"time"
             }
             ],
-            "sAjaxSource": "http://101.132.76.252:83/file/record",//这个是请求的地址
+            "sAjaxSource": "http://47.101.138.13:83/file/record",//这个是请求的地址
             "fnServerData": retrieveData,
             bLengthChange: false
         });

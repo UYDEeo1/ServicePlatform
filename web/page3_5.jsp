@@ -126,7 +126,7 @@
 <div class="title_right">积分</div>
 
 
-<p style="margin-left: 30px;margin-top: 20px;margin-bottom: 0;" ng-controller="pCtrl">当前积分：<label>{{PPP.integral}}</label></p>
+<p style="margin-left: 30px;margin-top: 20px;margin-bottom: 0;" ng-controller="pCtrl">当前积分：<label>{{PPP.Integral}}</label></p>
 
 <div style="width:97%;">
     <div class="wrapper wrapper-content animated fadeInRight">

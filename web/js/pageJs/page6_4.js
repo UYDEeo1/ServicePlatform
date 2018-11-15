@@ -34,7 +34,7 @@ $(document).ready(function(){
                     }
                 }
             ],
-            "sAjaxSource": "http://101.132.76.252:83/cart/getCartInfo",//这个是请求的地址
+            "sAjaxSource": "http://47.101.138.13:83/cart/getCartInfo",//这个是请求的地址
             "fnServerData": retrieveData,
             bLengthChange: false,
         });
@@ -88,7 +88,7 @@ function getCookie(name)
 
 function delete_shop(Id) {
     $.ajax({
-        url: "http://101.132.76.252:83/cart/delete",
+        url: "http://47.101.138.13:83/cart/delete",
         type: "get",
         data: {
             ids:Id
@@ -117,7 +117,7 @@ function delete_shop(Id) {
 
 function submit_shop() {
     $.ajax({
-        url: "http://101.132.76.252:83/cart/saveInBook",
+        url: "http://47.101.138.13:83/cart/saveInBook",
         type: "get",
         data: {
             token:getCookie("token")

@@ -50,13 +50,13 @@
         <li class="col-sm-2 control-label">失智情况：<label>{{Data.intelligence}}</label></li>
         <li class="col-sm-2 control-label">视力：<label>{{Data.eyesight}}</label></li>
 
-        <li class="col-sm-2 control-label">慢病: <label ng-repeat="x in ChronicDis">{{x.desc}}；&nbsp;</label></li>
+        <li class="col-sm-2 control-label">慢病: <label ng-repeat="x in ChronicDis">{{x.secTypeName}}；&nbsp;</label></li>
 
-        <li class="col-sm-2 control-label">失能情况：<label ng-repeat="x in AbiliInfo">{{x.desc}}；</label></li>
+        <li class="col-sm-2 control-label">失能情况：<label ng-repeat="x in AbiliInfo">{{x.secTypeName}}；</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">
-        <li class="col-sm-2 control-label">药物反应: <label ng-repeat="x in DrugAlley">{{x.desc}}；</label></li>
+        <li class="col-sm-2 control-label">药物反应: <label ng-repeat="x in DrugAlley">{{x.secTypeName}}；</label></li>
     </ul>
     <div class="hr-line-dashed"></div>
     <ul class="form-group">

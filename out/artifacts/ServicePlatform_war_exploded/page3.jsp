@@ -25,7 +25,7 @@
 
     <script>
         $.ajax({
-            url : "http://101.132.76.252:83/identify/checkToken?token="+getCookie("token"),
+            url : "http://47.101.138.13:83/identify/checkToken?token="+getCookie("token"),
             type : "get",
             async:false,
             success : function(data) {
@@ -172,17 +172,17 @@
 
 <script type="text/javascript">
     //获取登录用户
-    function getLoginUser(){
-        return 'eshimin04603655';
-    }
-
-    function getUserInfo(){
-        var json ={};
-        json.societyCode = '';
-        json.userName =  'eshimin04603655';
-        json.real =  '0';
-        return json;
-    }
+//    function getLoginUser(){
+//        return 'eshimin04603655';
+//    }
+//
+//    function getUserInfo(){
+//        var json ={};
+//        json.societyCode = '';
+//        json.userName =  'eshimin04603655';
+//        json.real =  '0';
+//        return json;
+//    }
 
     /*更新iframe高度*/
     function refreshIframeHeight(iframe,height){

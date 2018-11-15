@@ -16,7 +16,10 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/onepicture.js"></script>
-</head>
+
+
+
+
     <style>
         @media (min-width: 1024px) {
             body {
@@ -37,7 +40,9 @@
                 width: 16%;
                 margin-right: 1%;
                 margin-top: 30px;
+
                 right: 0;
+
             }
             .pop{
 
@@ -82,6 +87,9 @@
                 width:100%;
                 height:150px;
                 margin-bottom: 10px;
+                padding-top: 4%;
+                padding-right: 4%;
+                padding-left: 4%;
             }
             .box_related a{
                 color:#cb8e6a;
@@ -92,12 +100,22 @@
                 cursor: pointer;
             }
             .closeimg{
-                padding-left: 90%;
+                /*padding-left: 65%;*/
                 position: absolute;
             }
             .closeimg img{
                 width:30px;
             }
+            .erJ{
+                font-size: 14px!important;
+                padding-left: 20px!important;
+
+            }
+            .sanJ{
+                font-size: 14px!important;
+                padding-left: 35px!important;
+            }
+
 
         }
     </style>
@@ -168,12 +186,34 @@
             z-index: 999;
             display: none;
         }
+
+        #tubiao{
+            animation: myfirst 0.7s infinite;
+            /*box-shadow: -100px 100px 10px #fff; !*阴影*!*/
+            /*animation: shadow .5s linear infinite;*/
+        }
+        /*@keyframes shadow {*/
+            /*0%, 100% {transform: scaleX(1);}*/
+            /*50% {transform: scaleX(1.2);}*/
+        /*}*/
+
+        @keyframes myfirst {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(0px, -10px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
     </style>
 
 
 </head>
 
-<body>
+<body >
 
 <iframe id="headFrame" src="head.jsp" frameborder="0" scrolling="no">
 </iframe>
@@ -181,14 +221,20 @@
 </html>
 
 
+
+
+
+
+
+
     <div style="position: relative;width: 75%;float: left;">
         <div>
             <img src="img/onePic.jpeg" border="0" alt="OnePic" usemap="#onepicture" width="1056px;">
         </div>
         <div class="smalimage">
-            <img src="img/map.png" width="30px">
+            <img src="img/map.png" id="tubiao" width="30px" style="cursor: pointer" onclick="$('#details').show()">
             <div id="details" class="pop">
-                <div class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></div>
+                <a class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></a>
                 <li class="box_related">
                     <a>
                         <img id="imgOrg" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
@@ -202,7 +248,7 @@
             </div>
         </div>
         <div id="detailsOnly" class="popOnly">
-            <div class="closeimg"><img src="img/guanbi.png" onclick="closeimgOnly()"></div>
+            <a class="closeimg"><img src="img/guanbi.png" onclick="closeimgOnly()"></a>
             <li class="box_related">
                 <a>
                     <img id="imgOrgOnly" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
@@ -226,7 +272,42 @@
 
 
 <div id="right_nav">
-    <div class="panel-group" id="accordion" >
+    <div class="panel-group" id="accordion" ng-controller="LocCtrl">
+
+
+        <div class="panel panel-info" id="ddd">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                       href="#co1">
+                        {{jw.name}}
+                    </a>
+                </h4>
+            </div>
+            <div id="co1" class="panel-collapse collapse">
+                <div ng-repeat="www in jw.organData">
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title erJ">
+                                <a data-toggle="collapse" data-parent="#ddd"
+                                   href="#co{{www.organName}}">
+                                    {{www.organName}}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="co{{www.organName}}" class="panel-collapse collapse">
+                            <div class="panel-body sanJ" ng-repeat="ws in www.organs">
+                                <a id="{{ws.id}}" ng-click="showImage(ws.id);showDetails(ws.id)">{{ws.value}}</a><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
 
 
         <div class="panel panel-info" ng-repeat="x in Data" ng-cloak>
@@ -248,58 +329,10 @@
 
 
 
-        <%--<div class="panel panel-success">--%>
-            <%--<div class="panel-heading">--%>
-                <%--<h4 class="panel-title">--%>
-                    <%--<a data-toggle="collapse" data-parent="#accordion"--%>
-                       <%--href="#collapseThree">--%>
-                        <%--长者照护之家--%>
-                    <%--</a>--%>
-                <%--</h4>--%>
-            <%--</div>--%>
-            <%--<div id="collapseThree" class="panel-collapse collapse">--%>
-                <%--<div class="panel-body">--%>
-                    <%--Nihil anim keffiyeh helvetica, craft beer labore wes anderson--%>
-                    <%--cred nesciunt sapiente ea proident. Ad vegan excepteur butcher--%>
-                    <%--vice lomo.--%>
-                <%--</div>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-        <%--<div class="panel panel-warning">--%>
-            <%--<div class="panel-heading">--%>
-                <%--<h4 class="panel-title">--%>
-                    <%--<a data-toggle="collapse" data-parent="#accordion"--%>
-                       <%--href="#collapseFour">--%>
-                        <%--助餐点--%>
-                    <%--</a>--%>
-                <%--</h4>--%>
-            <%--</div>--%>
-            <%--<div id="collapseFour" class="panel-collapse collapse">--%>
-                <%--<div class="panel-body">--%>
-                    <%--Nihil anim keffiyeh helvetica, craft beer labore wes anderson--%>
-                    <%--cred nesciunt sapiente ea proident. Ad vegan excepteur butcher--%>
-                    <%--vice lomo.--%>
-                <%--</div>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-        <%--<div class="panel panel-default">--%>
-            <%--<div class="panel-heading">--%>
-                <%--<h4 class="panel-title">--%>
-                    <%--<a data-toggle="collapse" data-parent="#accordion"--%>
-                       <%--href="#collapseFive">--%>
-                        <%--邻里中心--%>
-                    <%--</a>--%>
-                <%--</h4>--%>
-            <%--</div>--%>
-            <%--<div id="collapseFive" class="panel-collapse collapse">--%>
-                <%--<div class="panel-body">--%>
-                    <%--<a>平南居</a><br>--%>
-                    <%--<a onclick="showImage('19.5%','31%')">东兰苑</a><br>--%>
-                    <%--<a onclick="showImage('60.3%','33.5%')">古龙汇</a>--%>
-                <%--</div>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-    <%--</div>--%>
+
+
+
+
 
 
 </div>

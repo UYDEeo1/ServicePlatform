@@ -107,13 +107,13 @@
 <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script>
     $.ajax({
-        url : "http://101.132.76.252:83/identify/checkToken?token="+getCookie("token"),
+        url : "http://47.101.138.13:83/identify/checkToken?token="+getCookie("token"),
         type : "get",
         success : function(data) {
             if(data.success==true){
                 $("#div_login").hide();
                 $("#div_login_2").show();
-                $("#div_login_2 button").html(getCookie("username"));
+                $("#usernam").html(getCookie("username"));
             }
         }
     });
@@ -125,6 +125,26 @@
             return unescape(arr[2]);
         else
             return null;
+    }
+    function logoutt() {
+        $.ajax({
+            url : "http://47.101.138.13:83/identify/logout?token="+getCookie("token"),
+            type : "get",
+            success : function(data) {
+//                window.location.reload();
+                delCookie("token");
+                top.location.href="page1.jsp";
+
+            }
+        });
+    }
+    function delCookie(name)
+    {
+        var exp = new Date();
+        exp.setTime(exp.getTime() - 1);
+        var cval=getCookie(name);
+        if(cval!=null)
+            document.cookie= name + "="+cval+";expires="+exp.toGMTString();
     }
 </script>
 <body>
@@ -139,8 +159,8 @@
             <a href="page6.jsp" target="_top"><button class="btn bbtn">个人中心</button></a>
         </div>
         <div id="div_login_2" class="col-md-offset-3" style="display: none">
-            <a href="page6.jsp" target="_top"><button class="btn bbtn"></button></a>
-            <%--<a href="page6.jsp" target="_top"><button class="btn bbtn">退出</button></a>--%>
+            <a href="page6.jsp" target="_top"><button class="btn bbtn" id="usernam"></button></a>
+            <a onclick="logoutt()"><button class="btn bbtn">退出</button></a>
         </div>
     </div>
 

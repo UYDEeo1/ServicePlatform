@@ -465,7 +465,12 @@
                 <div class="btnn"><a href="http://{{s.webUrl}}" target="_blank">线上网站</a></div>
                 <div class="btnn"><a ng-click="phone(s.phone)">线下电话</a></div>
                 <div class="btnn"><a href="shop_other.jsp?id={{s.organId}}" ng-cloak>其他商品</a></div>
-                <div class="btnn"><a ng-click="add_shopcar(s.id,s.organId,s.type)">加入购物车</a></div>
+                <div class="btnn">
+
+                    <a ng-click="add_shopcar(s.id,s.organId,s.type)" ng-if="panduan(s.button,'saveInCart')">加入购物车</a>
+                    <a ng-click="add_shopcar(s.id,s.organId,s.type)" ng-if="panduan(s.button,'book')">预定</a>
+
+                </div>
             </div>
             <div class="row detail" style="margin-top: 10px;">
                 <div class="col-md-4"><img src="{{s.imgUrl}}"></div>
@@ -481,33 +486,6 @@
                 </div>
             </div>
         </div>
-
-
-       <%--养老院--%>
-
-        <div ng-repeat="s in Shop" id="yanglaoyuan" style="display: none;">
-            <div class="row">
-                <div class="companyname">{{s.organName}}</div>
-                <div class="btnn"><a href="http://{{s.webUrl}}" target="_blank">线上网站</a></div>
-                <div class="btnn"><a ng-click="phone(s.phone)">线下电话</a></div>
-                <div class="btnn"><a href="shop_other.jsp?id={{s.organId}}" ng-cloak>其他商品</a></div>
-                <div class="btnn"><a ng-click="add_shopcar(s.id,s.organId,s.type)">预定</a></div>
-            </div>
-            <div class="row detail" style="margin-top: 10px;">
-                <div class="col-md-4"><img src="{{s.imgUrl}}"></div>
-                <div class="detail col-md-offset-4">
-                    <dl>
-                        <dt style="margin-bottom: 15px;!important;">商品名称：</dt>
-                        <dd style="margin-bottom: 15px;!important;">{{s.name}}</dd>
-                        <dt style="margin-bottom: 15px;!important;">商品介绍：</dt>
-                        <dd style="margin-bottom: 15px;!important;">{{s.intro}}</dd>
-                        <dt style="margin-bottom: 15px;!important;">服务价格：</dt>
-                        <dd style="margin-bottom: 15px;!important;">¥{{s.price}}</dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-
 
 
     </div>

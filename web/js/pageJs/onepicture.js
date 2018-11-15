@@ -6,7 +6,7 @@ var app = angular.module('myInfo', []);
 app.controller('PicCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/map/getTypes'
+        url: 'http://47.101.138.13:83/map/getTypes'
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -22,7 +22,7 @@ app.controller('PicCtrl', function($scope, $http) {
     //点击菜单，在地图中显示小图标
     $scope.showImage = function (id) {
         $.ajax({
-            url: "http://101.132.76.252:83/map/getDetails",
+            url: "http://47.101.138.13:83/map/getDetails",
             type: "get",
             data: {
                 organId: id
@@ -45,7 +45,7 @@ app.controller('PicCtrl', function($scope, $http) {
 
     $scope.showDetails = function (id) {
         $.ajax({
-            url: "http://101.132.76.252:83/map/getDetails",
+            url: "http://47.101.138.13:83/map/getDetails",
             type: "get",
             data: {
                 organId: id
@@ -66,10 +66,11 @@ app.controller('PicCtrl', function($scope, $http) {
                     document.getElementById("phoneNum").innerHTML=data.data.phone;
                     document.getElementById("add").innerHTML=data.data.address;
                     document.getElementById("serviceTime").innerHTML=data.data.serviceTime;
+                    document.getElementById("imgOrg").innerHTML=data.data.imgUrl;
 
                     $("#detailsOnly").hide();
                     $(".smalimage").show();
-                    $("#details").show();
+                    // $("#details").show();
 
                     // $("#details").css({ "top": data.data.mapTop, "left": data.data.mapLeft }).show();
 
@@ -86,7 +87,7 @@ app.controller('PicCtrl', function($scope, $http) {
 app.controller('MapCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/map/getLocation'
+        url: 'http://47.101.138.13:83/map/getLocation'
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -103,7 +104,7 @@ app.controller('MapCtrl', function($scope, $http) {
 
     $scope.showDetailsOnly = function (id) {
         $.ajax({
-            url: "http://101.132.76.252:83/map/getDetails",
+            url: "http://47.101.138.13:83/map/getDetails",
             type: "get",
             data: {
                 organId: id
@@ -124,6 +125,7 @@ app.controller('MapCtrl', function($scope, $http) {
                     document.getElementById("phoneNumOnly").innerHTML=data.data.phone;
                     document.getElementById("addOnly").innerHTML=data.data.address;
                     document.getElementById("serviceTimeOnly").innerHTML=data.data.serviceTime;
+                    document.getElementById("imgOrgOnly").innerHTML=data.data.imgUrl;
 
                     $(".smalimage").hide();
                     $("#detailsOnly").css("top",data.data.mapTop).css("left",data.data.mapLeft).show();
@@ -135,3 +137,20 @@ app.controller('MapCtrl', function($scope, $http) {
 
 });
 
+app.controller('LocCtrl', function($scope, $http) {
+        $http({
+            method: 'GET',
+            url: 'http://47.101.138.13:83/map/getJwTypes'
+        }).then(function successCallback(response) {
+
+            console.log(response);
+            // alert(JSON.stringify(response.data.data))
+            $scope.jw = response.data.data;
+
+
+        }, function errorCallback(response) {
+            // 请求失败执行代码
+        });
+
+
+    })

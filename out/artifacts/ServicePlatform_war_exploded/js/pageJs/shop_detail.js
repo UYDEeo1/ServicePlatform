@@ -18,7 +18,7 @@ IIId=GetQueryString("id");
 app.controller('NavCtrl', function($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://101.132.76.252:83/goods/getTypes'
+        url: 'http://47.101.138.13:83/goods/getTypes'
     }).then(function successCallback(response) {
 
         console.log(response);
@@ -70,7 +70,7 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
         $http({
             method: 'GET',
             // url: page + '.json',
-            url:'http://101.132.76.252:83/goods/getProductByPage?type='+Id+'&iDisplay='+page,
+            url:'http://47.101.138.13:83/goods/getProductByPage?type='+Id+'&iDisplay='+page,
             // params: {
             //     "iDisplay": page, // 页码
             //     // pageSize: $scope.pageSize, // 每页记录数
@@ -86,24 +86,15 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
                 $(".pagination").hide();
                 $("#content").hide();
                 $("#kong").show();
-            }else{
+            }else {
                 $("#kong").hide();
                 $(".pagination").show();
                 $("#content").show();
                 // 显示表格数据
                 $scope.Shop = response.data.aaData;
-            }
 
 
-            if(response.data.aaData.button=="saveInCart")
-            {
-                document.getElementById("shangpin").style.display="block";
-                document.getElementById("yanglaoyuan").style.display="none";
 
-            }
-            else {
-                document.getElementById("shangpin").style.display="none";
-                document.getElementById("yanglaoyuan").style.display="block";
             }
 
 
@@ -172,7 +163,7 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
 
     $scope.add_shopcar = function (id,organId,type) {
         $.ajax({
-            url: "http://101.132.76.252:83/cart/save",
+            url: "http://47.101.138.13:83/cart/save",
             type: "get",
             data: {
                 organId: organId,
@@ -198,7 +189,9 @@ app.controller('myController',["$scope", "$http",function($scope,$http) {
             }
         });
 
-
+    }
+    $scope.panduan= function (s1,s2) {
+        return angular.equals(s1,s2);
     }
 }]);
 
