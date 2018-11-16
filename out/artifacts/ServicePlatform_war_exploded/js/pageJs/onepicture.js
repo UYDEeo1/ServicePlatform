@@ -35,7 +35,7 @@ app.controller('PicCtrl', function($scope, $http) {
                 } else {
 
                     $(".smalimage").css("top",data.data.mapTop).css("left",data.data.mapLeft).show();
-
+                    $("#details").hide();
                 }
             }
         });
@@ -66,7 +66,7 @@ app.controller('PicCtrl', function($scope, $http) {
                     document.getElementById("phoneNum").innerHTML=data.data.phone;
                     document.getElementById("add").innerHTML=data.data.address;
                     document.getElementById("serviceTime").innerHTML=data.data.serviceTime;
-                    document.getElementById("imgOrg").innerHTML=data.data.imgUrl;
+                    document.getElementById("imgOrg").src=data.data.imgUrl;
 
                     $("#detailsOnly").hide();
                     $(".smalimage").show();
@@ -125,7 +125,7 @@ app.controller('MapCtrl', function($scope, $http) {
                     document.getElementById("phoneNumOnly").innerHTML=data.data.phone;
                     document.getElementById("addOnly").innerHTML=data.data.address;
                     document.getElementById("serviceTimeOnly").innerHTML=data.data.serviceTime;
-                    document.getElementById("imgOrgOnly").innerHTML=data.data.imgUrl;
+                    document.getElementById("imgOrgOnly").src=data.data.imgUrl;
 
                     $(".smalimage").hide();
                     $("#detailsOnly").css("top",data.data.mapTop).css("left",data.data.mapLeft).show();

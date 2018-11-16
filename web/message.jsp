@@ -124,9 +124,21 @@
             padding: 5px 0;
         }
 
+      .time{
+          color:#777272;
+          font-size: 14px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+        }
+        .cont{
+            font-size: 15px;
+            color: #954025;
+        }
+
     </style>
 </head>
-<body>
+<body ng-app="myInfo" >
 
 
 <div class="pannel">
@@ -142,14 +154,18 @@
 
 </p>
 
-<form>
+<div ng-controller="messageCtrl">
     <ul>
-        <li>消息1</li>
-        <li>消息2</li>
-        <li>消息3</li>
-    </ul>
-</form>
+        <li ng-repeat="x in Mess"><label class="time">{{x.time}}</label><label class="cont">{{x.content}}</label></li>
 
+    </ul>
+</div>
+
+
+
+
+<script src="js/angular.min.js"></script>
+<script src="js/pageJs/page6_3.js"></script>
 
 
 </body>

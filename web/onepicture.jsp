@@ -208,6 +208,10 @@
                 transform: translate(0px, 0px);
             }
         }
+
+        #imgOrg,#imgOrgOnly{
+            width: 100%;
+        }
     </style>
 
 
@@ -237,7 +241,7 @@
                 <a class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></a>
                 <li class="box_related">
                     <a>
-                        <img id="imgOrg" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
+                        <img id="imgOrg" onerror="this.src='https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg'">
                     </a>
                     <a id="Tit">
                         古美敬老院
@@ -251,7 +255,7 @@
             <a class="closeimg"><img src="img/guanbi.png" onclick="closeimgOnly()"></a>
             <li class="box_related">
                 <a>
-                    <img id="imgOrgOnly" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
+                    <img id="imgOrgOnly" onerror="this.src='https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg'">
                 </a>
                 <a id="TitOnly">
                     古美敬老院
