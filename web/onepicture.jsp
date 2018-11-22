@@ -36,7 +36,8 @@
                 /*width:100%;*/
             /*}*/
             #right_nav{
-                position: fixed;
+                /*position: fixed;*/
+                float: right;
                 width: 16%;
                 margin-right: 1%;
                 margin-top: 30px;
@@ -47,7 +48,7 @@
             .pop{
 
                  height:320px;
-                 width:70%;
+                 width:250px;
                  display: none;
                  /*position: fixed;*/
                  /*bottom: 0;*/
@@ -63,7 +64,7 @@
             .popOnly{
 
                 height:320px;
-                width:27%;
+                width:250px;
                 display: none;
                 /*position: fixed;*/
                 /*bottom: 0;*/
@@ -211,6 +212,11 @@
 
         #imgOrg,#imgOrgOnly{
             width: 100%;
+            max-width: 250px;
+        }
+        #onePic{
+            width: 1056px;
+            height: 1314px;
         }
     </style>
 
@@ -233,7 +239,7 @@
 
     <div style="position: relative;width: 75%;float: left;">
         <div>
-            <img src="img/onePic.jpeg" border="0" alt="OnePic" usemap="#onepicture" width="1056px;">
+            <img src="img/onePic.jpeg" border="0" alt="OnePic" id="onePic" usemap="#onepicture" width="1056px;">
         </div>
         <div class="smalimage">
             <img src="img/map.png" id="tubiao" width="30px" style="cursor: pointer" onclick="$('#details').show()">
