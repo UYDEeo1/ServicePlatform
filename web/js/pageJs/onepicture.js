@@ -53,6 +53,7 @@ app.controller('PicCtrl', function($scope, $http) {
                 } else {
                     $(".smalimage").css("top",data.data.mapTop+"px").css("left",data.data.mapLeft+"px").show();
                     $("#details").hide();
+                    location.href="#miao";
                 }
             }
         });

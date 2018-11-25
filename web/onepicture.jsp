@@ -243,6 +243,7 @@
         </div>
         <div class="smalimage">
             <img src="img/map.png" id="tubiao" width="30px" style="cursor: pointer" onclick="$('#details').show()">
+            <a name="miao" style="position: relative;bottom: 100px;color: transparent">1</a>
             <div id="details" class="pop">
                 <a class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></a>
                 <li class="box_related">
