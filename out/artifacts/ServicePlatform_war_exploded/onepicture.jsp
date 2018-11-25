@@ -36,11 +36,11 @@
                 /*width:100%;*/
             /*}*/
             #right_nav{
-                /*position: fixed;*/
-                float: right;
+                position: fixed;
+                /*float: right;*/
                 width: 16%;
                 margin-right: 1%;
-                margin-top: 30px;
+                margin-top: 5px;
 
                 right: 0;
 
