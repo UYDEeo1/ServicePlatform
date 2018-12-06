@@ -177,14 +177,39 @@
         .buttn{
             height: 40px;
             width:100px;
-            background-color: #F3BE9C;
+            background-color: #ff5000;
             border-radius: 8px;
             color:#fff;
         }
+        button:disabled{
+            background-color: #d3d3d3;
+        }
 
     </style>
+    <script>
+        setInterval(function(){
+            var obj = document.getElementsByName("id");
+            var check=0;
+            for(var k in obj){
+                if(obj[k].checked) {
+                    document.getElementById("button").disabled="";
+                    check = 1;
+                }
+
+            }
+            if(check == 0)
+            {
+                document.getElementById("button").disabled="disabled";
+            }
+            else {
+                document.getElementById("button").disabled="";
+            }
+        },200);
+
+    </script>
 </head>
 <body>
+
 
 <div class="pannel">
     <div class="title">
@@ -202,7 +227,7 @@
 
 
 
-<div>
+<div id="biaoge">
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
             <div class="col-sm-12">
@@ -225,13 +250,14 @@
                                 <table class="table table-striped dataTables-example text-nowrap text-nowrap">
                                     <thead>
                                     <tr style="border-bottom: 1px solid #eea77c;">
+                                        <th></th>
                                         <th>商品名称</th>
                                         <th>公司</th>
                                         <th>时间</th>
                                         <th></th>
                                     </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody style="width: 100%;">
 
                                     </tbody>
                                 </table>
@@ -283,7 +309,9 @@
 
     <%--</tbody>--%>
 <%--</table>--%>
-<div style="margin-left: 500px;margin-top: 20px;"><button class="buttn" onclick="submit_shop()">确认订购</button></div>
+<div style="margin-left: 500px;margin-top: 20px;"><button id="button" class="buttn" onclick="submit_shop()" disabled="disabled">确认订购</button></div>
+
+
 
 </body>
 </html>

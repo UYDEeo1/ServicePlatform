@@ -166,10 +166,11 @@
         }
         .btnn{
             border:1px solid #e9e9e9;
-            width:auto;
+            width: 90px;
             height:27px;
             float:left;
-            margin-left: 10px;
+            text-align: center;
+            margin-left: 15px;
             padding-left: 10px;
             padding-right: 10px;
             padding-top: 4px;
@@ -184,11 +185,11 @@
         }
         .companyname{
             float:left;
-            width:auto;
+            width: 260px;
             color:#ff6713;
             font-weight: 700;
-            padding-top: 4px;
             font-size:20px;
+            margin-right: 40px;
         }
         .detail img{
             width:270px;
@@ -199,6 +200,7 @@
         }
         .detail dd{
             padding-left: 40px;
+            width: 83%;
         }
 
         /***************************/
@@ -207,21 +209,22 @@
             margin: 0 auto;
         }
         .tbh-nav .nav {
-            height: 40px;
-            line-height: 40px;
+            height: 55px;
+            line-height: 55px;
             position: relative;
             color: #fff;
         }
         .tbh-nav .nav-hd {
             float: left;
             *display: inline;
-            font-size: 16px;
+            /*font-size: 17px;*/
             font-weight: 700;
 
         }
         .tbh-nav ul {
             position: relative;
             z-index: 5;
+            width: 75%;
         }
         ul{
             list-style: none;
@@ -244,10 +247,11 @@
         .tbh-nav .nav-bd li.hover a, .tbh-nav .nav-bd li:hover a, .tbh-nav .nav-hd li.hover a, .tbh-nav .nav-hd li:hover a {
             color: #FFF;
         }
-        tbh-nav .nav-bd a, .tbh-nav .nav-hd a {
+        .nav-bd a, .tbh-nav .nav-hd a {
             float: left;
             *display: inline;
             padding: 0 5px;
+            font-size: 16px!important;
             font-weight: 700;
             color: #fff;
         }
@@ -255,10 +259,10 @@
             float: left;
             width: 290px;
             text-align: center;
-            font-size: 16px;
+            font-size: 19px!important;
             background: #ff5000;
             margin:0;!important;
-            line-height:40px;
+            line-height:55px;
         }
         body a:hover {
             color: #F40;
@@ -293,8 +297,11 @@
 
 
         }
+        .organReg{
+            padding-left: 20%!important;
+        }
         .organReg a{
-            margin-left: 200px;
+            font-size: 15px!important;
             cursor: pointer;
             color:#731032!important;
         }
@@ -450,7 +457,7 @@
 </div>
 
 <div style="margin-left: 200px;margin-top:25px;">
-    <div class="d_tit" style="width:1000px;">
+    <div class="d_tit" style="width:90%;">
         <div class="d_p">服务机构</div>
     </div>
     <div id="kong" align="center" style="display: none;position: relative;right:12%;">
@@ -461,11 +468,11 @@
 
          <%--商品--%>
 
-        <div ng-repeat="s in Shop" id="shangpin">
-            <div class="row">
+        <div ng-repeat="s in Shop" id="shangpin" style="margin-bottom: 30px;">
+            <div class="row" style="margin-bottom: 30px;">
                 <div class="companyname" id="{{s.organId}}">{{s.organName}}</div>
-                <div class="btnn"><a href="http://{{s.webUrl}}" target="_blank">线上网站</a></div>
-                <div class="btnn"><a ng-click="phone(s.phone)">线下电话</a></div>
+                <div class="btnn"><a href="http://{{s.webUrl}}" target="_blank">网 &nbsp站</a></div>
+                <div class="btnn"><a ng-click="phone(s.phone)">联系电话</a></div>
                 <div class="btnn"><a href="shop_other.jsp?id={{s.organId}}" ng-cloak>其他商品</a></div>
                 <div class="btnn">
 

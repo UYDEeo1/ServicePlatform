@@ -37,9 +37,10 @@
             /*}*/
             #right_nav{
                 position: fixed;
+                /*float: right;*/
                 width: 16%;
-                margin-right: 1%;
-                margin-top: 30px;
+                /*margin-right: 1%;*/
+                margin-top: 5px;
 
                 right: 0;
 
@@ -47,7 +48,7 @@
             .pop{
 
                  height:320px;
-                 width:70%;
+                 width:250px;
                  display: none;
                  /*position: fixed;*/
                  /*bottom: 0;*/
@@ -63,7 +64,7 @@
             .popOnly{
 
                 height:320px;
-                width:27%;
+                width:250px;
                 display: none;
                 /*position: fixed;*/
                 /*bottom: 0;*/
@@ -145,6 +146,16 @@
                 margin: 0 auto;
                 overflow: hidden;
                 display: block;}
+            #right_nav{
+                position: fixed;
+                /*float: right;*/
+                width: 16%;
+                margin-right: 1%;
+                margin-top: 5px;
+
+                right: 0;
+
+            }
 
         }
         @media screen and (min-width: 1366px) and (max-width: 1599px){
@@ -156,6 +167,16 @@
                 margin: 0 auto;
                 overflow: hidden;
                 display: block;}
+            #right_nav{
+                position: fixed;
+                /*float: right;*/
+                width: 16%;
+                margin-right: 4%;
+                margin-top: 5px;
+
+                right: 0;
+
+            }
 
         }
         @media screen and (min-width: 1600px) and (max-width: 1919px){
@@ -167,6 +188,16 @@
                 margin: 0 auto;
                 overflow: hidden;
                 display: block;}
+            #right_nav{
+                position: fixed;
+                /*float: right;*/
+                width: 16%;
+                margin-right: 4%;
+                margin-top: 5px;
+
+                right: 0;
+
+            }
 
         }
         @media screen and (min-width: 1920px){
@@ -178,6 +209,16 @@
                 margin: 0 auto;
                 overflow: hidden;
                 display: block;}
+            #right_nav{
+                position: fixed;
+                /*float: right;*/
+                width: 16%;
+                margin-right: 5%;
+                margin-top: 5px;
+
+                right: 0;
+
+            }
 
 
         }
@@ -185,6 +226,37 @@
             position: absolute;
             z-index: 999;
             display: none;
+        }
+
+        #tubiao{
+            animation: myfirst 0.7s infinite;
+            /*box-shadow: -100px 100px 10px #fff; !*阴影*!*/
+            /*animation: shadow .5s linear infinite;*/
+        }
+        /*@keyframes shadow {*/
+            /*0%, 100% {transform: scaleX(1);}*/
+            /*50% {transform: scaleX(1.2);}*/
+        /*}*/
+
+        @keyframes myfirst {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(0px, -10px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        #imgOrg,#imgOrgOnly{
+            width: 100%;
+            max-width: 250px;
+        }
+        #onePic{
+            width: 1056px;
+            height: 1314px;
         }
     </style>
 
@@ -207,15 +279,16 @@
 
     <div style="position: relative;width: 75%;float: left;">
         <div>
-            <img src="img/onePic.jpeg" border="0" alt="OnePic" usemap="#onepicture" width="1056px;">
+            <img src="img/onePic.jpeg" border="0" alt="OnePic" id="onePic" usemap="#onepicture" width="1056px;" onclick="closeimg();closeimgOnly()">
         </div>
         <div class="smalimage">
-            <img src="img/map.png" width="30px">
+            <img src="img/map.png" id="tubiao" width="30px" style="cursor: pointer" onclick="$('#details').show()">
+            <a name="miao" style="position: relative;bottom: 100px;color: transparent">1</a>
             <div id="details" class="pop">
-                <a class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></a>
+                <%--<a class="closeimg"><img src="img/guanbi.png" onclick="closeimg()"></a>--%>
                 <li class="box_related">
                     <a>
-                        <img id="imgOrg" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
+                        <img id="imgOrg" onerror="this.src='https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg'">
                     </a>
                     <a id="Tit">
                         古美敬老院
@@ -226,10 +299,10 @@
             </div>
         </div>
         <div id="detailsOnly" class="popOnly">
-            <a class="closeimg"><img src="img/guanbi.png" onclick="closeimgOnly()"></a>
+            <%--<a class="closeimg"><img src="img/guanbi.png" onclick="closeimgOnly()"></a>--%>
             <li class="box_related">
                 <a>
-                    <img id="imgOrgOnly" src="https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg">
+                    <img id="imgOrgOnly" onerror="this.src='https://api.eshimin.com/image/live/commercial/icons/3101120060005_icon_20150812_155519_88.jpg'">
                 </a>
                 <a id="TitOnly">
                     古美敬老院
@@ -254,15 +327,16 @@
 
 
         <div class="panel panel-info" id="ddd">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-                       href="#co{{jw.name}}">
-                        {{jw.name}}
+            <div class="panel-heading" style="padding:0">
+
+                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion"
+                       href="#co1" style="text-decoration: none;padding: 10px 0px 10px 15px;cursor: pointer">
+                        <img src="{{jw.imgUrl}}" style="width:14%;">
+                        <label style="padding: 10px 0;width:180px;">{{jw.name}}</label>
                     </a>
-                </h4>
+
             </div>
-            <div id="co{{jw.name}}" class="panel-collapse collapse">
+            <div id="co1" class="panel-collapse collapse">
                 <div ng-repeat="www in jw.organData">
 
                     <div class="panel panel-info">
@@ -270,13 +344,15 @@
                             <h4 class="panel-title erJ">
                                 <a data-toggle="collapse" data-parent="#ddd"
                                    href="#co{{www.organName}}">
-                                    {{www.organName}}
+                                    <label style="width: 210px;padding-left: 15px;">{{www.organName}}</label>
                                 </a>
                             </h4>
                         </div>
                         <div id="co{{www.organName}}" class="panel-collapse collapse">
                             <div class="panel-body sanJ" ng-repeat="ws in www.organs">
-                                <a id="{{ws.id}}" ng-click="showImage(ws.id);showDetails(ws.id)">{{ws.value}}</a><br>
+                                <a id="{{ws.id}}" ng-click="showImage(ws.id);showDetails(ws.id)">
+                                    <label style="width:200px; text-align: center">{{ws.value}}</label>
+                                </a><br>
                             </div>
                         </div>
                     </div>
@@ -289,18 +365,22 @@
 
 
         <div class="panel panel-info" ng-repeat="x in Data" ng-cloak>
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"
-                       href="#co{{x.organName}}" id="{{x.id}}">
-                       {{x.organName}}
+            <div class="panel-heading" style="padding:0">
+                <%--<h4 class="panel-title">--%>
+                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion"
+                       href="#co{{x.organName}}" id="{{x.id}}" style="text-decoration: none;padding: 10px 0 10px 15px;cursor: pointer;">
+                        <%--<img src="https://organold.oss-cn-shanghai.aliyuncs.com/img/%E7%BB%BC%E5%90%88%E4%B8%BA%E8%80%81%E6%9C%8D%E5%8A%A1%E4%B8%AD%E5%BF%83.png?Expires=1543891753&OSSAccessKeyId=TMP.AQEHsnBobsK4qg6E1NZN2Y9xjmNbCFuhuhRp_jGT4YWWGmm724pT4fVqhPH8MC4CFQDHgbLRI0yvl8BHimzeepUrmKS0GAIVAOWTOP8Vu4IajOfkob4yP0S0Yhw0&Signature=wCgLKSRkXc%2FpCh2Ww5Wou9BY1PE%3D">--%>
+                        <img style="width:14%;" src="{{x.imgUrl}}">
+                        <label style="padding:10px 0;width:180px;">{{x.organName}}</label>
                     </a>
-                </h4>
+                <%--</h4>--%>
             </div>
             <div id="co{{x.organName}}" class="panel-collapse collapse">
                 <div class="panel-body" ng-repeat="s in x.organs">
                     <%--<a onclick="sImage('19.5%','31%')">ceshi</a><br>--%>
-                    <a id="{{s.id}}" ng-click="showImage(s.id);showDetails(s.id)">{{s.value}}</a><br>
+                    <a id="{{s.id}}" ng-click="showImage(s.id);showDetails(s.id)">
+                        <label style="width:200px;text-align: center;">{{s.value}}</label>
+                    </a><br>
                 </div>
             </div>
         </div>
@@ -334,7 +414,7 @@
 
     }
 
-    function closeimg() {
+    function    closeimg() {
         $("#details").hide();
     }
 function closeimgOnly() {
@@ -342,6 +422,29 @@ function closeimgOnly() {
 }
 </script>
 
+    <script>
+            var winWidth,winHeight;
+            // 获取窗口宽度
+            if (window.innerWidth)
+                winWidth = window.innerWidth;
+            else if ((document.body) && (document.body.clientWidth))
+                winWidth = document.body.clientWidth;
+            // 获取窗口高度
+            if (window.innerHeight)
+                winHeight = window.innerHeight;
+            else if ((document.body) && (document.body.clientHeight))
+                winHeight = document.body.clientHeight;
+            // 通过深入 Document 内部对 body 进行检测，获取窗口大小
+            if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
+            {
+                winHeight = document.documentElement.clientHeight;
+                winWidth = document.documentElement.clientWidth;
+            }
+//
+//            alert(winWidth);
+//            alert(winHeight);
+
+    </script>
 
 
 

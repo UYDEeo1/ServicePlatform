@@ -2,6 +2,27 @@
  * Created by jinsq on 2018/11/6.
  */
 
+var winWidth,winHeight;
+// 获取窗口宽度
+if (window.innerWidth)
+    winWidth = window.innerWidth;
+else if ((document.body) && (document.body.clientWidth))
+    winWidth = document.body.clientWidth;
+// 获取窗口高度
+if (window.innerHeight)
+    winHeight = window.innerHeight;
+else if ((document.body) && (document.body.clientHeight))
+    winHeight = document.body.clientHeight;
+// 通过深入 Document 内部对 body 进行检测，获取窗口大小
+if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
+{
+    winHeight = document.documentElement.clientHeight;
+    winWidth = document.documentElement.clientWidth;
+}
+
+
+
+
 var app = angular.module('myInfo', []);
 app.controller('PicCtrl', function($scope, $http) {
     $http({
@@ -33,9 +54,9 @@ app.controller('PicCtrl', function($scope, $http) {
                 if (data.success == false) {
                     // $("#m").html(data.error);
                 } else {
-
-                    $(".smalimage").css("top",data.data.mapTop).css("left",data.data.mapLeft).show();
-
+                    $(".smalimage").css("top",data.data.mapTop+"px").css("left",data.data.mapLeft+"px").show();
+                    $("#details").hide();
+                    location.href="#miao";
                 }
             }
         });
@@ -66,10 +87,11 @@ app.controller('PicCtrl', function($scope, $http) {
                     document.getElementById("phoneNum").innerHTML=data.data.phone;
                     document.getElementById("add").innerHTML=data.data.address;
                     document.getElementById("serviceTime").innerHTML=data.data.serviceTime;
+                    document.getElementById("imgOrg").src=data.data.imgUrl;
 
                     $("#detailsOnly").hide();
                     $(".smalimage").show();
-                    $("#details").show();
+                    // $("#details").show();
 
                     // $("#details").css({ "top": data.data.mapTop, "left": data.data.mapLeft }).show();
 
@@ -124,9 +146,10 @@ app.controller('MapCtrl', function($scope, $http) {
                     document.getElementById("phoneNumOnly").innerHTML=data.data.phone;
                     document.getElementById("addOnly").innerHTML=data.data.address;
                     document.getElementById("serviceTimeOnly").innerHTML=data.data.serviceTime;
+                    document.getElementById("imgOrgOnly").src=data.data.imgUrl;
 
                     $(".smalimage").hide();
-                    $("#detailsOnly").css("top",data.data.mapTop).css("left",data.data.mapLeft).show();
+                    $("#detailsOnly").css("top",parseInt(data.data.mapTop)+40+"px").css("left",parseInt(data.data.mapLeft)+40+"px").show();
 
                 }
             }

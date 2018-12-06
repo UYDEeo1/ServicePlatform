@@ -24,33 +24,44 @@ function regsub() {
         })
     }
     else {
-        var obj = document.getElementsByName("auth");
-        var check_val = [];
-        for(var k in obj){
-            if(obj[k].checked)
-                check_val.push(obj[k].value);
-        };
+        // var obj = document.getElementsByName("auth");
+        // var check_val = [];
+        // for(var k in obj){
+        //     if(obj[k].checked)
+        //         check_val.push(obj[k].value);
+        // };
+
+
+        // var oFiles = document.getElementsByName("pic").files;
+        // var params = new FormData();
+        // params.append('file',oFiles[0]);
+
+        var formData = new FormData($("#uploadForm")[0]);
+
         $.ajax({
             url: "http://47.101.138.13:83/organ/reg",
             type: "post",
-            data: {
-                personPhone: $("input[name='personPhone']").val(),
-                name: $("input[name='name']").val(),
-                email: $("input[name='email']").val(),
-                organTypeId: $("#organTypeId option:checked").val(),
-                intro: $("input[name='intro']").val(),
-                work: $("input[name='work']").val(),
-                serviceTime: $("input[name='serviceTime']").val(),
-                address: $("input[name='address']").val(),
-                phone: $("input[name='phone']").val(),
-                webUrl: $("input[name='webUrl']").val(),
-                // pic: $("input[name='pic']").val(),
-                num: $("input[name='num']").val(),
-                districtId: $("#districtId option:checked").val(),
-                auth:check_val
-
-            },
+            // data: {
+            //     personPhone: $("input[name='personPhone']").val(),
+            //     name: $("input[name='name']").val(),
+            //     email: $("input[name='email']").val(),
+            //     organTypeId: $("#organTypeId option:checked").val(),
+            //     intro: $("input[name='intro']").val(),
+            //     work: $("input[name='work']").val(),
+            //     serviceTime: $("input[name='serviceTime']").val(),
+            //     address: $("input[name='address']").val(),
+            //     phone: $("input[name='phone']").val(),
+            //     webUrl: $("input[name='webUrl']").val(),
+            //     pic: params,
+            //     num: $("input[name='num']").val(),
+            //     districtId: $("#districtId option:checked").val()
+            //
+            // },
+            data:formData,
             async:false,
+            cache:false,
+            contentType:false,
+            processData:false,
             success: function (data) {
 
                 if (data.success == false) {

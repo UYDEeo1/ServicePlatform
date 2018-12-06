@@ -168,7 +168,7 @@
                     <p  style="background-color:white;text-align: center;padding-top: 5px;font-size: 2em;font-weight: bold">机构注册</p>
                 </div>
                 <div class="ibox-content">
-                    <div method="post" action="/organ/reg" class="form-horizontal"  enctype="multipart/form-data">
+                    <form id="uploadForm" method="post" action="/organ/reg" class="form-horizontal"  enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">申请人信息</label>
                         </div>
@@ -285,39 +285,42 @@
         </select>
     </div>
 </div>
-<div class="form-group">
-    <label class="col-sm-2 control-label">权限升级</label>
-    <div class="col-sm-1">
-        <div class="checkbox i-checks">
-            <label>
-                <input type="checkbox" value="consume"  name="auth"> <i></i> 消费</label>
-        </div>
-    </div>
-    <div class="col-sm-1">
-        <div class="checkbox i-checks">
-            <label>
-                <input type="checkbox" value="sign"  name="auth" > <i></i> 签到</label>
-        </div>
-    </div>
-    <div class="col-sm-1">
-        <div class="checkbox i-checks">
-            <label>
-                <input type="checkbox" value="product"  name="auth"> <i></i> 商品</label>
-        </div>
-    </div>
-    <div class="col-sm-1">
-        <div class="checkbox i-checks">
-            <label>
-                <input type="checkbox" value="info"  name="auth"> <i></i> 老人信息查询</label>
-        </div>
-    </div>
-    <div class="col-sm-1">
-        <div class="checkbox i-checks">
-            <label>
-                <input type="checkbox" value="integral"  name="auth"> <i></i> 积分查询</label>
-        </div>
-    </div>
-</div>
+<%--<div class="form-group">--%>
+    <%--<label class="col-sm-2 control-label">权限升级</label>--%>
+    <%--<div class="col-sm-1">--%>
+        <%--<div class="checkbox i-checks">--%>
+            <%--<label>--%>
+                <%--<input type="checkbox" value="consume"  name="auth"> <i></i> 消费</label>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="col-sm-1">--%>
+        <%--<div class="checkbox i-checks">--%>
+            <%--<label>--%>
+                <%--<input type="checkbox" value="sign"  name="auth" > <i></i> 签到</label>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="col-sm-1">--%>
+        <%--<div class="checkbox i-checks">--%>
+            <%--<label>--%>
+                <%--<input type="checkbox" value="product"  name="auth"> <i></i> 商品</label>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="col-sm-1">--%>
+        <%--<div class="checkbox i-checks">--%>
+            <%--<label>--%>
+                <%--<input type="checkbox" value="info"  name="auth"> <i></i> 老人信息查询</label>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="col-sm-1">--%>
+        <%--<div class="checkbox i-checks">--%>
+            <%--<label>--%>
+                <%--<input type="checkbox" value="integral"  name="auth"> <i></i> 积分查询</label>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+<%--</div>--%>
+
+
+
 <%--<#--<div class="hr-line-dashed"></div>-->--%>
 <%--<#--<div class="form-group">-->--%>
 <%--<#--<label class="col-sm-2 control-label">签到次数/天<br>(无限制填‘0’)</label>-->--%>
@@ -331,7 +334,7 @@
         <button class="btn btn-primary" type="submit" onclick="regsub()">提交</button>
     </div>
 </div>
-                    </div>
+                    </form>
 
 
 </div>

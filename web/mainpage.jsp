@@ -10,6 +10,10 @@
 <head>
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <script src="js/sweetalert.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/sweetalert.css">
+
     <%--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">--%>
     <style>
         @media screen and (max-width: 1365px){
@@ -248,11 +252,11 @@
 
             #line1_2{
                 /*margin-left: 500px;*/
-                margin-left: 42%;
+                margin-left: 43%;
             }
             #line2{
                 /*padding-top: 85px;*/
-                padding-top: 8%;
+                padding-top: 10%;
             }
             #line2_1{
                 /*margin-left:60px;*/
@@ -260,11 +264,11 @@
             }
             #line2_2,#line2_3{
                 /*margin-left:130px;*/
-                margin-left: 10%;
+                margin-left: 10.8%;
             }
             #line2_4{
                 /*padding-left: 130px;*/
-                padding-left: 13%;
+                padding-left: 12%;
                 width:22%;
             }
 
@@ -372,8 +376,10 @@
             <div><a href="onepicture.jsp" target="_top"><img src="img/mainpage/01.png"></a></div>
         </div>
         <div id="line1_2" class="col-md-2 linknum">
-            <div><a href="listpage_new.jsp" target="_top">一份清单</a></div>
-            <div><a href="listpage_new.jsp" target="_top"><img src="img/mainpage/02.png"></a></div>
+            <%--<div><a href="listpage_new.jsp" target="_top">一份清单</a></div>--%>
+            <%--<div><a href="listpage_new.jsp" target="_top"><img src="img/mainpage/02.png"></a></div>--%>
+                <div><a onclick="aa()">一份清单</a></div>
+                <div><a onclick="aa()"><img src="img/mainpage/02.png"></a></div>
         </div>
     </div>
     <div class="row" id="line2">
@@ -395,6 +401,16 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    function aa() {
+        swal({
+            text:"正在建设中"
+        })
+    }
+
+</script>
 </body>
 
 </html>

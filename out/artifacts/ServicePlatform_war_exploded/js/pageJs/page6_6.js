@@ -25,7 +25,7 @@ function xinxiang() {
                     swal({
                         text:"提交成功！",
                         icon:"success"
-                    })
+                    });
 
                 }
             }
@@ -42,3 +42,4 @@ function getCookie(name)
     else
         return null;
 }
+

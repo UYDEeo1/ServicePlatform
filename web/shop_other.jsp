@@ -40,7 +40,7 @@
             /*border:1px solid #E2E2E2;*/
             /*background-color: #ffdcbd29;*/
             border:1px solid #e9e9e9;
-
+            box-shadow:0 0 2px 2px #f0f0f0;
             margin-top:20px;
             margin-left: 10px;
             padding-left: 2px;
@@ -195,12 +195,14 @@
     </div>
 
     <div class="container row" style="margin-left:10px;">
-        <div ng-repeat="s in ShopD" class="shop_div col-md-3" id="{{s.type}}" ng-click="gotoShop(s.type)" style="padding-right:10px;!important;">
+        <div ng-repeat="s in ShopD" class="shop_div col-md-3" id="{{s.type}}" ng-click="gotoShop(s.type)" style="padding-right:10px!important;height:420px;">
             <div><img src="{{s.imgUrl}}"></div>
-            <p>{{s.name}}</p>
-            <label>{{s.intro}}</label>
+            <p style="font-weight: 600;font-size: 17px;">{{s.name}}</p>
+            <label style="min-height:75px;">商品详情：<br>
+                <label style="padding-top: 3px;line-height: 20px;">{{s.intro}}</label>
+            </label>
             <div class="hr-line-dashed"></div>
-            <span>¥{{s.price}}</span>
+            <span style="color:red;font-size: 16px;">¥{{s.price}}</span>
             <%--<div style="padding-left:150px;"><a href="shop_list_1.jsp">查看详情</a></div>--%>
         </div>
 

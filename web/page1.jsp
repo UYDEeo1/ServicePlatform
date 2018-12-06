@@ -44,7 +44,7 @@
         }
 
         @media screen and (max-width: 1365px){
-            body{font-size: 12px}
+            body{font-size: 12px;}
             #headFrame {
                 height: 78px;
                 min-width: 1268px;
@@ -54,10 +54,12 @@
                 display: block;}
             #indexIframe{
                 height:800px;
-            }
+                /*width:1300px;*/
+            };
+
         }
         @media screen and (min-width: 1366px) and (max-width: 1599px){
-            body{font-size: 14px}
+            body{font-size: 14px;}
             #headFrame {
                 height: 78px;
                 min-width: 1268px;
@@ -67,19 +69,21 @@
                 display: block;}
             #indexIframe{
                 height:800px;
+                /*width:1400px;*/
             }
         }
         @media screen and (min-width: 1600px) and (max-width: 1919px){
-            body{font-size: 16px}
+            body{font-size: 16px;}
             #headFrame {
-                height: 78px;
+                height: 85px;
                 min-width: 1268px;
                 width: 100%;
                 margin: 0 auto;
                 overflow: hidden;
                 display: block;}
             #indexIframe{
-                height:800px;
+                height:900px;
+                /*width:1700px;*/
             }
         }
         @media screen and (min-width: 1920px){
@@ -131,36 +135,38 @@
 <div id="xinchun-image"></div>
 
 
-<div>
-
-    <iframe id="indexIframe" src="mainpage.jsp" frameborder="0" scrolling="no" style="width:100%;">
+<%--<div>--%>
+<center>
+    <iframe id="indexIframe" src="mainpage.jsp" frameborder="0" scrolling="no" style="min-width:1400px;width:100%;">
     </iframe>
-</div>
+</center>
+<%--</div>--%>
 
 
 
 
 <script>
-//    var winWidth,winHeight;
-//    // 获取窗口宽度
-//    if (window.innerWidth)
-//        winWidth = window.innerWidth;
-//    else if ((document.body) && (document.body.clientWidth))
-//        winWidth = document.body.clientWidth;
-//    // 获取窗口高度
-//    if (window.innerHeight)
-//        winHeight = window.innerHeight;
-//    else if ((document.body) && (document.body.clientHeight))
-//        winHeight = document.body.clientHeight;
-//    // 通过深入 Document 内部对 body 进行检测，获取窗口大小
-//    if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
-//    {
-//        winHeight = document.documentElement.clientHeight;
-//        winWidth = document.documentElement.clientWidth;
-//    }
-//
+    var winWidth,winHeight;
+    // 获取窗口宽度
+    if (window.innerWidth)
+        winWidth = window.innerWidth;
+    else if ((document.body) && (document.body.clientWidth))
+        winWidth = document.body.clientWidth;
+    // 获取窗口高度
+    if (window.innerHeight)
+        winHeight = window.innerHeight;
+    else if ((document.body) && (document.body.clientHeight))
+        winHeight = document.body.clientHeight;
+    // 通过深入 Document 内部对 body 进行检测，获取窗口大小
+    if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
+    {
+        winHeight = document.documentElement.clientHeight;
+        winWidth = document.documentElement.clientWidth;
+    }
+
 //    alert(winWidth);
-//    alert(winHeight);
+//    document.getElementById("indexIframe").style.width=winWidth+"px";
+
 
 </script>
 

@@ -1,6 +1,8 @@
 /**
  * Created by jinsq on 2018/11/5.
  */
+
+
 $(document).ready(function(){
 
 
@@ -14,7 +16,7 @@ $(document).ready(function(){
             "bStateSave": true,
             "bProcessing": true, //加载数据时显示正在加载信息
             "bServerSide": true, //指定从服务器端获取数据
-            "columns":[{
+            "columns":[{},{
                 data:"name"
             },{
                 data:"organName"
@@ -24,10 +26,17 @@ $(document).ready(function(){
             ],
             "columnDefs": [
                 // 列样式
+                {
+                    "targets": [0], // 目标列位置，下标从0开始
+                    "data": "id", // 数据列名
+                    "render": function(data, type, full) { // 返回自定义内容
+                        return"<input type='checkbox' name='id' value='"+data+"'/>";
+                    }
+                },
 
                 // 增加一列删除和修改，同时将我们需要传递的数据传递到链接中
                 {
-                    "targets": [3], // 目标列位置，下标从0开始
+                    "targets": [4], // 目标列位置，下标从0开始
                     "data": "id", // 数据列名
                     "render": function(data, type, full) { // 返回自定义内容
                         return "<button id='"+data+"' onclick='delete_shop("+data+")'>删除</button>";
@@ -58,6 +67,7 @@ $(document).ready(function(){
             },
             error:function(XMLHttpRequest, textStatus, errorThrown) {
                 // alert("status:"+XMLHttpRequest.status+",readyState:"+XMLHttpRequest.readyState+",textStatus:"+textStatus);
+
             }
         });
     }
@@ -106,7 +116,8 @@ function delete_shop(Id) {
                 swal({
                     text:"删除成功！",
                     icon:"success"
-                })
+                });
+                tableUpdate();
 
             }
         }
@@ -116,11 +127,23 @@ function delete_shop(Id) {
 
 
 function submit_shop() {
+
+
+
+    var obj = document.getElementsByName("id");
+    var check_val = [];
+    for(var k in obj){
+        if(obj[k].checked)
+            check_val.push(obj[k].value);
+
+
+    };
     $.ajax({
         url: "http://47.101.138.13:83/cart/saveInBook",
         type: "get",
         data: {
-            token:getCookie("token")
+            token:getCookie("token"),
+            bookIds_array:check_val
         },
         async:false,
         success: function (data) {
@@ -135,7 +158,8 @@ function submit_shop() {
                 swal({
                     text:"提交成功！",
                     icon:"success"
-                })
+                });
+                tableUpdate();
 
             }
         }
@@ -143,3 +167,15 @@ function submit_shop() {
 
 }
 
+
+
+function tableUpdate() {
+    var start = $(".dataTables-example").dataTable().fnSettings()._iDisplayStart;
+    var total = $(".dataTables-example").dataTable().fnSettings().fnRecordsDisplay();
+    window.location.reload();
+    if(total-start==1){
+        if(start>0){
+            $(".dataTables-example").dataTable().fnPageChange('previous',true);
+        }
+    }
+}

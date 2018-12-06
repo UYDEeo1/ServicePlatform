@@ -74,7 +74,8 @@ function psdd() {
                     swal({
                         text:"密码修改成功！",
                         icon:"success"
-                    })
+                    });
+
 
                 }
             }
