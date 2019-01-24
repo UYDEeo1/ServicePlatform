@@ -9,12 +9,12 @@ line-height: 35px;
     height: 20px;
     vertical-align: middle;
     float: left;
-    margin-left: 12px; 
+    margin-left: 12px;
     display: inline;
     margin-top: 9px;
 }
 /* 解决angularjs中init初始化延时 */
-.ng-cloak{display:none;} 
+.ng-cloak{display:none;}
 
 .container{
 	width: 100% !important;
@@ -67,7 +67,7 @@ font-size:16px;
 }
 .body_main {
    height: auto;
-   margin-left: 15%;
+   margin-left: 10%!important;
    overflow: hidden;
 }
 .body_left {
@@ -77,7 +77,7 @@ font-size:16px;
    height:600px;
 }
 .left_body{
-	
+
 }
 .title{
    color:#bfbfbf;
@@ -91,20 +91,20 @@ font-size:16px;
 }
 .body_right {
    float: left;
-   height: 654px;
+   height: 900px;
    overflow: hidden;
    width:650px;
    background-color:white;
 }
 .content{
-width:100%;
-margin: 0;
-text-align: left;
-         text-indent: 15px;
+    width:100%;
+    margin: 0;
+    text-align: left;
+    text-indent: 15px;
 }
 .list{
-padding: 5px;
-cursor:pointer; 
-color:#5c5c5c; 
+    padding: 5px;
+    cursor:pointer;
+    color:#5c5c5c;
 }
 /* .list:hover{ color:rgb(252,82,20); } */

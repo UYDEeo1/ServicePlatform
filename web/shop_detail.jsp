@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>商品详情</title>
+    <title>网上商城</title>
     <link type="text/css" rel="stylesheet"  href="css/common.css" />
     <link type="text/css" rel="stylesheet"  href="css/account.css" />
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
@@ -429,7 +429,7 @@
     </div>
 </div>
 <div id="shop_nav">
-<div ng-repeat="x in Data" id="{{x.id}}" class="hidden_div"  style="display: none;"ng-mouseover="overdiv(x.id)" ng-mouseout="outdiv(x.id)">
+<div ng-repeat="x in Data" id="c{{x.id}}" class="hidden_div"  style="display: none;"ng-mouseover="overdiv(x.id)" ng-mouseout="outdiv(x.id)">
     <div class="cate_detail">
 
         <dl class="cate_detail_item dl-horizontal" ng-repeat="m in x.productTypeModels">

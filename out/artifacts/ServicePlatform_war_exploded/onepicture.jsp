@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>一张图</title>
+    <title>为老服务地图</title>
     <%--<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>--%>
     <%--<script src="js/jquery-1.9.1.min.js"></script>--%>
     <%--<script src="js/bootstrap.min.js"></script>--%>
@@ -20,8 +20,9 @@
 
 
 
+
     <style>
-        @media (min-width: 1024px) {
+        @media (min-width: 100px) {
             body {
                 font-size: 18px;
                 margin: 0;
@@ -39,12 +40,17 @@
                 position: fixed;
                 /*float: right;*/
                 width: 16%;
+                margin-left: 1060px;
                 /*margin-right: 1%;*/
                 margin-top: 5px;
-
-                right: 0;
-
+                /*right: 0;*/
             }
+            .fixnav {
+                position: fixed!important;
+                top: 0px;
+                /*left: 0px;*/
+            }
+
             .pop{
 
                  height:320px;
@@ -88,9 +94,9 @@
                 width:100%;
                 height:150px;
                 margin-bottom: 10px;
-                padding-top: 4%;
-                padding-right: 4%;
-                padding-left: 4%;
+                /*padding-top: 4%;*/
+                /*padding-right: 4%;*/
+                /*padding-left: 4%;*/
             }
             .box_related a{
                 color:#cb8e6a;
@@ -120,6 +126,41 @@
 
         }
     </style>
+    <style>
+        #hor_nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            /*position: relative;*/
+            /*top: 0;*/
+            width: 100%;
+            /*z-index: 99;*/
+        }
+
+        #hor_nav li {
+            float: left;
+            width: 120px;
+        }
+
+        #hor_nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #hor_nav li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        #hor_nav .active {
+            background-color: #4CAF50;
+        }
+
+    </style>
 </head>
 <body ng-app="myInfo" ng-controller="PicCtrl">
 
@@ -136,8 +177,27 @@
             margin: 0px;
             padding: 0px;
         }
+        @media screen and (max-width: 1319px){
+            body{font-size: 12px}
+            #headFrame {
+                height: 78px;
+                min-width: 1268px;
+                width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: block;}
+            #right_nav{
+                display: none!important;
+            }
+            #hor_nav{
+                display: block!important;
+                z-index:99;
+                width:100%;
+            }
 
-        @media screen and (max-width: 1365px){
+        }
+
+        @media screen and (min-width: 1320px) and (max-width: 1365px){
             body{font-size: 12px}
             #headFrame {
                 height: 78px;
@@ -148,13 +208,26 @@
                 display: block;}
             #right_nav{
                 position: fixed;
+
                 /*float: right;*/
-                width: 16%;
-                margin-right: 1%;
+                width: 14%;
+                min-width:260px;
+                /*margin-right: 4%;*/
                 margin-top: 5px;
 
                 right: 0;
 
+            }
+            #hor_nav{
+                display: none!important;
+            }
+            .panel-title{
+                line-height: 12px;
+                font-size: 13px;
+            }
+            .panel-heading{
+                line-height: 12px;
+                font-size: 13px;
             }
 
         }
@@ -170,12 +243,24 @@
             #right_nav{
                 position: fixed;
                 /*float: right;*/
+                font-size: 14px;
                 width: 16%;
-                margin-right: 4%;
+                min-width:260px;
+                /*margin-right: 4%;*/
                 margin-top: 5px;
 
-                right: 0;
-
+                margin-left: 1160px;
+            }
+            #hor_nav{
+                display: none!important;
+            }
+            .panel-title{
+                line-height: 13px;
+                font-size: 14px;
+            }
+            .panel-heading{
+                line-height: 13px;
+                font-size: 14px;
             }
 
         }
@@ -192,11 +277,16 @@
                 position: fixed;
                 /*float: right;*/
                 width: 16%;
-                margin-right: 4%;
+                font-size: 14px;
+                min-width:260px;
+                /*margin-right: 4%;*/
                 margin-top: 5px;
+                margin-left: 1160px;
+                /*right: 0;*/
 
-                right: 0;
-
+            }
+            #hor_nav{
+                display: none!important;
             }
 
         }
@@ -212,19 +302,24 @@
             #right_nav{
                 position: fixed;
                 /*float: right;*/
+                min-width:260px;
+                font-size: 14px;
                 width: 16%;
-                margin-right: 5%;
+                /*margin-right: 5%;*/
                 margin-top: 5px;
+                margin-left: 1160px;
+                /*right: 0;*/
 
-                right: 0;
-
+            }
+            #hor_nav{
+                display: none!important;
             }
 
 
         }
         .smalimage{
             position: absolute;
-            z-index: 999;
+            z-index: 98;
             display: none;
         }
 
@@ -269,6 +364,57 @@
 </iframe>
 </body>
 </html>
+
+<div id="hor_nav" style="display: none;min-width: 1260px;">
+    <div>
+    <ul>
+        <li ng-controller="LocCtrl" style="width:180px;"><a ng-mouseover="overdiv('jwww')" ng-mouseout="outdiv('jwww')">
+            <img src="{{jw.imgUrl}}" style="width:14%;">
+            <label >{{jw.name}}</label>
+        </a></li>
+
+        <li ng-repeat="h_x in Data"><a ng-mouseover="overdiv(h_x.id)" ng-mouseout="outdiv(h_x.id)">
+            <img src="{{h_x.imgUrl}}" style="width:14%;">
+            <label >{{h_x.organName}}</label>
+        </a></li>
+
+
+    </ul>
+
+
+   <div id="hor_nav2">
+    <ul ng-repeat="h_x in Data" id="h{{h_x.id}}" ng-mouseover="overdiv(h_x.id)" ng-mouseout="outdiv(h_x.id)" style="display: none;padding-left: 40px;text-align: center;font-weight: 700;">
+
+            <li style="width: 180px!important;" ng-repeat="h_s in h_x.organs"><a ng-click="showImage(h_s.id);showDetails(h_s.id)">{{h_s.value}}</a></li>
+
+
+    </ul>
+        <ul ng-controller="LocCtrl" id="hjwww" ng-mouseover="overdiv('jwww')" ng-mouseout="outdiv('jwww')" style="display: none;">
+
+            <div style="padding-left: 40px;">
+
+                <li style="width: 180px!important;" ng-repeat="qq in jw.organData">
+
+                       <label> {{qq.organName}}</label>
+
+                    <label >
+                        <a ng-repeat="bb in qq.organs" ng-click="showImage(bb.id);showDetails(bb.id)">{{bb.value}} </a>
+
+                    </label>
+                </li>
+
+
+            </div>
+
+
+        </ul>
+   </div>
+
+    </div>
+
+
+
+</div>
 
 
 
@@ -344,14 +490,14 @@
                             <h4 class="panel-title erJ">
                                 <a data-toggle="collapse" data-parent="#ddd"
                                    href="#co{{www.organName}}">
-                                    <label style="width: 210px;padding-left: 15px;">{{www.organName}}</label>
+                                    <label style="width: 300px;padding-left: 34px;">{{www.organName}}</label>
                                 </a>
                             </h4>
                         </div>
                         <div id="co{{www.organName}}" class="panel-collapse collapse">
                             <div class="panel-body sanJ" ng-repeat="ws in www.organs">
                                 <a id="{{ws.id}}" ng-click="showImage(ws.id);showDetails(ws.id)">
-                                    <label style="width:200px; text-align: center">{{ws.value}}</label>
+                                    <label style="width:300px;padding-left: 47px;">{{ws.value}}</label>
                                 </a><br>
                             </div>
                         </div>
@@ -379,7 +525,7 @@
                 <div class="panel-body" ng-repeat="s in x.organs">
                     <%--<a onclick="sImage('19.5%','31%')">ceshi</a><br>--%>
                     <a id="{{s.id}}" ng-click="showImage(s.id);showDetails(s.id)">
-                        <label style="width:200px;text-align: center;">{{s.value}}</label>
+                        <label style="width:300px;padding-left: 56px;">{{s.value}}</label>
                     </a><br>
                 </div>
             </div>
@@ -395,6 +541,23 @@
 
 </div>
 
+    <script type="text/javascript">
+        $(function() {
+//            $(".nav2").hide();
+            $(window).scroll(function() {
+                if($(document).scrollTop() >= 120) {
+                    $("#right_nav").addClass("fixnav").slideDown();
+                    $("#hor_nav").addClass("fixnav");
+//                    $("#right_nav").style.top = '0';
+                } else {
+                    $("#right_nav").removeClass("fixnav").slideDown();
+                    $("#hor_nav").removeClass("fixnav");
+
+                }
+            })
+        })
+
+    </script>
 
 
 <script type="text/javascript">
@@ -440,9 +603,41 @@ function closeimgOnly() {
                 winHeight = document.documentElement.clientHeight;
                 winWidth = document.documentElement.clientWidth;
             }
+
+            if(winWidth<1320)
+            {
+                $(function() {
+//            $(".nav2").hide();
+                    $(window).scroll(function() {
+                        if($(document).scrollTop() >= 78) {
+//                            $("#right_nav").addClass("fixnav").slideDown();
+                            $("#hor_nav").addClass("fixnav").slideDown();
+//                    $("#right_nav").style.top = '0';
+                        } else {
+//                            $("#right_nav").removeClass("fixnav").slideDown();
+                            $("#hor_nav").removeClass("fixnav").slideDown();
+
+                        }
+                    })
+                })
+            }
+            else{
+                $(function() {
+//            $(".nav2").hide();
+                    $(window).scroll(function() {
+                        if($(document).scrollTop() >= 120) {
+                            $("#right_nav").addClass("fixnav").slideDown();
 //
-//            alert(winWidth);
-//            alert(winHeight);
+                        } else {
+                            $("#right_nav").removeClass("fixnav").slideDown();
+//
+
+                        }
+                    })
+                })
+
+            }
+
 
     </script>
 

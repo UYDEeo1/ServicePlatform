@@ -39,6 +39,15 @@ app.controller('PicCtrl', function($scope, $http) {
         // 请求失败执行代码
     });
 
+    $scope.overdiv = function (xid) {
+        $("#hor_nav2").show();
+        document.getElementById("h"+xid).style.display="block";
+    }
+    $scope.outdiv = function (xid) {
+        document.getElementById("h"+xid).style.display="none";
+    }
+
+
 
     //点击菜单，在地图中显示小图标
     $scope.showImage = function (id) {
@@ -56,6 +65,7 @@ app.controller('PicCtrl', function($scope, $http) {
                 } else {
                     $(".smalimage").css("top",data.data.mapTop+"px").css("left",data.data.mapLeft+"px").show();
                     $("#details").hide();
+                    $("#hor_nav2").hide();
                     location.href="#miao";
                 }
             }
@@ -172,6 +182,15 @@ app.controller('LocCtrl', function($scope, $http) {
         }, function errorCallback(response) {
             // 请求失败执行代码
         });
+
+    $scope.overdiv = function (xid) {
+        $("#hor_nav2").show();
+        document.getElementById("h"+xid).style.display="block";
+    }
+    $scope.outdiv = function (xid) {
+        document.getElementById("h"+xid).style.display="none";
+    }
+
 
 
     })

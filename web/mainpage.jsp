@@ -75,12 +75,12 @@
             }
             #line1_1{
                 /*margin-left: 170px;*/
-                margin-left: 11%;
+                margin-left: 8%;
             }
 
             #line1_2{
                 /*margin-left: 500px;*/
-                margin-left: 42%;
+                margin-left: 41%;
             }
             #line2{
                 /*padding-top: 85px;*/
@@ -161,12 +161,12 @@
             }
             #line1_1{
                 /*margin-left: 170px;*/
-                margin-left: 11%;
+                margin-left: 8%;
             }
 
             #line1_2{
                 /*margin-left: 500px;*/
-                margin-left: 42.5%;
+                margin-left: 41%;
             }
             #line2{
                 /*padding-top: 85px;*/
@@ -247,12 +247,12 @@
             }
             #line1_1{
                 /*margin-left: 170px;*/
-                margin-left: 11%;
+                margin-left: 8%;
             }
 
             #line1_2{
                 /*margin-left: 500px;*/
-                margin-left: 43%;
+                margin-left: 41%;
             }
             #line2{
                 /*padding-top: 85px;*/
@@ -333,12 +333,12 @@
             }
             #line1_1{
                 /*margin-left: 170px;*/
-                margin-left: 11%;
+                margin-left: 8%;
             }
 
             #line1_2{
                 /*margin-left: 500px;*/
-                margin-left: 43%;
+                margin-left: 41%;
             }
             #line2{
                 /*padding-top: 85px;*/
@@ -367,19 +367,19 @@
 <body>
 
 <div id="pic_div">
-    <img src="img/mainpage/word.png">
+    <img src="img/mainpage/word1.png">
 </div>
 <div id="center_div">
     <div class="row" id="line1">
         <div id="line1_1" class="col-md-2 linknum">
-            <div><a href="onepicture.jsp" target="_top">一张图</a></div>
-            <div><a href="onepicture.jsp" target="_top"><img src="img/mainpage/01.png"></a></div>
+            <div><a href="onepicture.jsp" target="_top">为老服务地图</a></div>
+            <div style="padding-left: 35px;"><a href="onepicture.jsp" target="_top"><img src="img/mainpage/01.png"></a></div>
         </div>
-        <div id="line1_2" class="col-md-2 linknum">
+        <div id="line1_2" class="col-md-2 linknum" style="width: 300px;">
             <%--<div><a href="listpage_new.jsp" target="_top">一份清单</a></div>--%>
             <%--<div><a href="listpage_new.jsp" target="_top"><img src="img/mainpage/02.png"></a></div>--%>
-                <div><a onclick="aa()">一份清单</a></div>
-                <div><a onclick="aa()"><img src="img/mainpage/02.png"></a></div>
+                <div><a onclick="aa()">为老服务项目清单</a></div>
+                <div style="padding-left: 55px;"><a onclick="aa()"><img src="img/mainpage/02.png"></a></div>
         </div>
     </div>
     <div class="row" id="line2">
@@ -392,7 +392,7 @@
             <div><a href="page3.jsp" target="_top"><img src="img/mainpage/04.png"></a></div>
         </div>
         <div id="line2_3" class="col-md-2 linknum">
-            <div><a href="linkpage.jsp" target="_top">网站链接</a></div>
+            <div><a href="linkpage.jsp" target="_top">友情链接</a></div>
             <div><a href="linkpage.jsp" target="_top"><img src="img/mainpage/05.png"></a></div>
         </div>
         <div id="line2_4" class="col-md-2 linknum">

@@ -118,6 +118,11 @@
             cursor: pointer;
         }
 
+
+        #DataTables_Table_0{
+            width: 750px!important;
+        }
+
     </style>
 </head>
 <body>
@@ -143,7 +148,7 @@
 
                     <div class="table-responsive">
                         <div class="table-responsive">
-                            <table class="table table-striped dataTables-example text-nowrap text-nowrap">
+                            <table class="table table-striped dataTables-example text-nowrap text-nowrap" style="width: 750px!important;">
                                 <thead>
                                 <tr style="border-bottom: 1px solid #eea77c;">
                                     <th>机构</th>

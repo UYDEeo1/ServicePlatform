@@ -170,7 +170,7 @@
                <h5>IOS下载</h5>
            </div>
            <div class="col-md-2" style=" margin-left: 15px;">
-               <img src="img/app_img.png" style="height:110px;width:110px;">
+               <img src="img/androidApp.png" style="height:110px;width:110px;">
                <h5>Android下载</h5>
            </div>
 

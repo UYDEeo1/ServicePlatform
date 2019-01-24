@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>page1</title>
+    <title>古美路街道开放式养老综合服务平台</title>
 </head>
 <body onLoad="scrollTo(0,0)">
 

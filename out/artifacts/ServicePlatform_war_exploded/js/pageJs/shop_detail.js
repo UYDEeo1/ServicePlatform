@@ -31,10 +31,12 @@ app.controller('NavCtrl', function($scope, $http) {
 
 
     $scope.overdiv = function (xid) {
-        document.getElementById(xid).style.display="block";
+        console.log("over_c"+xid);
+        document.getElementById("c"+xid).style.display="block";
     }
     $scope.outdiv = function (xid) {
-        document.getElementById(xid).style.display="none";
+        console.log("c"+xid);
+        document.getElementById("c"+xid).style.display="none";
     }
 
 

@@ -67,7 +67,7 @@
                 position: absolute;
                 width: 52px;
                 height: 52px;
-                top: 16px;
+                top: 20px;
                 left: 21px;
                 background-size: 100% auto;
                 background-repeat: no-repeat;
@@ -268,7 +268,9 @@
     <%--</div>--%>
     <div id="link_div">
         <a href="http://www.mca.gov.cn/" target="_blank">
-            <span style="background-image: url(img/guohui1.png);"></span>
+            <span>
+                <img src="img/guohui1.png" style="width:57px;height:57px;">
+            </span>
             <h3>中华人民共和国民政部</h3>
             <ul class="clearfloat">
                 <li>婚姻</li>
@@ -280,7 +282,9 @@
         </a>
 
         <a href="http://www.nhfpc.gov.cn/" target="_blank">
-            <span style="background-image: url(img/guohui1.png);"></span>
+            <span>
+                <img src="img/guohui1.png" style="width:57px;height:57px;">
+            </span>
             <h3>中国国家卫生健康委员会</h3>
             <ul class="clearfloat">
                 <li>卫生</li>
@@ -290,7 +294,9 @@
         </a>
 
         <a href="http://www.shmzj.gov.cn/gb/shmzj/index.html" target="_blank">
-            <span style="background-image: url(img/logobaiyulan.png);"></span>
+            <span>
+                <img src="img/logobaiyulan.png" style="width:57px;height:57px;">
+            </span>
             <h3>上海市民政局</h3>
             <ul class="clearfloat">
                 <li>婚姻</li>
@@ -302,7 +308,9 @@
         </a>
 
         <a href="http://www.wsjsw.gov.cn/wsj/" target="_blank">
-            <span style="background-image: url(img/logobaiyulan.png);"></span>
+            <span>
+                <img src="img/logobaiyulan.png" style="width:57px;height:57px;">
+            </span>
             <h3>上海市卫生和计划生育委员会</h3>
             <ul class="clearfloat">
                 <li>卫生</li>
@@ -313,7 +321,9 @@
         </a>
 
         <a href="http://mh.shmzj.gov.cn/gb/mzmhq/index.html" target="_blank">
-            <span style="background-image: url(img/logobaiyulan.png);"></span>
+            <span>
+                <img src="img/mh.png" style="width:57px;height:57px;">
+            </span>
             <h3>上海市闵行区民政局</h3>
             <ul class="clearfloat">
                 <li>闵行</li>
@@ -325,7 +335,9 @@
         </a>
 
         <a href="https://www.mhwsjsw.gov.cn/" target="_blank">
-            <span style="background-image: url(img/logobaiyulan.png);"></span>
+            <span>
+                <img src="img/mh.png" style="width:57px;height:57px;">
+            </span>
             <h3>闵行区卫生和计划生育委员会</h3>
             <ul class="clearfloat">
                 <li>闵行</li>
@@ -338,7 +350,10 @@
         </a>
 
         <a href="http://gmjd.shmh.gov.cn/" target="_blank">
-            <span style="background-image: url(img/mainpage/logo.png);height:100px;"></span>
+            <span>
+                <img src="img/mainpage/logo.png" style="width:47px;height:57px;">
+            </span>
+
             <h3>古美路街道</h3>
             <ul class="clearfloat">
                 <li>街道</li>
@@ -350,7 +365,9 @@
         </a>
 
         <a href="http://weilao.shmh.gov.cn/Portal/Page/Index" target="_blank">
-            <span style="background-image: url(img/mainpage/gumei_logo.png);height:100px;"></span>
+            <span>
+                <img src="img/mh.png" style="width:57px;height:57px;">
+            </span>
             <h3>闵行区综合为老服务平台</h3>
             <ul class="clearfloat">
                 <li>闵行</li>

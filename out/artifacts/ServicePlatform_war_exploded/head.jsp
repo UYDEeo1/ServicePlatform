@@ -17,8 +17,8 @@
                 padding:10px;
             }
             #logo img{
-                width:16%;
-                height:73%;
+                width:20%;
+                height:70%;
             }
             .bbtn{
                 color:white;
@@ -39,8 +39,8 @@
                 padding:10px;
             }
             #logo img{
-                width:16%;
-                height:73%;
+                width:20%;
+                height:70%;
             }
             .bbtn{
                 color:white;
@@ -61,8 +61,8 @@
                 padding:10px;
             }
             #logo img{
-                width:16%;
-                height:73%;
+                width:20%;
+                height:70%;
             }
             .bbtn{
                 color:white;
@@ -83,8 +83,8 @@
                 padding:10px;
             }
             #logo img{
-                width:16%;
-                height:73%;
+                width:20%;
+                height:70%;
             }
             .bbtn{
                 color:white;
@@ -152,7 +152,7 @@
 <div>
     <div style="background-color: #ffd5b7;width:100%;height:100%;">
         <div id="logo" class="col-md-8 col-md-offset-1" >
-            <a href="page1.jsp" target="_top"><img src="img/mainpage/logo_title.png"></a>
+            <a href="page1.jsp" target="_top"><img src="img/mainpage/logo_title1.png"></a>
         </div>
         <div id="div_login" class="col-md-offset-3" >
             <a href="login.jsp" target="_blank"><button class="btn bbtn">登录</button></a>

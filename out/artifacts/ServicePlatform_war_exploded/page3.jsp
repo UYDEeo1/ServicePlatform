@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>档案</title>
+    <title>个人档案</title>
     <link type="text/css" rel="stylesheet"  href="css/common.css" />
     <link type="text/css" rel="stylesheet"  href="css/account.css" />
     <link rel="icon" href="http://www.smmail.cn/favicon.ico?1234" type="image/x-icon" />
@@ -19,6 +19,11 @@
             padding:0px;
             background-color: #f4f4f4;
         }
+        .body_main {
+            height: auto;
+            margin-left: 10%!important;
+            overflow: hidden;
+        }
     </style>
     <link href="css/billDetail.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37293556" charset="UTF-8"></script>
@@ -34,6 +39,42 @@
                 }
             }
         });
+
+
+        window.onload=function()
+        {
+
+
+            $.ajax({
+                url: "http://47.101.138.13:83/file/identifyCensus?token="+getCookie("token"),
+                type: "get",
+                async: false,
+                success: function (data) {
+
+                    if(data.data=='0')
+                    {
+                        document.getElementById("life").style.display="none";
+
+                        document.getElementById("personal").style.display="none";
+
+                        document.getElementById("social").style.display="none";
+
+//                        document.getElementById("ccc").addClass("choosed");
+                        document.getElementById("billIframe").src='page3_4.jsp';
+
+                    }
+                    else {
+//                        document.getElementById("bbb").addClass("choosed");
+                    }
+
+
+                }
+
+            })
+
+
+        };
+
 
         function getCookie(name)
         {
@@ -74,10 +115,11 @@
             margin: 0px;
             padding: 0px;
             background-color: #f4f4f4;
+            min-width: 1365px;
         }
 
         @media screen and (max-width: 1365px){
-            body{font-size: 12px}
+            body{font-size: 12px;min-width: 1365px;}
             #headFrame {
                 height: 78px;
                 min-width: 1268px;
@@ -189,6 +231,9 @@
         $("#"+iframe).height(parseInt(height)+10);
     }
 
+
+
+
 </script>
 
 
@@ -200,10 +245,13 @@
                 <!-- 左边导航 -->
                 <div id="body_left" class="body_left">
                     <div id="left_body" class="left_body f14">
-                        <div id="life" class="life_list" style="padding-top: 20px;">
-                            <div id="sh_title" class="title "> 档案 </div>
+                        <div id="sh_title" class="title" style="padding-top: 20px;"> 档案 </div>
+
+                        <div id="life" class="life_list">
+                            <%--<div id="sh_title" class="title "> 档案 </div>--%>
+
                             <div id="sh_content" class="content" >
-                                <div id="cloudbill1" class="list" ><img src="img/login_icon2@2x.png"><span onclick="refreshStyle(this,'page3_1.jsp')" class="choosed"><a href="javascript:void(0)">个人信息</a></span></div>
+                                <div id="cloudbill1" class="list" ><img src="img/login_icon2@2x.png"><span id="bbb" onclick="refreshStyle(this,'page3_1.jsp')"><a href="javascript:void(0)">个人信息</a></span></div>
 
                             </div>
                         </div>
@@ -223,7 +271,7 @@
                         <div class="personal_list">
                             <%--<div class="title"> 一卡通 </div>--%>
                             <div class="content">
-                                <div class="list" ><img src="img/headlines.png"><span onclick="refreshStyle(this,'page3_4.jsp')"><a href="javascript:void(0)">一卡通记录</a></span></div>
+                                <div class="list" ><img src="img/headlines.png"><span id="ccc" onclick="refreshStyle(this,'page3_4.jsp')"><a href="javascript:void(0)">一卡通记录</a></span></div>
 
                             </div>
                         </div>
@@ -237,9 +285,9 @@
                     </div>
                 </div>
                 <!-- 右边是frame形式的地址引入内容 -->
-                <div id="body_right" class="body_right" style="width:750px;">
+                <div id="body_right" class="body_right" style="min-width:900px;">
 
-                    <div class="content_right" id="content_right" style="width:750px;">
+                    <div class="content_right" id="content_right" style="width:900px;">
                         <iframe id="billIframe" name="billIframe" src="page3_1.jsp" frameborder="0"  scrolling="auto" ></iframe>
                     </div>
 

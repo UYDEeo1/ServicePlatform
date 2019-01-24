@@ -25,6 +25,8 @@ app.controller('infoCtrl', function($scope, $http) {
 });
 
 
+
+
 function getCookie(name)
 {
     var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
